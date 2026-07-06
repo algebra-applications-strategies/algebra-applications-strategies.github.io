@@ -5356,6 +5356,411 @@ var ptx_lunr_docs = [
   "body": "  Interpret if represents the quantity of sales and represents the profit from selling the product.    As the quantity of sales increases, the profit from selling the product decreases until the quantity reaches , where it reaches a minimum profit of . As the quantity of sales increases beyond , the profit from selling the product increases.   "
 },
 {
+  "id": "sec-lines",
+  "level": "1",
+  "url": "sec-lines.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Lines",
+  "body": " Lines    In this section, we learn how to:    Articulate the connection between an equation in and and its graph.  Determine the slope of a line given two points on the line.  Determine an equation for a line given some information about the line.  Graph a line given its equation.  Interpret the slope and -intercept of a line in context.     Applications  The skills we learn in this section are useful for predictive purposes. At the end of this section, we will use what we learn to answer the following questions.   A studio apartment has a monthly rent of in the year 2010. Its monthly rent is in the year 2021. If the rent increases by the same amount each year, what would be the monthly rent in 2025?    A car rental company charges per day to rent a car, plus a one-time fee of for insurance. If the final bill for renting a car is , how many days was the car rented?    A local coffee shop sells drip coffee for in 2020 and in 2023. If the price of coffee increases by the same amount each year, what was the price back in 2015?       Equations in and  The primary focus of this section is on lines, which the nicest examples of graphs of equations in two variables and . Before introducing lines, we first discuss equations in and in general. An equation in and is an equation that mentions the variables and . Typically, both variables appear at least once, but it is possible to just have one of the variables missing. Here are ten examples of equations in and :            The list above may look intimidating, but at the moment, we are not conerned with extracting any information out of these yet. Notice that each example is an equation (and not an expression) because there is an equal sign. Each is an equation in and because one or both of these variables appear. In the fifth equation, appears but does not: this is allowed. In the sixth equation, appears but does not: this is also allowed. The first and fourth equations are examples where both and appear multiple times.  Every equation in and has a graph, which is the set of all points that satisfy the equation.  Connection between an equation in and and its graph  Every equation in and has a graph, which is the set of all points that satisfy the equation. The point is on the graph of the equation if and only if it satisfies the equation.  To make sense of this principle, we will explain it by looking more closely at the first equation from the list .   Is the point on the graph of the equation ?    To determine if the point is on the graph of the equation , we need to check if it satisfies the equation. We do this by substituting and into the equation and seeing if both sides are equal.   The left side of the equation becomes     The right side of the equation becomes    Since the two sides are not equal, the point does not satisfy the equation, and therefore is not on the graph of the equation.      Is the point on the graph of the equation ?    We substitute and into the equation, and independently simplify each side according to the Order of Operations.   The left side of the equation becomes     The right side of the equation becomes    Since the two sides are equal, the point satisfies the equation, and therefore is on the graph of the equation.      Is the point on the graph of the equation ?    We substitute and into the equation:   The left side of the equation becomes     The right side of the equation becomes    Since the two sides are equal, the point satisfies the equation, and therefore is on the graph of the equation.     The previous two examples show us that there are many points that are part of the graph of the equation , and many points that are not part of the graph. As another way to really see that the graph of an equation in and has many points, consider the followiing exercise:   Find three points on the graph of the equation .    We can find points on the graph by choosing values for and calculating the corresponding values.   If , then . So, the point is on the graph of .    If , then . So, the point is on the graph of .    If , then . So, the point is on the graph of .      We can select any value of , but to ensure that the value is nice, we only picked numbers that are perfect squares. There are so many more valid answers to this question. For example is another point on the graph. Can you find three more points?     Find three points on the graph of the equation .    In the previous example, we picked -values, and each time, this gave us a value of . However, in this equation, it is easier to pick -values, and then calculate the corresponding -values, since is the variable that is isolated on its own.   If , then . So, the point is on the graph of .    If , then . So, the point is on the graph of .    If , then . So, the point is on the graph of .        Before moving to the main event for this section, we discuss -intercepts and -intercepts. An -intercept is a point on the graph where the graph intersects the -axis. An -intercept is a point on the graph where the graph intersects the -axis.  Finding -intercepts   Given an equation in and , set and solve for in the resulting equation.   This may seem a little backwards at first. Why would we set equal to zero when we're trying to find -intercepts? We just introduced that an -intercept is a point on the -axis, and we saw in that a point is on the -axis if and only if its -coordinate is zero, because corresponds to no vertical movement: it was having no vertical movement ( ) which is what leads to a point being on the -axis.  Finding -intercepts   Given an equation in and , set and solve for in the resulting equation.   This procedure for finding -intercepts is justified similarly. Recall which says that a point is on the -axis if and only if its -coordinate is zero.   Find the -intercept(s) and -intercept(s) of the graph of .    To find the -intercept(s), set and solve for : turns into so . So, the only -intercept is .  To find the -intercept(s), set and solve for : . So, the only -intercept is .       Slope  Now that we have examined equations in and in general, we will focus on lines, which are some of the nicest examples of graphs in the -plane. Moreover, lines are very practical for noticing behavior and making predictions. In every day language, we often will say the word \"line\" for something that is not a line in the mathematical sense. Even in mathematics, sometimes people will informally call something that is slightly wavy a \"line\", but we will be careful in our language: when we talk about a line, we mean a geometric object that is perfectly straight and extends forever in both directions.  Whenever you have two points, we can draw a line through them. So, a line is determined by any two of its points. One key calculation for a line is its slope, which measures how steep the line is.  Slope   The slope of the line going through the point and the point is given by the formula    It is traditional to use the letter to represent slope. We are subtracting the -coordinates in the numerator, and doing one -value minus the other is called the \"change in slope\", denoted . Similarly, represents the change in the -coordinates. So, we can also write the formula for slope like this:  Slope: Change in coordinates       In either of the versions, the important thing to remember is that the subtraction of -values is in the numerator, and the subtraction of -values is in the denominator. An easy way to remember this is to think of slope as \"rise over run\", where the rise is the change in and the run is the change in . From past experience, students often find \"run over rise\" sounds strange, and that's good! The correct phras \"rise over run\" will help us remember that subtraction of the -values happens in the numerator: after all, \"rise\" refers to how much you go up, and is the vertical coordinate!   Find the slope of the line going through the points and .    We can use the formula for slope to find the slope of the line going through the points and . We can let and , and then we have     We can use the formula for slope to find the slope of the line going through the points and . This time, we switch which point is Point 1 and which point is Point 2. So we can let and , and then we have    In the end, it does not matter which point is considered Point 1 and which is considered Point 2. We get the same slope either way. We just need to be cautious that if the -coordinate for one point appears first in the numerator, then the -coordinate for that same point must appear first in the denominator. For example, the following is incorrect:   We now look at several examples of lines, and will refer back to these examples.   Find the slope of the line going through the points and              In our first answer, we are careful that we are still subtracting: we have minus . The fact that becomes is due to facts about how subtracting a negative number works. Even though we are doing , we aren't adding the -coordinates. We really did take the -value of and subtract the -value of . Especially when there are minus signs appearing for the coordinates of either point, it's best to be careful and follow the formula exactly to avoid mistakes. If there are any places where subtracting a negative ends up getting rewritten as adding a positive, it is best to save that for the next step: errors in finding slope ofter occur just from working too fast.     Find the slope of the line going through the points and              Both of the answers to this example are correct. We can have the minus sign in the denominator or in the numerator, but not both. We can also rewrite either fraction to have the minus sign in front of the fraction as in . While all the coordinates were positive in the previous example, it is still possible for the slope to be negative.   Find the slope of the line going through the points and      We say that line has zero slope, or a slope of .      Find the slope of the line going through the points and      This is undefined, so we say that this line does not have a slope. We can also say that this line has no slope.   The caution to point out is that in , zero was in the denominator, and so the slope does not exist (also: no slope), but in , zero was in the numerator, and so the slope is zero. It is an error to say that we have \"no slope\" in example : here, we have to be very cautious about zero slope versus no slope.  The following figures illustrate graphs of the last four examples. What do you notice about slope? First is the line from , which has positive slope.     The line through and  Since lines go on forover in both directions, this drawing of a line (like all drawings of lines) include arrows on each end to indicate that the drawing goes on forever.  Next is the line from , which has negative slope.     The line through and  In the previous section, we gave interpretations of graphs of lines in context when axes were labeled with specific meanings. In that section, our figures were called lines of positive correlation and negative correlation, and our graphs remained in the first quadrant to keep things clean. Here, our drawings may be in any quadrant, but the connection is that positive correlation from earlier is a line with positive slope here, and negative correlation corresponds to negative slope. Here's another way to say this: when a line has positive slope, as grows also grows, and when a line has negative slope, as grows shrinks.  The line from has zero slope:     The line through and  Like all lines with zero slope, this line is completely horizontal. Informally, a line with zero slope is described as \"flat\", but the word \"flat\" has the ambiguity of potentially meaning \"straight\" (as all lines are), or \"horizontal\" (where we talk about a \"flat\" part of a hill, for example). To avoid this confusion, we will say horizontal.  The line from has no slope:     The line through and  Like all lines with no slope, this line is completely vertical.  One of the important tasks in algebra is to be able to categorize lines as having positive slope, negative slope, zero slope, or no slope. If we only need to take a given line and categorize it into one fo four buckets, we should attempt to do this without doing any computation. Lines of zero slope and the lines of no slope are the easiest to identify. Informally, we can also identify lines of positive slope and negative slope by looking at what we can informally call their \"tilt\". As we move along the line to the right (so is increasing), is increasing or decreasing? If is increasing, the line has positive slope. If is decreasing, the line has negative slope.   In the following figure, several lines are drawn and labeled with letters. For each line, determine if it has positive slope, negative slope, zero slope, or no slope.     Various lines      Lines A, D, and F have positive slope. Lines B and G have negative slope. Line C has zero slope. Line E has no slope.      Determine if the line shown has positive slope, negative slope, zero slope, or no slope.     Slope: estimation versus exact calculation      The line has negative slope, even without needing to compute the slope exactly.      Find the exact slope of the line in .    The line appears to go through the points and . So .    The line appears to go through the points and . So .    The line appears to go through the points and . So .     Slope is a number that tells us how steep a line is. The larger the number, the steeper the line. Just like we categorized lines as having positive slope, negative slope, zero slope, or no slope without computation, to practice the idea that steeper lines have larger slope, we can take two lines of positive slope and determine which line has larger slope without computation.   In the following figure, two lines with positive slope are drawn and labeled with letters. Which line has larger slope?     Two lines of positive slope      Line A is steeper than line B, so line A has larger slope than line B.      In the following figure, two lines with positive slope are drawn and labeled with letters. Which line has larger slope?     Two lines of positive slope      Line A and Line B actually have the same steepeness, so this was a bit of a trick question. Both lines have the same slope. This previews a later topic: parallel lines have the same slope.       Equations of lines  There are several common formats for equations for a line, but we will focus on one that is directly built from the slope formula. This format for an equation of a line is both nice to use and is the most useful in most applications involving lines. Recall first that given two points and , the slope of the line through these points is given by . The subscripts are used to indicate a specific point. But, we also write to represent any point on the line (that is, represents a generic point on the line or a typical point on the line). So, let's replace with in the slope formula. We have . Then, multiplying both sides by the denominator , we have . Note that the parentheses here are necessary, due to order of operations. Only because it is typically done, we swap the two sides of the equation: .  Point-slope form   If a line has slope and goes through the point , then an equation for the line is To present a line in this format, substitute the known slope for and the known point in for and , but do not substitue for or , which will remain variables.      Find an equation of the line with slope that goes through the point .           Identify the slope and a point on the line given by the equation .    We rewrite as . The equation is in point-slope form, so we can directly identify the slope and a point on the line. The slope is , and a point on the line is .   One of the things that may feel intimidating about point-slope form is that it feels longer to write (thus harder to memorize) than another form of an equation for a line. Sometimes, dealing with something that appears slightly harder pays off: in many situations, point-slope form is the fastest way to write an equation for a line, and the one that leads to the fewest number of errors. Here are two ways recall point-slope form, and these will also help us be convinced this works in the first place:   Start from the slope formula . Replace with to get . Then multiply both sides by to get . Swap the two sides to get .    Our second approach is essentially the work above done backwards, but adding in a guess-and-check element. If we cannot recall whether the formula is or , we can take both of these equation (on is correct and one is not), and quickly find out. Take each equation and divide both sides by what's in parentheses: in the case of the first equation, this gives us which looks like the slope formula (rise over run), while doing this to the second equation gives us which suggests run over rise, and is not right. So, of the two equations we initally wrote, we keep .     Slope-intercept form   If a line has slope and has -intercept , then an equation for the line is To present a line in this format, substitute the known slope for and the known -intercept for . In the final answer in slope-intercept form, do not substitue for or , which will remain variables.      Find an equation of the line with slope that has -intercept .           Identify the slope and a point on the line given by the equation .    We rewrite as . The slope is . Since the -intercept is , a point on the line is .      Selecting the fastest form of a line      When does this strategy apply? This strategy describes which form of line to select when a question gives you data about a line and asks for an equation of the line (and the question does not require the final answer in a specific formrat).       If you know the slope and the -intercept, use slope-intercept form.    If the combination of data you are given is anything else, use point-slope form. (In fact, in all but the situation above, you will know a poin on the line and a slope, so use point-slope form.)      Why is point-slope form called point-slope form? This is because if you know a point on the line and you know the slope of the line, point-slope form is the fastest way to write an equation for the line.     Find an equation for the line going through the points and .    For this answer, we will ignore the advice from and use slope-intercept form. First, we compute the slope: Our equation so far is  tells us that we cannot substitue for or in the final answer, but we need to do so temporarily to find the value of b . We can use either point to find . Let's use . Substituting and into , we have . Solving for , we have , so . Now that we found the value of , we undo substituting for and . So, the final answer is     If we reset, the information we have is that the line goes through the point and also through the point . Compute the slope: Now, we know two points and the slope. The note at the end of tells us that whenever we have a point, point-slope form is fastest. One valid final answer is and another valid final answer is .      Find an equation for the line with slope with -intercept .    Since we know the slope and the -intercept, we use slope-intercept form. So, the equation is .      Find an equation for the line with slope with -intercept .    Note that is the -intercept, not the -intercept, so we cannot use slope-intercept form. Instead, we use point-slope form. Since is the -intercept, we know that the line goes through the point . So, we have a point and a slope, and we can use point-slope form. An equation for this line is .   Note that this question is very similar to the previous question, but the method to answer was different because we were given the -intercept instead of the -intercept.   A line goes through the points and . State the -coordinate of the point on the line which has -coordinate .    We will make an equation for the line first, based on the points and . The slope is . Using either point, we can get an equation for this line in point-slope form. Let's choose the first point, . So, an equation for the line is .  Now that we have an equation for the line, every point on the line must satisfy this equation, due to . So, we look for the point of the form by substituting into the equation for the line and getting the value of . So we have , so . This is a value of , though we have not simplified the arithmetic.       Parallel and perpendicular lines    Two lines are parallel if and only if they have the same slope.      Two lines are perpendicular if and only if one slope is the opposite reciprocal of the other (meaning the product of their slopes is ).      Find an equation of the line that is parallel to the line and goes through the point .    Since the line we are looking for is parallel to the line , it must have the same slope, which is . So, we have a slope of and a point on the line, . Using point-slope form, an equation for this line is .      Find an equation of the line that is perpendicular to the line and goes through the point .    Since the line we are looking for is perpendicular to the line , its slope must be the opposite reciprocal of the slope of the given line. The slope of the given line is , so the slope of the perpendicular line is . So, we have a slope of and a point on the line, . Using point-slope form, an equation for this line is .      Applications Revisited  Let's revisit the applications we introduced at the beginning of this section.   A studio apartment has a monthly rent of in the year 2010. Its monthly rent is in the year 2021. If the rent increases by the same amount each year, what would be the monthly rent in 2025?    We can think of the behavior as a line, and treat the data as two points on the line. We choose to put the year on the -axis and the rent on the -axis. (We could swap these as well, but often time is put on the -axis.) So, we have the points and . The slope is . (So the rent increases by each year.) Since we have a slope and a point, we can use point-slope form to get an equation for the line. Using the point , we have . To find out the rent in 2025, we substitute into the equation for the line and solve for . So, we have , so , so , so . The rent in 2025 was per month.   Note that the question we just answered had the same mathematical outline as , but with context.   A car rental company charges per day to rent a car, plus a one-time fee of for insurance. If the final bill for renting a car is , how many days was the car rented?    We can think of the behavior as a line. If we let be the number of days the car is rented, and be the total cost, then we have a slope of (the cost per day), and the -intercept given. So, an equation for this line is . Based on this equation, with a final bill of , we can solve for to find the number of days the car was rented. So , which gives , and thus . The car was rented for 5 days.      A local coffee shop sells drip coffee for in 2020 and in 2023. If the price of coffee increases by the same amount each year, what was the price back in 2015?    We can think of the behavior as a line. If we let be the number of years since 2015, and be the price of coffee, then we have a slope of , and the point . So, an equation for this line is . Based on this equation, we can solve for when to find the price in 2015. So so so . Therefore, . The price of coffee in 2015 was approximately .       Summary     Every equation in and has a graph, and a point is on the graph of the equation if and only if its coordinates satisfy the equation.    The slope of a line is a measure of its steepness, calculated as the rise (which is the change in ) divided by the run (which is the change in ).    Point-slope and slope-intercept are two common forms of equations for lines. Point-slope form is useful when you know a point on the line and the slope, while slope-intercept form is useful when you know the slope and the -intercept.    Parallel lines have the same slope, while perpendicular lines have slopes that are opposite reciprocals of each other.       Exercises        Each exercise below gives an equation in and and a point. Determine if a point is on the graph of the equation.  Is on the graph of ?  Is on the graph of ?  Is on the graph of ?   Is on the graph of ?  Is on the graph of ?      Find an equation of the line with the given data. (The question asks for \"an equation\" instead of \"the equation\" because there are multiple correct answers.)  The line through and  The line through and  The line through and  The line with slope and -intercept  The line with slope and -intercept  The line with slope and -intercept  The line with slope and -intercept  The line with slope and -intercept  The line with slope and -intercept  The line with slope and -intercept  The line with slope and -intercept  The line through and with slope      Find an equation perpendicular to going through the point .    Find an equation parallel to going through the point .      "
+},
+{
+  "id": "sec-lines-2",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-2",
+  "type": "Objectives",
+  "number": "2.2",
+  "title": "",
+  "body": "  In this section, we learn how to:    Articulate the connection between an equation in and and its graph.  Determine the slope of a line given two points on the line.  Determine an equation for a line given some information about the line.  Graph a line given its equation.  Interpret the slope and -intercept of a line in context.   "
+},
+{
+  "id": "connection-graph-of-equation",
+  "level": "2",
+  "url": "sec-lines.html#connection-graph-of-equation",
+  "type": "Principle",
+  "number": "2.2.1",
+  "title": "Connection between an equation in <span class=\"process-math\">\\(x\\)<\/span> and <span class=\"process-math\">\\(y\\)<\/span> and its graph.",
+  "body": " Connection between an equation in and and its graph  Every equation in and has a graph, which is the set of all points that satisfy the equation. The point is on the graph of the equation if and only if it satisfies the equation.  "
+},
+{
+  "id": "sec-lines-4-3-6",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-4-3-6",
+  "type": "Example",
+  "number": "2.2.2",
+  "title": "",
+  "body": "  Is the point on the graph of the equation ?    To determine if the point is on the graph of the equation , we need to check if it satisfies the equation. We do this by substituting and into the equation and seeing if both sides are equal.   The left side of the equation becomes     The right side of the equation becomes    Since the two sides are not equal, the point does not satisfy the equation, and therefore is not on the graph of the equation.   "
+},
+{
+  "id": "sec-lines-4-3-7",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-4-3-7",
+  "type": "Example",
+  "number": "2.2.3",
+  "title": "",
+  "body": "  Is the point on the graph of the equation ?    We substitute and into the equation, and independently simplify each side according to the Order of Operations.   The left side of the equation becomes     The right side of the equation becomes    Since the two sides are equal, the point satisfies the equation, and therefore is on the graph of the equation.   "
+},
+{
+  "id": "sec-lines-4-3-8",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-4-3-8",
+  "type": "Example",
+  "number": "2.2.4",
+  "title": "",
+  "body": "  Is the point on the graph of the equation ?    We substitute and into the equation:   The left side of the equation becomes     The right side of the equation becomes    Since the two sides are equal, the point satisfies the equation, and therefore is on the graph of the equation.   "
+},
+{
+  "id": "sec-lines-4-4-4",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-4-4-4",
+  "type": "Example",
+  "number": "2.2.5",
+  "title": "",
+  "body": "  Find three points on the graph of the equation .    We can find points on the graph by choosing values for and calculating the corresponding values.   If , then . So, the point is on the graph of .    If , then . So, the point is on the graph of .    If , then . So, the point is on the graph of .      "
+},
+{
+  "id": "sec-lines-4-5-1",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-4-5-1",
+  "type": "Example",
+  "number": "2.2.6",
+  "title": "",
+  "body": "  Find three points on the graph of the equation .    In the previous example, we picked -values, and each time, this gave us a value of . However, in this equation, it is easier to pick -values, and then calculate the corresponding -values, since is the variable that is isolated on its own.   If , then . So, the point is on the graph of .    If , then . So, the point is on the graph of .    If , then . So, the point is on the graph of .      "
+},
+{
+  "id": "principle-x-intercepts",
+  "level": "2",
+  "url": "sec-lines.html#principle-x-intercepts",
+  "type": "Principle",
+  "number": "2.2.7",
+  "title": "Finding <span class=\"process-math\">\\(x\\)<\/span>-intercepts.",
+  "body": " Finding -intercepts   Given an equation in and , set and solve for in the resulting equation.   "
+},
+{
+  "id": "principle-y-intercepts",
+  "level": "2",
+  "url": "sec-lines.html#principle-y-intercepts",
+  "type": "Principle",
+  "number": "2.2.8",
+  "title": "Finding <span class=\"process-math\">\\(y\\)<\/span>-intercepts.",
+  "body": " Finding -intercepts   Given an equation in and , set and solve for in the resulting equation.   "
+},
+{
+  "id": "sec-lines-4-6-23",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-4-6-23",
+  "type": "Example",
+  "number": "2.2.9",
+  "title": "",
+  "body": "  Find the -intercept(s) and -intercept(s) of the graph of .    To find the -intercept(s), set and solve for : turns into so . So, the only -intercept is .  To find the -intercept(s), set and solve for : . So, the only -intercept is .   "
+},
+{
+  "id": "principle-slope",
+  "level": "2",
+  "url": "sec-lines.html#principle-slope",
+  "type": "Principle",
+  "number": "2.2.10",
+  "title": "Slope.",
+  "body": " Slope   The slope of the line going through the point and the point is given by the formula    "
+},
+{
+  "id": "principle-slope-change",
+  "level": "2",
+  "url": "sec-lines.html#principle-slope-change",
+  "type": "Principle",
+  "number": "2.2.11",
+  "title": "Slope: Change in coordinates.",
+  "body": " Slope: Change in coordinates       "
+},
+{
+  "id": "sec-lines-5-3-15",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-5-3-15",
+  "type": "Example",
+  "number": "2.2.12",
+  "title": "",
+  "body": "  Find the slope of the line going through the points and .    We can use the formula for slope to find the slope of the line going through the points and . We can let and , and then we have     We can use the formula for slope to find the slope of the line going through the points and . This time, we switch which point is Point 1 and which point is Point 2. So we can let and , and then we have    "
+},
+{
+  "id": "example-positive-slope",
+  "level": "2",
+  "url": "sec-lines.html#example-positive-slope",
+  "type": "Example",
+  "number": "2.2.13",
+  "title": "",
+  "body": "  Find the slope of the line going through the points and              "
+},
+{
+  "id": "example-negative-slope",
+  "level": "2",
+  "url": "sec-lines.html#example-negative-slope",
+  "type": "Example",
+  "number": "2.2.14",
+  "title": "",
+  "body": "  Find the slope of the line going through the points and              "
+},
+{
+  "id": "example-zero-slope",
+  "level": "2",
+  "url": "sec-lines.html#example-zero-slope",
+  "type": "Example",
+  "number": "2.2.15",
+  "title": "",
+  "body": "  Find the slope of the line going through the points and      We say that line has zero slope, or a slope of .   "
+},
+{
+  "id": "example-no-slope",
+  "level": "2",
+  "url": "sec-lines.html#example-no-slope",
+  "type": "Example",
+  "number": "2.2.16",
+  "title": "",
+  "body": "  Find the slope of the line going through the points and      This is undefined, so we say that this line does not have a slope. We can also say that this line has no slope.   "
+},
+{
+  "id": "fig-positive-slope",
+  "level": "2",
+  "url": "sec-lines.html#fig-positive-slope",
+  "type": "Figure",
+  "number": "2.2.17",
+  "title": "",
+  "body": "    The line through and  "
+},
+{
+  "id": "fig-negative-slope",
+  "level": "2",
+  "url": "sec-lines.html#fig-negative-slope",
+  "type": "Figure",
+  "number": "2.2.18",
+  "title": "",
+  "body": "    The line through and  "
+},
+{
+  "id": "fig-zero-slope",
+  "level": "2",
+  "url": "sec-lines.html#fig-zero-slope",
+  "type": "Figure",
+  "number": "2.2.19",
+  "title": "",
+  "body": "    The line through and  "
+},
+{
+  "id": "fig-no-slope",
+  "level": "2",
+  "url": "sec-lines.html#fig-no-slope",
+  "type": "Figure",
+  "number": "2.2.20",
+  "title": "",
+  "body": "    The line through and  "
+},
+{
+  "id": "sec-lines-5-10-5",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-5-10-5",
+  "type": "Example",
+  "number": "2.2.21",
+  "title": "",
+  "body": "  In the following figure, several lines are drawn and labeled with letters. For each line, determine if it has positive slope, negative slope, zero slope, or no slope.     Various lines      Lines A, D, and F have positive slope. Lines B and G have negative slope. Line C has zero slope. Line E has no slope.   "
+},
+{
+  "id": "sec-lines-5-10-6",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-5-10-6",
+  "type": "Example",
+  "number": "2.2.23",
+  "title": "",
+  "body": "  Determine if the line shown has positive slope, negative slope, zero slope, or no slope.     Slope: estimation versus exact calculation      The line has negative slope, even without needing to compute the slope exactly.   "
+},
+{
+  "id": "sec-lines-5-10-7",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-5-10-7",
+  "type": "Example",
+  "number": "2.2.25",
+  "title": "",
+  "body": "  Find the exact slope of the line in .    The line appears to go through the points and . So .    The line appears to go through the points and . So .    The line appears to go through the points and . So .   "
+},
+{
+  "id": "sec-lines-5-11-2",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-5-11-2",
+  "type": "Example",
+  "number": "2.2.26",
+  "title": "",
+  "body": "  In the following figure, two lines with positive slope are drawn and labeled with letters. Which line has larger slope?     Two lines of positive slope      Line A is steeper than line B, so line A has larger slope than line B.   "
+},
+{
+  "id": "sec-lines-5-11-3",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-5-11-3",
+  "type": "Example",
+  "number": "2.2.28",
+  "title": "",
+  "body": "  In the following figure, two lines with positive slope are drawn and labeled with letters. Which line has larger slope?     Two lines of positive slope      Line A and Line B actually have the same steepeness, so this was a bit of a trick question. Both lines have the same slope. This previews a later topic: parallel lines have the same slope.   "
+},
+{
+  "id": "principle-point-slope-form",
+  "level": "2",
+  "url": "sec-lines.html#principle-point-slope-form",
+  "type": "Principle",
+  "number": "2.2.30",
+  "title": "Point-slope form.",
+  "body": " Point-slope form   If a line has slope and goes through the point , then an equation for the line is To present a line in this format, substitute the known slope for and the known point in for and , but do not substitue for or , which will remain variables.   "
+},
+{
+  "id": "sec-lines-6-2-13",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-6-2-13",
+  "type": "Example",
+  "number": "2.2.31",
+  "title": "",
+  "body": "  Find an equation of the line with slope that goes through the point .        "
+},
+{
+  "id": "sec-lines-6-2-14",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-6-2-14",
+  "type": "Example",
+  "number": "2.2.32",
+  "title": "",
+  "body": "  Identify the slope and a point on the line given by the equation .    We rewrite as . The equation is in point-slope form, so we can directly identify the slope and a point on the line. The slope is , and a point on the line is .   "
+},
+{
+  "id": "principle-slope-intercept-form",
+  "level": "2",
+  "url": "sec-lines.html#principle-slope-intercept-form",
+  "type": "Principle",
+  "number": "2.2.33",
+  "title": "Slope-intercept form.",
+  "body": " Slope-intercept form   If a line has slope and has -intercept , then an equation for the line is To present a line in this format, substitute the known slope for and the known -intercept for . In the final answer in slope-intercept form, do not substitue for or , which will remain variables.   "
+},
+{
+  "id": "sec-lines-6-2-17",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-6-2-17",
+  "type": "Example",
+  "number": "2.2.34",
+  "title": "",
+  "body": "  Find an equation of the line with slope that has -intercept .        "
+},
+{
+  "id": "sec-lines-6-2-18",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-6-2-18",
+  "type": "Example",
+  "number": "2.2.35",
+  "title": "",
+  "body": "  Identify the slope and a point on the line given by the equation .    We rewrite as . The slope is . Since the -intercept is , a point on the line is .   "
+},
+{
+  "id": "selecting-fastest-line-form",
+  "level": "2",
+  "url": "sec-lines.html#selecting-fastest-line-form",
+  "type": "Strategy",
+  "number": "2.2.36",
+  "title": "Selecting the fastest form of a line.",
+  "body": " Selecting the fastest form of a line      When does this strategy apply? This strategy describes which form of line to select when a question gives you data about a line and asks for an equation of the line (and the question does not require the final answer in a specific formrat).       If you know the slope and the -intercept, use slope-intercept form.    If the combination of data you are given is anything else, use point-slope form. (In fact, in all but the situation above, you will know a poin on the line and a slope, so use point-slope form.)      Why is point-slope form called point-slope form? This is because if you know a point on the line and you know the slope of the line, point-slope form is the fastest way to write an equation for the line.  "
+},
+{
+  "id": "sec-lines-6-2-20",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-6-2-20",
+  "type": "Example",
+  "number": "2.2.37",
+  "title": "",
+  "body": "  Find an equation for the line going through the points and .    For this answer, we will ignore the advice from and use slope-intercept form. First, we compute the slope: Our equation so far is  tells us that we cannot substitue for or in the final answer, but we need to do so temporarily to find the value of b . We can use either point to find . Let's use . Substituting and into , we have . Solving for , we have , so . Now that we found the value of , we undo substituting for and . So, the final answer is     If we reset, the information we have is that the line goes through the point and also through the point . Compute the slope: Now, we know two points and the slope. The note at the end of tells us that whenever we have a point, point-slope form is fastest. One valid final answer is and another valid final answer is .   "
+},
+{
+  "id": "sec-lines-6-2-21",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-6-2-21",
+  "type": "Example",
+  "number": "2.2.38",
+  "title": "",
+  "body": "  Find an equation for the line with slope with -intercept .    Since we know the slope and the -intercept, we use slope-intercept form. So, the equation is .   "
+},
+{
+  "id": "sec-lines-6-2-22",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-6-2-22",
+  "type": "Example",
+  "number": "2.2.39",
+  "title": "",
+  "body": "  Find an equation for the line with slope with -intercept .    Note that is the -intercept, not the -intercept, so we cannot use slope-intercept form. Instead, we use point-slope form. Since is the -intercept, we know that the line goes through the point . So, we have a point and a slope, and we can use point-slope form. An equation for this line is .   "
+},
+{
+  "id": "interpolation-preview",
+  "level": "2",
+  "url": "sec-lines.html#interpolation-preview",
+  "type": "Example",
+  "number": "2.2.40",
+  "title": "",
+  "body": "  A line goes through the points and . State the -coordinate of the point on the line which has -coordinate .    We will make an equation for the line first, based on the points and . The slope is . Using either point, we can get an equation for this line in point-slope form. Let's choose the first point, . So, an equation for the line is .  Now that we have an equation for the line, every point on the line must satisfy this equation, due to . So, we look for the point of the form by substituting into the equation for the line and getting the value of . So we have , so . This is a value of , though we have not simplified the arithmetic.   "
+},
+{
+  "id": "principle-parallel-lines",
+  "level": "2",
+  "url": "sec-lines.html#principle-parallel-lines",
+  "type": "Principle",
+  "number": "2.2.41",
+  "title": "",
+  "body": "  Two lines are parallel if and only if they have the same slope.   "
+},
+{
+  "id": "principle-perpendicular-lines",
+  "level": "2",
+  "url": "sec-lines.html#principle-perpendicular-lines",
+  "type": "Principle",
+  "number": "2.2.42",
+  "title": "",
+  "body": "  Two lines are perpendicular if and only if one slope is the opposite reciprocal of the other (meaning the product of their slopes is ).   "
+},
+{
+  "id": "subsec-parallel-perpendicular-4",
+  "level": "2",
+  "url": "sec-lines.html#subsec-parallel-perpendicular-4",
+  "type": "Example",
+  "number": "2.2.43",
+  "title": "",
+  "body": "  Find an equation of the line that is parallel to the line and goes through the point .    Since the line we are looking for is parallel to the line , it must have the same slope, which is . So, we have a slope of and a point on the line, . Using point-slope form, an equation for this line is .   "
+},
+{
+  "id": "subsec-parallel-perpendicular-5",
+  "level": "2",
+  "url": "sec-lines.html#subsec-parallel-perpendicular-5",
+  "type": "Example",
+  "number": "2.2.44",
+  "title": "",
+  "body": "  Find an equation of the line that is perpendicular to the line and goes through the point .    Since the line we are looking for is perpendicular to the line , its slope must be the opposite reciprocal of the slope of the given line. The slope of the given line is , so the slope of the perpendicular line is . So, we have a slope of and a point on the line, . Using point-slope form, an equation for this line is .   "
+},
+{
+  "id": "sec-lines-8-2-1",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-8-2-1",
+  "type": "Example",
+  "number": "2.2.45",
+  "title": "",
+  "body": "  A studio apartment has a monthly rent of in the year 2010. Its monthly rent is in the year 2021. If the rent increases by the same amount each year, what would be the monthly rent in 2025?    We can think of the behavior as a line, and treat the data as two points on the line. We choose to put the year on the -axis and the rent on the -axis. (We could swap these as well, but often time is put on the -axis.) So, we have the points and . The slope is . (So the rent increases by each year.) Since we have a slope and a point, we can use point-slope form to get an equation for the line. Using the point , we have . To find out the rent in 2025, we substitute into the equation for the line and solve for . So, we have , so , so , so . The rent in 2025 was per month.   "
+},
+{
+  "id": "sec-lines-8-2-3",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-8-2-3",
+  "type": "Example",
+  "number": "2.2.46",
+  "title": "",
+  "body": "  A car rental company charges per day to rent a car, plus a one-time fee of for insurance. If the final bill for renting a car is , how many days was the car rented?    We can think of the behavior as a line. If we let be the number of days the car is rented, and be the total cost, then we have a slope of (the cost per day), and the -intercept given. So, an equation for this line is . Based on this equation, with a final bill of , we can solve for to find the number of days the car was rented. So , which gives , and thus . The car was rented for 5 days.   "
+},
+{
+  "id": "sec-lines-8-2-4",
+  "level": "2",
+  "url": "sec-lines.html#sec-lines-8-2-4",
+  "type": "Example",
+  "number": "2.2.47",
+  "title": "",
+  "body": "  A local coffee shop sells drip coffee for in 2020 and in 2023. If the price of coffee increases by the same amount each year, what was the price back in 2015?    We can think of the behavior as a line. If we let be the number of years since 2015, and be the price of coffee, then we have a slope of , and the point . So, an equation for this line is . Based on this equation, we can solve for when to find the price in 2015. So so so . Therefore, . The price of coffee in 2015 was approximately .   "
+},
+{
   "id": "appendix-gcf-lcm",
   "level": "1",
   "url": "appendix-gcf-lcm.html",
