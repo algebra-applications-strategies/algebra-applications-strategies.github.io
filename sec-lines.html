@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Algebra">
+<meta property="book:author" content="
+      Edward D. Kim">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.8';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.917dfc3cfe0bb764.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.d40a1acc1751a0b6.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="dmoi-4" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://algebra-applications-strategies.github.io/"><img src="external/images/algebra-cover-preliminary.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="dmoi4.html"><span class="title">Algebra</span> <span class="subtitle">Applications and Strategies</span></a></h1>
+<p class="byline">Edward D. Kim</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-xy-plane.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-analytic-geometry.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{cancel}
+\def\d{\displaystyle} 
+\def\N{\mathbb N} 
+\def\B{\mathbf B} 
+\def\Z{\mathbb Z} 
+\def\Q{\mathbb Q} 
+\def\R{\mathbb R} 
+\def\C{\mathbb C} 
+\def\U{\mathcal U} 
+\def\x{\mathbf{x}}
+\def\y{\mathbf{y}}
+\def\X{\mathcal{X}}
+\def\Y{\mathcal{Y}}
+\def\pow{\mathcal P} 
+\def\inv{^{-1}} 
+\def\st{:} 
+\def\iff{\leftrightarrow} 
+\def\Iff{\Leftrightarrow} 
+\def\imp{\rightarrow} 
+\def\Imp{\Rightarrow} 
+\def\isom{\cong} 
+
+\def\bar{\overline} 
+\def\card#1{\left| #1 \right|} 
+\def\twoline#1#2{\begin{pmatrix}#1 \\ #2 \end{pmatrix}} 
+
+\def\mchoose#1#2{
+  \left.\mathchoice
+    {\left(\kern-0.48em\binom{#1}{#2}\kern-0.48em\right)}
+    {\big(\kern-0.30em\binom{\smash{#1}}{\smash{#2}}\kern-0.30em\big)}
+    {\left(\kern-0.30em\binom{\smash{#1}}{\smash{#2}}\kern-0.30em\right)}
+    {\left(\kern-0.30em\binom{\smash{#1}}{\smash{#2}}\kern-0.30em\right)}
+  \right.}
+\def\o{\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="1" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface to the student</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Preface to the instructor</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-expressions-equations.html" class="internal"><span class="codenumber">1</span> <span class="title">Expressions and Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-operations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-operations.html#sec-operations-8" class="internal"><span class="title">Order of Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-operations.html#sec-operations-11" class="internal"><span class="title">Order of Operations with variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-operations.html#sec-operations-12" class="internal"><span class="title">Language</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-operations.html#sec-operations-13" class="internal"><span class="title">Pictures</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-operations.html#sec-operations-14" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-operations.html#sec-operations-15" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-expressions-with-fractions.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Expressions with Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-fraction-applications" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#sec-expressions-with-fractions-4" class="internal"><span class="title">Representation and Equal/Unequal Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-adding-subtracting-fractions" class="internal"><span class="title">Adding and subtracting fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-multiplying-fractions" class="internal"><span class="title">Multiplying fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-dividing-fractions" class="internal"><span class="title">Dividing fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-additional-practice" class="internal"><span class="title">Additional practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-clarifications-and-details" class="internal"><span class="title">Clarifications and details</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-fraction-applications-revisited" class="internal"><span class="title">Applications Revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#sec-expressions-with-fractions-11" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#sec-expressions-with-fractions-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-solving-equations.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Solving Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#subsec-solving-equations-applications" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#subsec-introduction-to-equations" class="internal"><span class="title">Introduction to Equations</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-solving-equations.html#sec-solving-equations-5" class="internal"><span class="title">Equations when the variable is written once</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-solving-equations.html#subsubsec-equations-with-several-operations" class="internal"><span class="title">Equations with several operations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#sec-solving-equations-6" class="internal"><span class="title">Comments and clarifications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#sec-solving-equations-7" class="internal"><span class="title">Equations when the variable is written more than once</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#subsec-TITLE-applications-revisited" class="internal"><span class="title">Applications Revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#sec-solving-equations-9" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#sec-solving-equations-10" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-equations-with-fractions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Equations with Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-equations-with-fractions.html#subsec-24375623987698" class="internal"><span class="title">A new strategy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-equations-with-fractions.html#sec-equations-with-fractions-4" class="internal"><span class="title">Clarifications, Cautions, and Connections</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-equations-with-fractions.html#sec-equations-with-fractions-5" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-equations-with-fractions.html#sec-equations-with-fractions-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exponents.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exponents and Radicals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#sec-exponents-3" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#sec-exponents-4" class="internal"><span class="title">Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#subsec-radicals" class="internal"><span class="title">Radicals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#sec-exponents-6" class="internal"><span class="title">Clarifications and techniques</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#sec-exponents-7" class="internal"><span class="title">Applications Revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#sec-exponents-8" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#sec-exponents-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-factoring-and-expansion.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Factoring and Expansion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#sec-factoring-and-expansion-3" class="internal"><span class="title">Expansion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#sec-factoring-and-expansion-4" class="internal"><span class="title">Factoring</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#subsec-special-cases" class="internal"><span class="title">Special cases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#subsec-additional-factoring-techniques" class="internal"><span class="title">Additional factoring techniques</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#subsec-" class="internal"><span class="title">Factoring quadratics revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#sec-factoring-and-expansion-8" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#sec-factoring-and-expansion-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-fractions-revisited.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Fractions Revisited</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fractions-revisited.html#sec-fractions-revisited-5" class="internal"><span class="title">Rational Expressions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fractions-revisited.html#sec-fractions-revisited-6" class="internal"><span class="title">Compound Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fractions-revisited.html#sec-fractions-revisited-7" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fractions-revisited.html#sec-fractions-revisited-8" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-solving-equations-revisited.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Expressions and Equations Revisited</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-3" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-4" class="internal"><span class="title">Expressions representing contextual quantities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-5" class="internal"><span class="title">Equations involving percentages</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-6" class="internal"><span class="title">Systems of equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-7" class="internal"><span class="title">Distance, rate, and time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-8" class="internal"><span class="title">Mixture</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-9" class="internal"><span class="title">Literal Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-10" class="internal"><span class="title">Equations with Rational Expressions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-11" class="internal"><span class="title">Applications revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-12" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-13" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-analytic-geometry.html" class="internal"><span class="codenumber">2</span> <span class="title">Analytic Geometry</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-xy-plane.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The <span class="process-math">\(xy\)</span>-plane</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-3" class="internal"><span class="title">Why bother with the <span class="process-math">\(xy\)</span>-plane?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-4" class="internal"><span class="title">The <span class="process-math">\(xy\)</span>-plane</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-5" class="internal"><span class="title">Distance between points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-6" class="internal"><span class="title">Midpoint</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-7" class="internal"><span class="title">Application: Interpreting graphs in context</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-8" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-lines.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Lines</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-3" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-4" class="internal"><span class="title">Equations in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-5" class="internal"><span class="title">Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-6" class="internal"><span class="title">Equations of lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#subsec-parallel-perpendicular" class="internal"><span class="title">Parallel and perpendicular lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-8" class="internal"><span class="title">Applications Revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-9" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-10" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="appendix-gcf-lcm.html" class="internal"><span class="codenumber">A</span> <span class="title">Details on GCF and LCM</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="appendix-factoring-and-expansion-revisited.html" class="internal"><span class="codenumber">B</span> <span class="title">Factoring and Expansion Revisited</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-lines"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Lines</span>
+</h2>
+<article class="objectives goal-like" id="sec-lines-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<div class="introduction" id="sec-lines-2-1"><div class="para" id="sec-lines-2-1-1">In this section, we learn how to:<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<ol class="decimal" id="sec-lines-2-2">
+<li id="sec-lines-2-2-1">
+<div class="para" id="sec-lines-2-2-1-1">Articulate the connection between an equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> and its graph.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 2.2.1"><a href="#sec-lines-2-2-1" title="Copy heading and permalink for Objective 2.2.1" aria-label="Copy heading and permalink for Objective 2.2.1">🔗</a></div>
+</li>
+<li id="sec-lines-2-2-2">
+<div class="para" id="sec-lines-2-2-2-1">Determine the slope of a line given two points on the line.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 2.2.2"><a href="#sec-lines-2-2-2" title="Copy heading and permalink for Objective 2.2.2" aria-label="Copy heading and permalink for Objective 2.2.2">🔗</a></div>
+</li>
+<li id="sec-lines-2-2-3">
+<div class="para" id="sec-lines-2-2-3-1">Determine an equation for a line given some information about the line.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 2.2.3"><a href="#sec-lines-2-2-3" title="Copy heading and permalink for Objective 2.2.3" aria-label="Copy heading and permalink for Objective 2.2.3">🔗</a></div>
+</li>
+<li id="sec-lines-2-2-4">
+<div class="para" id="sec-lines-2-2-4-1">Graph a line given its equation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 2.2.4"><a href="#sec-lines-2-2-4" title="Copy heading and permalink for Objective 2.2.4" aria-label="Copy heading and permalink for Objective 2.2.4">🔗</a></div>
+</li>
+<li id="sec-lines-2-2-5">
+<div class="para" id="sec-lines-2-2-5-1">Interpret the slope and <span class="process-math">\(y\)</span>-intercept of a line in context.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-2-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 2.2.5"><a href="#sec-lines-2-2-5" title="Copy heading and permalink for Objective 2.2.5" aria-label="Copy heading and permalink for Objective 2.2.5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Objectives 2.2"><a href="#sec-lines-2" title="Copy heading and permalink for Objectives 2.2" aria-label="Copy heading and permalink for Objectives 2.2">🔗</a></div></article><section class="subsection" id="sec-lines-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Applications</span>
+</h3>
+<div class="para logical" id="sec-lines-3-2">
+<div class="para">The skills we learn in this section are useful for predictive purposes. At the end of this section, we will use what we learn to answer the following questions.</div>
+<ol class="decimal" id="sec-lines-3-2-1">
+<li id="sec-lines-3-2-1-1">
+<div class="para" id="sec-lines-3-2-1-1-1">A studio apartment has a monthly rent of <span class="process-math">\(\$600\)</span> in the year 2010. Its monthly rent is <span class="process-math">\(\$875\)</span> in the year 2021. If the rent increases by the same amount each year, what would be the monthly rent in 2025?<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-lines-3-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-lines-3-2-1-2">
+<div class="para" id="sec-lines-3-2-1-2-1">A car rental company charges <span class="process-math">\(\$25\)</span> per day to rent a car, plus a one-time fee of <span class="process-math">\(\$49\)</span> for insurance. If the final bill for renting a car is <span class="process-math">\(\$174\text{,}\)</span> how many days was the car rented?<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-3-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-lines-3-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-lines-3-2-1-3">
+<div class="para" id="sec-lines-3-2-1-3-1">A local coffee shop sells drip coffee for <span class="process-math">\(\$2.25\)</span> in 2020 and <span class="process-math">\(\$2.75\)</span> in 2023. If the price of coffee increases by the same amount each year, what was the price back in 2015?<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-3-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-lines-3-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Applications"><a href="#sec-lines-3" title="Copy heading and permalink for Subsection: Applications" aria-label="Copy heading and permalink for Subsection: Applications">🔗</a></div></section><section class="subsection" id="sec-lines-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Equations in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span></span>
+</h3>
+<div class="para logical" id="sec-lines-4-2">
+<div class="para">The primary focus of this section is on lines, which the nicest examples of graphs of equations in two variables <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> Before introducing lines, we first discuss equations in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in general. An equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> is an equation that mentions the variables <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> Typically, both variables appear at least once, but it is possible to just have one of the variables missing. Here are ten examples of equations in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{:}\)</span>
+</div>
+<ol class="decimal" id="sec-lines-4-2-11">
+<li id="sec-lines-4-2-11-1">
+<div class="para" id="sec-lines-4-2-11-1-1">
+<span class="process-math">\(\displaystyle y^2-x^3-8=x+y+2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-2-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-lines-4-2-11-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-lines-4-2-11-2">
+<div class="para" id="sec-lines-4-2-11-2-1">
+<span class="process-math">\(\displaystyle y = 2x + 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-2-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-lines-4-2-11-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-lines-4-2-11-3">
+<div class="para" id="sec-lines-4-2-11-3-1">
+<span class="process-math">\(\displaystyle y = -3x + 4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-2-11-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-lines-4-2-11-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec-lines-4-2-11-4">
+<div class="para" id="sec-lines-4-2-11-4-1">
+<span class="process-math">\(\displaystyle x^2 + 6x + y^2 - 8y = 3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-2-11-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#sec-lines-4-2-11-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="sec-lines-4-2-11-5">
+<div class="para" id="sec-lines-4-2-11-5-1">
+<span class="process-math">\(\displaystyle y = 5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-2-11-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#sec-lines-4-2-11-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="sec-lines-4-2-11-6">
+<div class="para" id="sec-lines-4-2-11-6-1">
+<span class="process-math">\(\displaystyle x = -2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-2-11-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#sec-lines-4-2-11-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="sec-lines-4-2-11-7">
+<div class="para" id="sec-lines-4-2-11-7-1">
+<span class="process-math">\(\displaystyle y = x^2 + 3x - 4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-2-11-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7"><a href="#sec-lines-4-2-11-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+<li id="sec-lines-4-2-11-8">
+<div class="para" id="sec-lines-4-2-11-8-1">
+<span class="process-math">\(\displaystyle y = \frac{1}{x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-2-11-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 8"><a href="#sec-lines-4-2-11-8" title="Copy heading and permalink for Item 8" aria-label="Copy heading and permalink for Item 8">🔗</a></div>
+</li>
+<li id="sec-lines-4-2-11-9">
+<div class="para" id="sec-lines-4-2-11-9-1">
+<span class="process-math">\(\displaystyle y = \sqrt{x} + 4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-2-11-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 9"><a href="#sec-lines-4-2-11-9" title="Copy heading and permalink for Item 9" aria-label="Copy heading and permalink for Item 9">🔗</a></div>
+</li>
+<li id="sec-lines-4-2-11-10">
+<div class="para" id="sec-lines-4-2-11-10-1">
+<span class="process-math">\(\displaystyle x = y^3 + 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-2-11-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 10"><a href="#sec-lines-4-2-11-10" title="Copy heading and permalink for Item 10" aria-label="Copy heading and permalink for Item 10">🔗</a></div>
+</li>
+</ol>
+<div class="para">The list above may look intimidating, but at the moment, we are not conerned with extracting any information out of these yet. Notice that each example is an equation (and not an expression) because there is an equal sign. Each is an equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> because one or both of these variables appear. In the fifth equation, <span class="process-math">\(y\)</span> appears but <span class="process-math">\(x\)</span> does not: this is allowed. In the sixth equation, <span class="process-math">\(x\)</span> appears but <span class="process-math">\(y\)</span> does not: this is also allowed. The first and fourth equations are examples where both <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> appear multiple times.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-4-3">Every equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> has a graph, which is the set of all points <span class="process-math">\((x,y)\)</span> that satisfy the equation. <article class="principle theorem-like" id="connection-graph-of-equation"><h4 class="heading">
+<span class="type">Principle</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Connection between an equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> and its graph.</span>
+</h4>
+<div class="para" id="connection-graph-of-equation-2">Every equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> has a graph, which is the set of all points <span class="process-math">\((x,y)\)</span> that satisfy the equation. The point <span class="process-math">\((x,y)\)</span> is on the graph of the equation if and only if it satisfies the equation.<div class="autopermalink" data-description="Paragraph"><a href="#connection-graph-of-equation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Principle 2.2.1: Connection between an equation in x and y and its graph"><a href="#connection-graph-of-equation" title="Copy heading and permalink for Principle 2.2.1: Connection between an equation in x and y and its graph" aria-label="Copy heading and permalink for Principle 2.2.1: Connection between an equation in x and y and its graph">🔗</a></div></article> To make sense of this principle, we will explain it by looking more closely at the first equation from the list <span class="process-math">\(y^2-x^3-8=x+y+2\text{.}\)</span> <article class="example example-like" id="sec-lines-4-3-6"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-4-3-6-1-1">Is the point <span class="process-math">\((1,5)\)</span> on the graph of the equation <span class="process-math">\(y^2-x^3-8=x+y+2\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-4-3-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-lines-4-3-6-2-1">
+<div class="para">To determine if the point <span class="process-math">\((1,5)\)</span> is on the graph of the equation <span class="process-math">\(y^2-x^3-8=x+y+2\text{,}\)</span> we need to check if it satisfies the equation. We do this by substituting <span class="process-math">\(x=1\)</span> and <span class="process-math">\(y=5\)</span> into the equation and seeing if both sides are equal.</div>
+<ol class="decimal" id="sec-lines-4-3-6-2-1-5">
+<li id="sec-lines-4-3-6-2-1-5-1">
+<div class="para" id="sec-lines-4-3-6-2-1-5-1-1">The left side of the equation becomes <span class="process-math">\(y^2-x^3-8 = 5^2 - 1^3 - 8 = 25 - 1 - 8 = 16.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3-6-2-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-lines-4-3-6-2-1-5-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-lines-4-3-6-2-1-5-2">
+<div class="para" id="sec-lines-4-3-6-2-1-5-2-1">The right side of the equation becomes <span class="process-math">\(x+y+2 = 1 + 5 + 2 = 8.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3-6-2-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-lines-4-3-6-2-1-5-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">Since the two sides are not equal, the point <span class="process-math">\((1,5)\)</span> does not satisfy the equation, and therefore <span class="process-math">\((1,5)\)</span> is not on the graph of the equation.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.2.1"><a href="#sec-lines-4-3-6-2" title="Copy heading and permalink for Answer 2.2.2.1" aria-label="Copy heading and permalink for Answer 2.2.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.2"><a href="#sec-lines-4-3-6" title="Copy heading and permalink for Example 2.2.2" aria-label="Copy heading and permalink for Example 2.2.2">🔗</a></div></article> <article class="example example-like" id="sec-lines-4-3-7"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-4-3-7-1-1">Is the point <span class="process-math">\((2,5)\)</span> on the graph of the equation <span class="process-math">\(y^2-x^3-8=x+y+2\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-4-3-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-lines-4-3-7-2-1">
+<div class="para">We substitute <span class="process-math">\(x=2\)</span> and <span class="process-math">\(y=5\)</span> into the equation, and independently simplify each side according to the Order of Operations.</div>
+<ol class="decimal" id="sec-lines-4-3-7-2-1-3">
+<li id="sec-lines-4-3-7-2-1-3-1">
+<div class="para" id="sec-lines-4-3-7-2-1-3-1-1">The left side of the equation becomes <span class="process-math">\(y^2-x^3-8 = 5^2 - 2^3 - 8 = 25 - 8 - 8 = 9.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3-7-2-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-lines-4-3-7-2-1-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-lines-4-3-7-2-1-3-2">
+<div class="para" id="sec-lines-4-3-7-2-1-3-2-1">The right side of the equation becomes <span class="process-math">\(x+y+2 = 2 + 5 + 2 = 9.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3-7-2-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-lines-4-3-7-2-1-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">Since the two sides are equal, the point <span class="process-math">\((2,5)\)</span> satisfies the equation, and therefore <span class="process-math">\((2,5)\)</span> is on the graph of the equation.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.3.1"><a href="#sec-lines-4-3-7-2" title="Copy heading and permalink for Answer 2.2.3.1" aria-label="Copy heading and permalink for Answer 2.2.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.3"><a href="#sec-lines-4-3-7" title="Copy heading and permalink for Example 2.2.3" aria-label="Copy heading and permalink for Example 2.2.3">🔗</a></div></article> <article class="example example-like" id="sec-lines-4-3-8"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-4-3-8-1-1">Is the point <span class="process-math">\((1,4)\)</span> on the graph of the equation <span class="process-math">\(y^2-x^3-8=x+y+2\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-4-3-8-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-lines-4-3-8-2-1">
+<div class="para">We substitute <span class="process-math">\(x=1\)</span> and <span class="process-math">\(y=4\)</span> into the equation:</div>
+<ol class="decimal" id="sec-lines-4-3-8-2-1-3">
+<li id="sec-lines-4-3-8-2-1-3-1">
+<div class="para" id="sec-lines-4-3-8-2-1-3-1-1">The left side of the equation becomes <span class="process-math">\(y^2-x^3-8 = 4^2 - 1^3 - 8 = 16 - 1 - 8 = 7.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3-8-2-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-lines-4-3-8-2-1-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-lines-4-3-8-2-1-3-2">
+<div class="para" id="sec-lines-4-3-8-2-1-3-2-1">The right side of the equation becomes <span class="process-math">\(x+y+2 = 1 + 4 + 2 = 7.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3-8-2-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-lines-4-3-8-2-1-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">Since the two sides are equal, the point <span class="process-math">\((1,4)\)</span> satisfies the equation, and therefore <span class="process-math">\((1,4)\)</span> is on the graph of the equation.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.4.1"><a href="#sec-lines-4-3-8-2" title="Copy heading and permalink for Answer 2.2.4.1" aria-label="Copy heading and permalink for Answer 2.2.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.4"><a href="#sec-lines-4-3-8" title="Copy heading and permalink for Example 2.2.4" aria-label="Copy heading and permalink for Example 2.2.4">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-4-4">The previous two examples show us that there are many points that are part of the graph of the equation <span class="process-math">\(y^2-x^3-8=x+y+2\text{,}\)</span> and many points that are not part of the graph. As another way to really see that the graph of an equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> has many points, consider the followiing exercise: <article class="example example-like" id="sec-lines-4-4-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-4-4-4-1-1">Find three points on the graph of the equation <span class="process-math">\(y = \sqrt{x} + 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-4-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-lines-4-4-4-2-1">
+<div class="para">We can find points on the graph by choosing values for <span class="process-math">\(x\)</span> and calculating the corresponding <span class="process-math">\(y\)</span> values.</div>
+<ol class="decimal" id="sec-lines-4-4-4-2-1-3">
+<li id="sec-lines-4-4-4-2-1-3-1">
+<div class="para" id="sec-lines-4-4-4-2-1-3-1-1">If <span class="process-math">\(x = 9\text{,}\)</span> then <span class="process-math">\(y = \sqrt{9} + 4 = 3 + 4 = 7\text{.}\)</span> So, the point <span class="process-math">\((9,7)\)</span> is on the graph of <span class="process-math">\(y = \sqrt{x} + 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-4-4-2-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-lines-4-4-4-2-1-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-lines-4-4-4-2-1-3-2">
+<div class="para" id="sec-lines-4-4-4-2-1-3-2-1">If <span class="process-math">\(x = 16\text{,}\)</span> then <span class="process-math">\(y = \sqrt{16} + 4 = 4 + 4 = 8\text{.}\)</span> So, the point <span class="process-math">\((16,8)\)</span> is on the graph of <span class="process-math">\(y = \sqrt{x} + 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-4-4-2-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-lines-4-4-4-2-1-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-lines-4-4-4-2-1-3-3">
+<div class="para" id="sec-lines-4-4-4-2-1-3-3-1">If <span class="process-math">\(x = 25\text{,}\)</span> then <span class="process-math">\(y = \sqrt{25} + 4 = 5 + 4 = 9\text{.}\)</span> So, the point <span class="process-math">\((25,9)\)</span> is on the graph of <span class="process-math">\(y = \sqrt{x} + 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-4-4-2-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-lines-4-4-4-2-1-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.5.1"><a href="#sec-lines-4-4-4-2" title="Copy heading and permalink for Answer 2.2.5.1" aria-label="Copy heading and permalink for Answer 2.2.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.5"><a href="#sec-lines-4-4-4" title="Copy heading and permalink for Example 2.2.5" aria-label="Copy heading and permalink for Example 2.2.5">🔗</a></div></article> We can select any value of <span class="process-math">\(x \geq 0\text{,}\)</span> but to ensure that the <span class="process-math">\(y\)</span> value is nice, we only picked numbers that are perfect squares. There are so many more valid answers to this question. For example <span class="process-math">\((36,10)\)</span> is another point on the graph. Can you find three more points?<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-4-5">
+<article class="example example-like" id="sec-lines-4-5-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-4-5-1-1-1">Find three points on the graph of the equation <span class="process-math">\(x = y^3 + 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-4-5-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-lines-4-5-1-2-1">
+<div class="para">In the previous example, we picked <span class="process-math">\(x\)</span>-values, and each time, this gave us a value of <span class="process-math">\(y\text{.}\)</span> However, in this equation, it is easier to pick <span class="process-math">\(y\)</span>-values, and then calculate the corresponding <span class="process-math">\(x\)</span>-values, since <span class="process-math">\(x\)</span> is the variable that is isolated on its own.</div>
+<ol class="decimal" id="sec-lines-4-5-1-2-1-6">
+<li id="sec-lines-4-5-1-2-1-6-1">
+<div class="para" id="sec-lines-4-5-1-2-1-6-1-1">If <span class="process-math">\(y = 2\text{,}\)</span> then <span class="process-math">\(x = 2^3 + 1 = 9\text{.}\)</span> So, the point <span class="process-math">\((9,2)\)</span> is on the graph of <span class="process-math">\(x = y^3 + 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-5-1-2-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-lines-4-5-1-2-1-6-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-lines-4-5-1-2-1-6-2">
+<div class="para" id="sec-lines-4-5-1-2-1-6-2-1">If <span class="process-math">\(y = 4\text{,}\)</span> then <span class="process-math">\(x = 4^3 + 1 = 65\text{.}\)</span> So, the point <span class="process-math">\((65,4)\)</span> is on the graph of <span class="process-math">\(x = y^3 + 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-5-1-2-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-lines-4-5-1-2-1-6-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-lines-4-5-1-2-1-6-3">
+<div class="para" id="sec-lines-4-5-1-2-1-6-3-1">If <span class="process-math">\(y = 10\text{,}\)</span> then <span class="process-math">\(x = 10^3 + 1 = 1001\text{.}\)</span> So, the point <span class="process-math">\((1001,10)\)</span> is on the graph of <span class="process-math">\(x = y^3 + 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-5-1-2-1-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-lines-4-5-1-2-1-6-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.6.1"><a href="#sec-lines-4-5-1-2" title="Copy heading and permalink for Answer 2.2.6.1" aria-label="Copy heading and permalink for Answer 2.2.6.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.6"><a href="#sec-lines-4-5-1" title="Copy heading and permalink for Example 2.2.6" aria-label="Copy heading and permalink for Example 2.2.6">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-4-6">Before moving to the main event for this section, we discuss <span class="process-math">\(x\)</span>-intercepts and <span class="process-math">\(y\)</span>-intercepts. An <span class="process-math">\(x\)</span>-intercept is a point on the graph where the graph intersects the <span class="process-math">\(x\)</span>-axis. An <span class="process-math">\(y\)</span>-intercept is a point on the graph where the graph intersects the <span class="process-math">\(y\)</span>-axis. <article class="principle theorem-like" id="principle-x-intercepts"><h4 class="heading">
+<span class="type">Principle</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding <span class="process-math">\(x\)</span>-intercepts.</span>
+</h4>
+<div class="para" id="principle-x-intercepts-2-1">Given an equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> set <span class="process-math">\(y=0\)</span> and solve for <span class="process-math">\(x\)</span> in the resulting equation.<div class="autopermalink" data-description="Paragraph"><a href="#principle-x-intercepts-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Principle 2.2.7: Finding x-intercepts"><a href="#principle-x-intercepts" title="Copy heading and permalink for Principle 2.2.7: Finding x-intercepts" aria-label="Copy heading and permalink for Principle 2.2.7: Finding x-intercepts">🔗</a></div></article> This may seem a little backwards at first. Why would we set <span class="process-math">\(y\)</span> equal to zero when we’re trying to find <span class="process-math">\(x\)</span>-intercepts? We just introduced that an <span class="process-math">\(x\)</span>-intercept is a point on the <span class="process-math">\(x\)</span>-axis, and we saw in <a href="sec-xy-plane.html#principle-point-on-x-axis" class="xref" data-knowl="./knowl/xref/principle-point-on-x-axis.html" data-reveal-label="Reveal" data-close-label="Close" title="Principle 2.1.6: A point on the x-axis">Principle 2.1.6</a> that a point is on the <span class="process-math">\(x\)</span>-axis if and only if its <span class="process-math">\(y\)</span>-coordinate is zero, because <span class="process-math">\(y=0\)</span> corresponds to no vertical movement: it was having no vertical movement (<span class="process-math">\(y=0\)</span>) which is what leads to a point being on the <span class="process-math">\(x\)</span>-axis. <article class="principle theorem-like" id="principle-y-intercepts"><h4 class="heading">
+<span class="type">Principle</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding <span class="process-math">\(y\)</span>-intercepts.</span>
+</h4>
+<div class="para" id="principle-y-intercepts-2-1">Given an equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> set <span class="process-math">\(x=0\)</span> and solve for <span class="process-math">\(y\)</span> in the resulting equation.<div class="autopermalink" data-description="Paragraph"><a href="#principle-y-intercepts-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Principle 2.2.8: Finding y-intercepts"><a href="#principle-y-intercepts" title="Copy heading and permalink for Principle 2.2.8: Finding y-intercepts" aria-label="Copy heading and permalink for Principle 2.2.8: Finding y-intercepts">🔗</a></div></article> This procedure for finding <span class="process-math">\(y\)</span>-intercepts is justified similarly. Recall <a href="sec-xy-plane.html#principle-point-on-y-axis" class="xref" data-knowl="./knowl/xref/principle-point-on-y-axis.html" data-reveal-label="Reveal" data-close-label="Close" title="Principle 2.1.5: A point on the y-axis">Principle 2.1.5</a> which says that a point is on the <span class="process-math">\(y\)</span>-axis if and only if its <span class="process-math">\(x\)</span>-coordinate is zero. <article class="example example-like" id="sec-lines-4-6-23"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-4-6-23-1-1">Find the <span class="process-math">\(x\)</span>-intercept(s) and <span class="process-math">\(y\)</span>-intercept(s) of the graph of <span class="process-math">\(2x+3y=12\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-6-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-4-6-23-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-4-6-23-2-1">To find the <span class="process-math">\(x\)</span>-intercept(s), set <span class="process-math">\(y=0\)</span> and solve for <span class="process-math">\(x\text{:}\)</span> <span class="process-math">\(2x+3(0)=12\)</span> turns into <span class="process-math">\(2x=12\)</span> so <span class="process-math">\(x=6\text{.}\)</span> So, the only <span class="process-math">\(x\)</span>-intercept is <span class="process-math">\((6,0)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-6-23-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-4-6-23-2-2">To find the <span class="process-math">\(y\)</span>-intercept(s), set <span class="process-math">\(x=0\)</span> and solve for <span class="process-math">\(y\text{:}\)</span> <span class="process-math">\(2(0)+3y=12 \Rightarrow 3y=12 \Rightarrow y=4\text{.}\)</span> So, the only <span class="process-math">\(y\)</span>-intercept is <span class="process-math">\((0,4)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-6-23-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.9.1"><a href="#sec-lines-4-6-23-2" title="Copy heading and permalink for Answer 2.2.9.1" aria-label="Copy heading and permalink for Answer 2.2.9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.9"><a href="#sec-lines-4-6-23" title="Copy heading and permalink for Example 2.2.9" aria-label="Copy heading and permalink for Example 2.2.9">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Equations in x and y"><a href="#sec-lines-4" title="Copy heading and permalink for Subsection: Equations in x and y" aria-label="Copy heading and permalink for Subsection: Equations in x and y">🔗</a></div></section><section class="subsection" id="sec-lines-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Slope</span>
+</h3>
+<div class="para" id="sec-lines-5-2">Now that we have examined equations in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in general, we will focus on lines, which are some of the nicest examples of graphs in the <span class="process-math">\(xy\)</span>-plane. Moreover, lines are very practical for noticing behavior and making predictions. In every day language, we often will say the word "line" for something that is not a line in the mathematical sense. Even in mathematics, sometimes people will informally call something that is slightly wavy a "line", but we will be careful in our language: when we talk about a line, we mean a geometric object that is perfectly straight and extends forever in both directions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-5-3">Whenever you have two points, we can draw a line through them. So, a line is determined by any two of its points. One key calculation for a line is its slope, which measures how steep the line is. <article class="principle theorem-like" id="principle-slope"><h4 class="heading">
+<span class="type">Principle</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Slope.</span>
+</h4>
+<div class="para" id="principle-slope-2-1">The slope of the line going through the point <span class="process-math">\((x_1,y_1)\)</span> and the point <span class="process-math">\((x_2,y_2)\)</span> is given by the formula <span class="process-math">\(m = \frac{y_2-y_1}{x_2-x_1}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#principle-slope-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Principle 2.2.10: Slope"><a href="#principle-slope" title="Copy heading and permalink for Principle 2.2.10: Slope" aria-label="Copy heading and permalink for Principle 2.2.10: Slope">🔗</a></div></article> It is traditional to use the letter <span class="process-math">\(m\)</span> to represent slope. We are subtracting the <span class="process-math">\(y\)</span>-coordinates in the numerator, and doing one <span class="process-math">\(y\)</span>-value minus the other is called the "change in slope", denoted <span class="process-math">\(\Delta y\text{.}\)</span> Similarly, <span class="process-math">\(\Delta x\)</span> represents the change in the <span class="process-math">\(x\)</span>-coordinates. So, we can also write the formula for slope like this: <article class="principle theorem-like" id="principle-slope-change"><h4 class="heading">
+<span class="type">Principle</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Slope: Change in coordinates.</span>
+</h4>
+<div class="para" id="principle-slope-change-2-1">
+<span class="process-math">\(m = \frac{\Delta y}{\Delta x}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#principle-slope-change-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Principle 2.2.11: Slope: Change in coordinates"><a href="#principle-slope-change" title="Copy heading and permalink for Principle 2.2.11: Slope: Change in coordinates" aria-label="Copy heading and permalink for Principle 2.2.11: Slope: Change in coordinates">🔗</a></div></article> In either of the versions, the important thing to remember is that the subtraction of <span class="process-math">\(y\)</span>-values is in the numerator, and the subtraction of <span class="process-math">\(x\)</span>-values is in the denominator. An easy way to remember this is to think of slope as "rise over run", where the rise is the change in <span class="process-math">\(y\)</span> and the run is the change in <span class="process-math">\(x\text{.}\)</span> From past experience, students often find "run over rise" sounds strange, and that’s good! The correct phras "rise over run" will help us remember that subtraction of the <span class="process-math">\(y\)</span>-values happens in the numerator: after all, "rise" refers to how much you go up, and <span class="process-math">\(y\)</span> is the vertical coordinate! <article class="example example-like" id="sec-lines-5-3-15"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-5-3-15-1-1">Find the slope of the line going through the points <span class="process-math">\((1,5)\)</span> and <span class="process-math">\((4,11)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-3-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec-lines-5-3-15-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-5-3-15-2-1">We can use the formula for slope to find the slope of the line going through the points <span class="process-math">\((1,5)\)</span> and <span class="process-math">\((4,11)\text{.}\)</span> We can let <span class="process-math">\((x_1,y_1) = (1,5)\)</span> and <span class="process-math">\((x_2,y_2) = (4,11)\text{,}\)</span> and then we have <span class="process-math">\(m = \frac{y_2-y_1}{x_2-x_1} = \frac{11-5}{4-1} = \frac{6}{3} = 2.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-3-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.12.1"><a href="#sec-lines-5-3-15-2" title="Copy heading and permalink for Answer 2.2.12.1" aria-label="Copy heading and permalink for Answer 2.2.12.1">🔗</a></div>
+</div></details><details id="sec-lines-5-3-15-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-5-3-15-3-1">We can use the formula for slope to find the slope of the line going through the points <span class="process-math">\((1,5)\)</span> and <span class="process-math">\((4,11)\text{.}\)</span> This time, we switch which point is Point 1 and which point is Point 2. So we can let <span class="process-math">\((x_1,y_1) = (1,5)\)</span> and <span class="process-math">\((x_2,y_2) = (4,11)\text{,}\)</span> and then we have <span class="process-math">\(m = \frac{y_2-y_1}{x_2-x_1} = \frac{11-5}{4-1} = \frac{6}{3} = 2.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-3-15-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.12.2"><a href="#sec-lines-5-3-15-3" title="Copy heading and permalink for Answer 2.2.12.2" aria-label="Copy heading and permalink for Answer 2.2.12.2">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 2.2.12"><a href="#sec-lines-5-3-15" title="Copy heading and permalink for Example 2.2.12" aria-label="Copy heading and permalink for Example 2.2.12">🔗</a></div></article> In the end, it does not matter which point is considered Point 1 and which is considered Point 2. We get the same slope either way. We just need to be cautious that if the <span class="process-math">\(y\)</span>-coordinate for one point appears first in the numerator, then the <span class="process-math">\(x\)</span>-coordinate for that same point must appear first in the denominator. For example, the following is incorrect: <span class="process-math">\(m = \frac{11-5}{1-4} = \frac{6}{-3} = -2.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-5-4">We now look at several examples of lines, and will refer back to these examples. <article class="example example-like" id="example-positive-slope"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="example-positive-slope-1-1">Find the slope of the line going through the points <span class="process-math">\((-3,2)\)</span> and <span class="process-math">\((4,10)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-positive-slope-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="example-positive-slope-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="example-positive-slope-2-1">
+<span class="process-math">\(m = \frac{10-2}{4-(-3)} = \frac{10-2}{4+3} = \frac{8}{7}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-positive-slope-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.13.1"><a href="#example-positive-slope-2" title="Copy heading and permalink for Answer 2.2.13.1" aria-label="Copy heading and permalink for Answer 2.2.13.1">🔗</a></div>
+</div></details><details id="example-positive-slope-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="example-positive-slope-3-1">
+<span class="process-math">\(m = \frac{2-10}{-3-4} = \frac{-8}{-7} = \frac{8}{7}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-positive-slope-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.13.2"><a href="#example-positive-slope-3" title="Copy heading and permalink for Answer 2.2.13.2" aria-label="Copy heading and permalink for Answer 2.2.13.2">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 2.2.13"><a href="#example-positive-slope" title="Copy heading and permalink for Example 2.2.13" aria-label="Copy heading and permalink for Example 2.2.13">🔗</a></div></article> In our first answer, we are careful that we are still subtracting: we have <span class="process-math">\(x=4\)</span> minus <span class="process-math">\(x=-3\text{.}\)</span> The fact that <span class="process-math">\(4-(-3)\)</span> becomes <span class="process-math">\(4+3\)</span> is due to facts about how subtracting a negative number works. Even though we are doing <span class="process-math">\(4+3\text{,}\)</span> we aren’t adding the <span class="process-math">\(x\)</span>-coordinates. We really did take the <span class="process-math">\(x\)</span>-value of <span class="process-math">\(4\)</span> and subtract the <span class="process-math">\(x\)</span>-value of <span class="process-math">\(-3\text{.}\)</span> Especially when there are minus signs appearing for the coordinates of either point, it’s best to be careful and follow the formula exactly to avoid mistakes. If there are any places where subtracting a negative ends up getting rewritten as adding a positive, it is best to save that for the next step: errors in finding slope ofter occur just from working too fast.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-5-5">
+<article class="example example-like" id="example-negative-slope"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="example-negative-slope-1-1">Find the slope of the line going through the points <span class="process-math">\((7,2)\)</span> and <span class="process-math">\((4,10)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-negative-slope-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="example-negative-slope-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="example-negative-slope-2-1">
+<span class="process-math">\(m = \frac{10-2}{4-7} = \frac{8}{-3}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-negative-slope-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.14.1"><a href="#example-negative-slope-2" title="Copy heading and permalink for Answer 2.2.14.1" aria-label="Copy heading and permalink for Answer 2.2.14.1">🔗</a></div>
+</div></details><details id="example-negative-slope-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="example-negative-slope-3-1">
+<span class="process-math">\(m = \frac{2-10}{7-4} = \frac{-8}{3}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-negative-slope-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.14.2"><a href="#example-negative-slope-3" title="Copy heading and permalink for Answer 2.2.14.2" aria-label="Copy heading and permalink for Answer 2.2.14.2">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 2.2.14"><a href="#example-negative-slope" title="Copy heading and permalink for Example 2.2.14" aria-label="Copy heading and permalink for Example 2.2.14">🔗</a></div></article> Both of the answers to this example are correct. We can have the minus sign in the denominator or in the numerator, but not both. We can also rewrite either fraction to have the minus sign in front of the fraction as in <span class="process-math">\(m=-\frac{8}{3}\text{.}\)</span> While all the coordinates were positive in the previous example, it is still possible for the slope to be negative. <article class="example example-like" id="example-zero-slope"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="example-zero-slope-1-1">Find the slope of the line going through the points <span class="process-math">\((-3,2)\)</span> and <span class="process-math">\((4,2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-zero-slope-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-zero-slope-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="example-zero-slope-2-1">
+<span class="process-math">\(m = \frac{2-2}{4-(-3)} = \frac{2-2}{4+3} = \frac{0}{7} = 0.\)</span> We say that line has zero slope, or a slope of <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-zero-slope-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.15.1"><a href="#example-zero-slope-2" title="Copy heading and permalink for Answer 2.2.15.1" aria-label="Copy heading and permalink for Answer 2.2.15.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.15"><a href="#example-zero-slope" title="Copy heading and permalink for Example 2.2.15" aria-label="Copy heading and permalink for Example 2.2.15">🔗</a></div></article> <article class="example example-like" id="example-no-slope"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="example-no-slope-1-1">Find the slope of the line going through the points <span class="process-math">\((-3,2)\)</span> and <span class="process-math">\((-3,10)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-no-slope-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-no-slope-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="example-no-slope-2-1">
+<span class="process-math">\(m = \frac{10-2}{-3-(-3)} = \frac{10-2}{-3+3} = \frac{8}{0}.\)</span> This is undefined, so we say that this line does not have a slope. We can also say that this line has no slope.<div class="autopermalink" data-description="Paragraph"><a href="#example-no-slope-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.16.1"><a href="#example-no-slope-2" title="Copy heading and permalink for Answer 2.2.16.1" aria-label="Copy heading and permalink for Answer 2.2.16.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.16"><a href="#example-no-slope" title="Copy heading and permalink for Example 2.2.16" aria-label="Copy heading and permalink for Example 2.2.16">🔗</a></div></article> The caution to point out is that in <a href="sec-lines.html#example-no-slope" class="xref" data-knowl="./knowl/xref/example-no-slope.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.2.16">Example 2.2.16</a>, zero was in the denominator, and so the slope does not exist (also: no slope), but in <a href="sec-lines.html#example-zero-slope" class="xref" data-knowl="./knowl/xref/example-zero-slope.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.2.15">Example 2.2.15</a>, zero was in the numerator, and so the slope is zero. It is an error to say that we have "no slope" in example <a href="sec-lines.html#example-zero-slope" class="xref" data-knowl="./knowl/xref/example-zero-slope.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.2.15">Example 2.2.15</a>: here, we have to be very cautious about zero slope versus no slope.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-5-6">The following figures illustrate graphs of the last four examples. What do you notice about slope? First is the line from <a href="sec-lines.html#example-positive-slope" class="xref" data-knowl="./knowl/xref/example-positive-slope.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.2.13">Example 2.2.13</a>, which has positive slope. <figure class="figure figure-like" id="fig-positive-slope"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/latex-image/fig-positive-slope-1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The line through <span class="process-math">\((-3,2)\)</span> and <span class="process-math">\((4,10)\)</span><div class="autopermalink" data-description="Figure 2.2.17"><a href="#fig-positive-slope" title="Copy heading and permalink for Figure 2.2.17" aria-label="Copy heading and permalink for Figure 2.2.17">🔗</a></div></figcaption></figure> Since lines go on forover in both directions, this drawing of a line (like all drawings of lines) include arrows on each end to indicate that the drawing goes on forever.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-5-7">Next is the line from <a href="sec-lines.html#example-negative-slope" class="xref" data-knowl="./knowl/xref/example-negative-slope.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.2.14">Example 2.2.14</a>, which has negative slope. <figure class="figure figure-like" id="fig-negative-slope"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/latex-image/fig-negative-slope-1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The line through <span class="process-math">\((7,2)\)</span> and <span class="process-math">\((4,10)\)</span><div class="autopermalink" data-description="Figure 2.2.18"><a href="#fig-negative-slope" title="Copy heading and permalink for Figure 2.2.18" aria-label="Copy heading and permalink for Figure 2.2.18">🔗</a></div></figcaption></figure> In the previous section, we gave interpretations of graphs of lines in context when axes were labeled with specific meanings. In that section, our figures were called lines of positive correlation and negative correlation, and our graphs remained in the first quadrant to keep things clean. Here, our drawings may be in any quadrant, but the connection is that positive correlation from earlier is a line with positive slope here, and negative correlation corresponds to negative slope. Here’s another way to say this: when a line has positive slope, as <span class="process-math">\(x\)</span> grows <span class="process-math">\(y\)</span> also grows, and when a line has negative slope, as <span class="process-math">\(x\)</span> grows <span class="process-math">\(y\)</span> shrinks.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-5-8">The line from <a href="sec-lines.html#example-zero-slope" class="xref" data-knowl="./knowl/xref/example-zero-slope.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.2.15">Example 2.2.15</a> has zero slope: <figure class="figure figure-like" id="fig-zero-slope"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/latex-image/fig-zero-slope-1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The line through <span class="process-math">\((-3,2)\)</span> and <span class="process-math">\((4,2)\)</span><div class="autopermalink" data-description="Figure 2.2.19"><a href="#fig-zero-slope" title="Copy heading and permalink for Figure 2.2.19" aria-label="Copy heading and permalink for Figure 2.2.19">🔗</a></div></figcaption></figure> Like all lines with zero slope, this line is completely horizontal. Informally, a line with zero slope is described as "flat", but the word "flat" has the ambiguity of potentially meaning "straight" (as all lines are), or "horizontal" (where we talk about a "flat" part of a hill, for example). To avoid this confusion, we will say horizontal.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-5-9">The line from <a href="sec-lines.html#example-no-slope" class="xref" data-knowl="./knowl/xref/example-no-slope.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.2.16">Example 2.2.16</a> has no slope: <figure class="figure figure-like" id="fig-no-slope"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/latex-image/fig-no-slope-1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The line through <span class="process-math">\((-3,2)\)</span> and <span class="process-math">\((-3,10)\)</span><div class="autopermalink" data-description="Figure 2.2.20"><a href="#fig-no-slope" title="Copy heading and permalink for Figure 2.2.20" aria-label="Copy heading and permalink for Figure 2.2.20">🔗</a></div></figcaption></figure> Like all lines with no slope, this line is completely vertical.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-5-10">One of the important tasks in algebra is to be able to categorize lines as having positive slope, negative slope, zero slope, or no slope. If we only need to take a given line and categorize it into one fo four buckets, we should attempt to do this without doing any computation. Lines of zero slope and the lines of no slope are the easiest to identify. Informally, we can also identify lines of positive slope and negative slope by looking at what we can informally call their "tilt". As we move along the line to the right (so <span class="process-math">\(x\)</span> is increasing), is <span class="process-math">\(y\)</span> increasing or decreasing? If <span class="process-math">\(y\)</span> is increasing, the line has positive slope. If <span class="process-math">\(y\)</span> is decreasing, the line has negative slope. <article class="example example-like" id="sec-lines-5-10-5"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-5-10-5-1-1">In the following figure, several lines are drawn and labeled with letters. For each line, determine if it has positive slope, negative slope, zero slope, or no slope. <figure class="figure figure-like" id="sec-lines-5-10-5-1-1-1"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/latex-image/sec-lines-5-10-5-1-1-1-1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Various lines<div class="autopermalink" data-description="Figure 2.2.22"><a href="#sec-lines-5-10-5-1-1-1" title="Copy heading and permalink for Figure 2.2.22" aria-label="Copy heading and permalink for Figure 2.2.22">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-10-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-5-10-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-5-10-5-2-1">Lines A, D, and F have positive slope. Lines B and G have negative slope. Line C has zero slope. Line E has no slope.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-10-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.21.1"><a href="#sec-lines-5-10-5-2" title="Copy heading and permalink for Answer 2.2.21.1" aria-label="Copy heading and permalink for Answer 2.2.21.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.21"><a href="#sec-lines-5-10-5" title="Copy heading and permalink for Example 2.2.21" aria-label="Copy heading and permalink for Example 2.2.21">🔗</a></div></article> <article class="example example-like" id="sec-lines-5-10-6"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-5-10-6-1-1">Determine if the line shown has positive slope, negative slope, zero slope, or no slope. <figure class="figure figure-like" id="fig-slope-estimation"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/latex-image/fig-slope-estimation-1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Slope: estimation versus exact calculation<div class="autopermalink" data-description="Figure 2.2.24"><a href="#fig-slope-estimation" title="Copy heading and permalink for Figure 2.2.24" aria-label="Copy heading and permalink for Figure 2.2.24">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-10-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-5-10-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-5-10-6-2-1">The line has negative slope, even without needing to compute the slope exactly.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-10-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.23.1"><a href="#sec-lines-5-10-6-2" title="Copy heading and permalink for Answer 2.2.23.1" aria-label="Copy heading and permalink for Answer 2.2.23.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.23"><a href="#sec-lines-5-10-6" title="Copy heading and permalink for Example 2.2.23" aria-label="Copy heading and permalink for Example 2.2.23">🔗</a></div></article> <article class="example example-like" id="sec-lines-5-10-7"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-5-10-7-1-1">Find the exact slope of the line in <a href="sec-lines.html#fig-slope-estimation" class="xref" data-knowl="./knowl/xref/fig-slope-estimation.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.2.24">Figure 2.2.24</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-10-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec-lines-5-10-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-5-10-7-2-1">The line appears to go through the points <span class="process-math">\((3,8)\)</span> and <span class="process-math">\((5,2)\text{.}\)</span> So <span class="process-math">\(m = \frac{2-8}{5-3} = \frac{-6}{2} = -3.\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-10-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.25.1"><a href="#sec-lines-5-10-7-2" title="Copy heading and permalink for Answer 2.2.25.1" aria-label="Copy heading and permalink for Answer 2.2.25.1">🔗</a></div>
+</div></details><details id="sec-lines-5-10-7-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-5-10-7-3-1">The line appears to go through the points <span class="process-math">\((3,8)\)</span> and <span class="process-math">\((5,2)\text{.}\)</span> So <span class="process-math">\(m = \frac{8-2}{3-5} = \frac{6}{-2} = -3.\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-10-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.25.2"><a href="#sec-lines-5-10-7-3" title="Copy heading and permalink for Answer 2.2.25.2" aria-label="Copy heading and permalink for Answer 2.2.25.2">🔗</a></div>
+</div></details><details id="sec-lines-5-10-7-4" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-5-10-7-4-1">The line appears to go through the points <span class="process-math">\((3,8)\)</span> and <span class="process-math">\((4,5)\text{.}\)</span> So <span class="process-math">\(m = \frac{8-5}{3-4} = \frac{3}{-1} = -3.\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-10-7-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.25.3"><a href="#sec-lines-5-10-7-4" title="Copy heading and permalink for Answer 2.2.25.3" aria-label="Copy heading and permalink for Answer 2.2.25.3">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 2.2.25"><a href="#sec-lines-5-10-7" title="Copy heading and permalink for Example 2.2.25" aria-label="Copy heading and permalink for Example 2.2.25">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-lines-5-11">Slope is a number that tells us how steep a line is. The larger the number, the steeper the line. Just like we categorized lines as having positive slope, negative slope, zero slope, or no slope without computation, to practice the idea that steeper lines have larger slope, we can take two lines of positive slope and determine which line has larger slope <em class="emphasis">without</em> computation. <article class="example example-like" id="sec-lines-5-11-2"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-5-11-2-1-1">In the following figure, two lines with positive slope are drawn and labeled with letters. Which line has larger slope? <figure class="figure figure-like" id="sec-lines-5-11-2-1-1-1"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/latex-image/sec-lines-5-11-2-1-1-1-1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.27<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Two lines of positive slope<div class="autopermalink" data-description="Figure 2.2.27"><a href="#sec-lines-5-11-2-1-1-1" title="Copy heading and permalink for Figure 2.2.27" aria-label="Copy heading and permalink for Figure 2.2.27">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-11-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-5-11-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-5-11-2-2-1">Line A is steeper than line B, so line A has larger slope than line B.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-11-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.26.1"><a href="#sec-lines-5-11-2-2" title="Copy heading and permalink for Answer 2.2.26.1" aria-label="Copy heading and permalink for Answer 2.2.26.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.26"><a href="#sec-lines-5-11-2" title="Copy heading and permalink for Example 2.2.26" aria-label="Copy heading and permalink for Example 2.2.26">🔗</a></div></article> <article class="example example-like" id="sec-lines-5-11-3"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-5-11-3-1-1">In the following figure, two lines with positive slope are drawn and labeled with letters. Which line has larger slope? <figure class="figure figure-like" id="sec-lines-5-11-3-1-1-1"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/latex-image/sec-lines-5-11-3-1-1-1-1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.29<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Two lines of positive slope<div class="autopermalink" data-description="Figure 2.2.29"><a href="#sec-lines-5-11-3-1-1-1" title="Copy heading and permalink for Figure 2.2.29" aria-label="Copy heading and permalink for Figure 2.2.29">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-11-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-5-11-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-5-11-3-2-1">Line A and Line B actually have the same steepeness, so this was a bit of a trick question. Both lines have the same slope. This previews a later topic: parallel lines have the same slope.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-11-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.28.1"><a href="#sec-lines-5-11-3-2" title="Copy heading and permalink for Answer 2.2.28.1" aria-label="Copy heading and permalink for Answer 2.2.28.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.28"><a href="#sec-lines-5-11-3" title="Copy heading and permalink for Example 2.2.28" aria-label="Copy heading and permalink for Example 2.2.28">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-5-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Slope"><a href="#sec-lines-5" title="Copy heading and permalink for Subsection: Slope" aria-label="Copy heading and permalink for Subsection: Slope">🔗</a></div></section><section class="subsection" id="sec-lines-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Equations of lines</span>
+</h3>
+<div class="para logical" id="sec-lines-6-2">
+<div class="para">There are several common formats for equations for a line, but we will focus on one that is directly built from the slope formula. This format for an equation of a line is both nice to use and is the most useful in most applications involving lines. Recall first that given two points <span class="process-math">\((x_1,y_1)\)</span> and <span class="process-math">\((x_2,y_2)\text{,}\)</span> the slope of the line through these points is given by <span class="process-math">\(m = \frac{y_2-y_1}{x_2-x_1}\text{.}\)</span> The subscripts are used to indicate a specific point. But, we also write <span class="process-math">\((x,y)\)</span> to represent any point on the line (that is, <span class="process-math">\((x,y)\)</span> represents a generic point on the line or a typical point on the line). So, let’s replace <span class="process-math">\((x_2,y_2)\)</span> with <span class="process-math">\((x,y)\)</span> in the slope formula. We have <span class="process-math">\(m = \frac{y-y_1}{x-x_1}\text{.}\)</span> Then, multiplying both sides by the denominator <span class="process-math">\(x-x_1\text{,}\)</span> we have <span class="process-math">\(m(x-x_1) = y-y_1\text{.}\)</span> Note that the parentheses here are necessary, due to order of operations. Only because it is typically done, we swap the two sides of the equation: <span class="process-math">\(y-y_1 = m(x-x_1)\text{.}\)</span> <article class="principle theorem-like" id="principle-point-slope-form"><h4 class="heading">
+<span class="type">Principle</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Point-slope form.</span>
+</h4>
+<div class="para logical" id="principle-point-slope-form-2-1">
+<div class="para">If a line has slope <span class="process-math">\(m\)</span> and goes through the point <span class="process-math">\((x_1,y_1)\text{,}\)</span> then an equation for the line is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y-y_1 = m(x-x_1).
+\end{equation*}
+</div>
+<div class="para">To present a line in this format, substitute the known slope for <span class="process-math">\(m\)</span> and the known point <span class="process-math">\((x_1,y_1)\)</span> in for <span class="process-math">\(x_1\)</span> and <span class="process-math">\(y_1\text{,}\)</span> but do not substitue for <span class="process-math">\(x\)</span> or <span class="process-math">\(y\text{,}\)</span> which will remain variables.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#principle-point-slope-form-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Principle 2.2.30: Point-slope form"><a href="#principle-point-slope-form" title="Copy heading and permalink for Principle 2.2.30: Point-slope form" aria-label="Copy heading and permalink for Principle 2.2.30: Point-slope form">🔗</a></div></article> <article class="example example-like" id="sec-lines-6-2-13"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.31</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-6-2-13-1-1">Find an equation of the line with slope <span class="process-math">\(3\)</span> that goes through the point <span class="process-math">\((2,5)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-6-2-13-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-6-2-13-2-1">
+<span class="process-math">\(y-5 = 3(x-2).\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.31.1"><a href="#sec-lines-6-2-13-2" title="Copy heading and permalink for Answer 2.2.31.1" aria-label="Copy heading and permalink for Answer 2.2.31.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.31"><a href="#sec-lines-6-2-13" title="Copy heading and permalink for Example 2.2.31" aria-label="Copy heading and permalink for Example 2.2.31">🔗</a></div></article> <article class="example example-like" id="sec-lines-6-2-14"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-6-2-14-1-1">Identify the slope and a point on the line given by the equation <span class="process-math">\(y-4 = -2(x+3)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-6-2-14-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-6-2-14-2-1">We rewrite <span class="process-math">\(y-4 = -2(x+3)\)</span> as <span class="process-math">\(y-4 = -2(x-(-3))\text{.}\)</span> The equation is in point-slope form, so we can directly identify the slope and a point on the line. The slope is <span class="process-math">\(-2\text{,}\)</span> and a point on the line is <span class="process-math">\((-3,4)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.32.1"><a href="#sec-lines-6-2-14-2" title="Copy heading and permalink for Answer 2.2.32.1" aria-label="Copy heading and permalink for Answer 2.2.32.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.32"><a href="#sec-lines-6-2-14" title="Copy heading and permalink for Example 2.2.32" aria-label="Copy heading and permalink for Example 2.2.32">🔗</a></div></article> One of the things that may feel intimidating about point-slope form is that it feels longer to write (thus harder to memorize) than another form of an equation for a line. Sometimes, dealing with something that appears slightly harder pays off: in many situations, point-slope form is the fastest way to write an equation for a line, and the one that leads to the fewest number of errors. Here are two ways recall point-slope form, and these will also help us be convinced this works in the first place:</div>
+<ul class="disc" id="sec-lines-6-2-15">
+<li id="sec-lines-6-2-15-1">
+<div class="para" id="sec-lines-6-2-15-1-1">Start from the slope formula <span class="process-math">\(m = \frac{y_2-y_1}{x_2-x_1}\text{.}\)</span> Replace <span class="process-math">\((x_2,y_2)\)</span> with <span class="process-math">\((x,y)\)</span> to get <span class="process-math">\(m = \frac{y-y_1}{x-x_1}\text{.}\)</span> Then multiply both sides by <span class="process-math">\(x-x_1\)</span> to get <span class="process-math">\(m(x-x_1) = y-y_1\text{.}\)</span> Swap the two sides to get <span class="process-math">\(y-y_1 = m(x-x_1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-lines-6-2-15-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-lines-6-2-15-2">
+<div class="para" id="sec-lines-6-2-15-2-1">Our second approach is essentially the work above done backwards, but adding in a guess-and-check element. If we cannot recall whether the formula is <span class="process-math">\(y-y_1 = m(x-x_1)\)</span> or <span class="process-math">\(x-x_1 = m(y-y_1)\text{,}\)</span> we can take both of these equation (on is correct and one is not), and quickly find out. Take each equation and divide both sides by what’s in parentheses: in the case of the first equation, this gives us <span class="process-math">\(\frac{y-y_1}{x-x_1}=m\)</span> which looks like the slope formula (rise over run), while doing this to the second equation gives us <span class="process-math">\(\frac{x-x_1}{y-y_1}=m\)</span> which suggests run over rise, and is not right. So, of the two equations we initally wrote, we keep <span class="process-math">\(y-y_1 = m(x-x_1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-lines-6-2-15-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">
+<article class="principle theorem-like" id="principle-slope-intercept-form"><h4 class="heading">
+<span class="type">Principle</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.33</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Slope-intercept form.</span>
+</h4>
+<div class="para logical" id="principle-slope-intercept-form-2-1">
+<div class="para">If a line has slope <span class="process-math">\(m\)</span> and has <span class="process-math">\(y\)</span>-intercept <span class="process-math">\(b\text{,}\)</span> then an equation for the line is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = mx + b.
+\end{equation*}
+</div>
+<div class="para">To present a line in this format, substitute the known slope for <span class="process-math">\(m\)</span> and the known <span class="process-math">\(y\)</span>-intercept for <span class="process-math">\(b\text{.}\)</span> In the final answer in slope-intercept form, do not substitue for <span class="process-math">\(x\)</span> or <span class="process-math">\(y\text{,}\)</span> which will remain variables.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#principle-slope-intercept-form-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Principle 2.2.33: Slope-intercept form"><a href="#principle-slope-intercept-form" title="Copy heading and permalink for Principle 2.2.33: Slope-intercept form" aria-label="Copy heading and permalink for Principle 2.2.33: Slope-intercept form">🔗</a></div></article> <article class="example example-like" id="sec-lines-6-2-17"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.34</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-6-2-17-1-1">Find an equation of the line with slope <span class="process-math">\(13\)</span> that has <span class="process-math">\(y\)</span>-intercept <span class="process-math">\(5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-17-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-6-2-17-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-6-2-17-2-1">
+<span class="process-math">\(y = 13x + 5.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-17-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.34.1"><a href="#sec-lines-6-2-17-2" title="Copy heading and permalink for Answer 2.2.34.1" aria-label="Copy heading and permalink for Answer 2.2.34.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.34"><a href="#sec-lines-6-2-17" title="Copy heading and permalink for Example 2.2.34" aria-label="Copy heading and permalink for Example 2.2.34">🔗</a></div></article> <article class="example example-like" id="sec-lines-6-2-18"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.35</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-6-2-18-1-1">Identify the slope and a point on the line given by the equation <span class="process-math">\(y = \frac34x - 8\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-18-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-6-2-18-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-6-2-18-2-1">We rewrite <span class="process-math">\(y= \frac34x -8\)</span> as <span class="process-math">\(y = \frac34x + (- 8)\text{.}\)</span> The slope is <span class="process-math">\(\frac34\text{.}\)</span> Since the <span class="process-math">\(y\)</span>-intercept is <span class="process-math">\(-8\text{,}\)</span> a point on the line is <span class="process-math">\((0, -8)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-18-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.35.1"><a href="#sec-lines-6-2-18-2" title="Copy heading and permalink for Answer 2.2.35.1" aria-label="Copy heading and permalink for Answer 2.2.35.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.35"><a href="#sec-lines-6-2-18" title="Copy heading and permalink for Example 2.2.35" aria-label="Copy heading and permalink for Example 2.2.35">🔗</a></div></article>  <article class="computation computation-like" id="selecting-fastest-line-form"><h4 class="heading">
+<span class="type">Strategy</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Selecting the fastest form of a line.</span>
+</h4>
+<div class="para logical" id="selecting-fastest-line-form-2">
+<ul class="disc" id="selecting-fastest-line-form-2-1">
+<li id="selecting-fastest-line-form-2-1-1">
+<div class="para" id="selecting-fastest-line-form-2-1-1-1">
+<em class="alert">When does this strategy apply?</em> This strategy describes which form of line to select when a question gives you data about a line and asks for an equation of the line (and the question does not require the final answer in a specific formrat).<div class="autopermalink" data-description="Paragraph"><a href="#selecting-fastest-line-form-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#selecting-fastest-line-form-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="selecting-fastest-line-form-2-1-2">
+<div class="para logical" id="selecting-fastest-line-form-2-1-2-1">
+<ul class="circle" id="selecting-fastest-line-form-2-1-2-1-1">
+<li id="selecting-fastest-line-form-2-1-2-1-1-1">
+<div class="para" id="selecting-fastest-line-form-2-1-2-1-1-1-1">If you know the slope and the <span class="process-math">\(y\)</span>-intercept, use slope-intercept form.<div class="autopermalink" data-description="Paragraph"><a href="#selecting-fastest-line-form-2-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#selecting-fastest-line-form-2-1-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="selecting-fastest-line-form-2-1-2-1-1-2">
+<div class="para" id="selecting-fastest-line-form-2-1-2-1-1-2-1">If the combination of data you are given is anything else, use point-slope form. (In fact, in all but the situation above, you will know a poin on the line and a slope, so use point-slope form.)<div class="autopermalink" data-description="Paragraph"><a href="#selecting-fastest-line-form-2-1-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#selecting-fastest-line-form-2-1-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#selecting-fastest-line-form-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#selecting-fastest-line-form-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Why is point-slope form called point-slope form? This is because if you know a point on the line and you know the slope of the line, point-slope form is the fastest way to write an equation for the line.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#selecting-fastest-line-form-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Strategy 2.2.36: Selecting the fastest form of a line"><a href="#selecting-fastest-line-form" title="Copy heading and permalink for Strategy 2.2.36: Selecting the fastest form of a line" aria-label="Copy heading and permalink for Strategy 2.2.36: Selecting the fastest form of a line">🔗</a></div></article> <article class="example example-like" id="sec-lines-6-2-20"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-6-2-20-1-1">Find an equation for the line going through the points <span class="process-math">\((2, 5)\)</span> and <span class="process-math">\((4, 9)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec-lines-6-2-20-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-lines-6-2-20-2-1">
+<div class="para">For this answer, we will ignore the advice from <a href="sec-lines.html#selecting-fastest-line-form" class="xref" data-knowl="./knowl/xref/selecting-fastest-line-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Strategy 2.2.36: Selecting the fastest form of a line">Strategy 2.2.36</a> and use slope-intercept form. First, we compute the slope: <span class="process-math">\(m = \frac{9-5}{4-2} = \frac{4}{2} = 2.\)</span> Our equation so far is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/selecting-fastest-line-form.html ./knowl/xref/principle-slope-intercept-form.html">
+\begin{equation*}
+y = 2x + b.
+\end{equation*}
+</div>
+<div class="para">
+<a href="sec-lines.html#principle-slope-intercept-form" class="xref" data-knowl="./knowl/xref/principle-slope-intercept-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Principle 2.2.33: Slope-intercept form">Principle 2.2.33</a> tells us that we cannot substitue for <span class="process-math">\(x\)</span> or <span class="process-math">\(y\)</span> in the final answer, but we need to do so temporarily to find the value of b. We can use either point to find <span class="process-math">\(b\text{.}\)</span> Let’s use <span class="process-math">\((2,5)\text{.}\)</span> Substituting <span class="process-math">\(x=2\)</span> and <span class="process-math">\(y=5\)</span> into <span class="process-math">\(y = 2x + b\text{,}\)</span> we have <span class="process-math">\(5 = 2(2) + b\text{.}\)</span> Solving for <span class="process-math">\(b\text{,}\)</span> we have <span class="process-math">\(5 = 4 + b\text{,}\)</span> so <span class="process-math">\(b = 1\text{.}\)</span> Now that we found the value of <span class="process-math">\(b\text{,}\)</span> we undo substituting for <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> So, the final answer is <span class="process-math">\(y = 2x + 1\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-20-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.37.1"><a href="#sec-lines-6-2-20-2" title="Copy heading and permalink for Answer 2.2.37.1" aria-label="Copy heading and permalink for Answer 2.2.37.1">🔗</a></div>
+</div></details><details id="sec-lines-6-2-20-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-6-2-20-3-1">If we reset, the information we have is that the line goes through the point <span class="process-math">\((2,5)\)</span> and also through the point <span class="process-math">\((4,9)\text{.}\)</span> Compute the slope: <span class="process-math">\(m = \frac{9-5}{4-2} = \frac{4}{2} = 2.\)</span> Now, we know two points and the slope. The note at the end of <a href="sec-lines.html#selecting-fastest-line-form" class="xref" data-knowl="./knowl/xref/selecting-fastest-line-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Strategy 2.2.36: Selecting the fastest form of a line">Strategy 2.2.36</a> tells us that whenever we have a point, point-slope form is fastest. One valid final answer is <span class="process-math">\(y-5 = 2(x-2)\)</span> and another valid final answer is <span class="process-math">\(y-9 = 2(x-4)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-20-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.37.2"><a href="#sec-lines-6-2-20-3" title="Copy heading and permalink for Answer 2.2.37.2" aria-label="Copy heading and permalink for Answer 2.2.37.2">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 2.2.37"><a href="#sec-lines-6-2-20" title="Copy heading and permalink for Example 2.2.37" aria-label="Copy heading and permalink for Example 2.2.37">🔗</a></div></article> <article class="example example-like" id="sec-lines-6-2-21"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-6-2-21-1-1">Find an equation for the line with slope <span class="process-math">\(-\frac{8}{7}\)</span> with <span class="process-math">\(y\)</span>-intercept <span class="process-math">\(3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-21-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-6-2-21-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-6-2-21-2-1">Since we know the slope and the <span class="process-math">\(y\)</span>-intercept, we use slope-intercept form. So, the equation is <span class="process-math">\(y = -\frac{8}{7}x + 3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-21-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.38.1"><a href="#sec-lines-6-2-21-2" title="Copy heading and permalink for Answer 2.2.38.1" aria-label="Copy heading and permalink for Answer 2.2.38.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.38"><a href="#sec-lines-6-2-21" title="Copy heading and permalink for Example 2.2.38" aria-label="Copy heading and permalink for Example 2.2.38">🔗</a></div></article> <article class="example example-like" id="sec-lines-6-2-22"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.39</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-6-2-22-1-1">Find an equation for the line with slope <span class="process-math">\(-\frac{8}{7}\)</span> with <span class="process-math">\(x\)</span>-intercept <span class="process-math">\(3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-6-2-22-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-6-2-22-2-1">Note that <span class="process-math">\(b\)</span> is the <span class="process-math">\(y\)</span>-intercept, not the <span class="process-math">\(x\)</span>-intercept, so we cannot use slope-intercept form. Instead, we use point-slope form. Since <span class="process-math">\(3\)</span> is the <span class="process-math">\(x\)</span>-intercept, we know that the line goes through the point <span class="process-math">\((3,0)\text{.}\)</span> So, we have a point and a slope, and we can use point-slope form. An equation for this line is <span class="process-math">\(y-0 = -\frac{8}{7}(x-3)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2-22-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.39.1"><a href="#sec-lines-6-2-22-2" title="Copy heading and permalink for Answer 2.2.39.1" aria-label="Copy heading and permalink for Answer 2.2.39.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.39"><a href="#sec-lines-6-2-22" title="Copy heading and permalink for Example 2.2.39" aria-label="Copy heading and permalink for Example 2.2.39">🔗</a></div></article> Note that this question is very similar to the previous question, but the method to answer was different because we were given the <span class="process-math">\(x\)</span>-intercept instead of the <span class="process-math">\(y\)</span>-intercept. <article class="example example-like" id="interpolation-preview"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="interpolation-preview-1-1">A line goes through the points <span class="process-math">\((30, 2)\)</span> and <span class="process-math">\((45, 9)\text{.}\)</span> State the <span class="process-math">\(y\)</span>-coordinate of the point on the line which has <span class="process-math">\(x\)</span>-coordinate <span class="process-math">\(100\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#interpolation-preview-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="interpolation-preview-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="interpolation-preview-2-1">We will make an equation for the line first, based on the points  <span class="process-math">\((30, 2)\)</span> and <span class="process-math">\((45, 9)\text{.}\)</span> The slope is <span class="process-math">\(m = \frac{9-2}{45-30} = \frac{7}{15}\text{.}\)</span> Using either point, we can get an equation for this line in point-slope form. Let’s choose the first point, <span class="process-math">\((30,2)\text{.}\)</span> So, an equation for the line is <span class="process-math">\(y-2 = \frac{7}{15}(x-30)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#interpolation-preview-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="interpolation-preview-2-2">Now that we have an equation for the line, every point <span class="process-math">\((x,y)\)</span> on the line must satisfy this equation, due to <a href="sec-lines.html#connection-graph-of-equation" class="xref" data-knowl="./knowl/xref/connection-graph-of-equation.html" data-reveal-label="Reveal" data-close-label="Close" title="Principle 2.2.1: Connection between an equation in x and y and its graph">Principle 2.2.1</a>. So, we look for the point of the form <span class="process-math">\((100,y)\)</span> by substituting <span class="process-math">\(x=100\)</span> into the equation for the line and getting the value of <span class="process-math">\(y\text{.}\)</span> So we have <span class="process-math">\(y-2 = \frac{7}{15}(100-30)\text{,}\)</span> so <span class="process-math">\(y= \frac{7}{15}(100-30)+2\text{.}\)</span> This is a value of <span class="process-math">\(y\text{,}\)</span> though we have not simplified the arithmetic.<div class="autopermalink" data-description="Paragraph"><a href="#interpolation-preview-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.40.1"><a href="#interpolation-preview-2" title="Copy heading and permalink for Answer 2.2.40.1" aria-label="Copy heading and permalink for Answer 2.2.40.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.40"><a href="#interpolation-preview" title="Copy heading and permalink for Example 2.2.40" aria-label="Copy heading and permalink for Example 2.2.40">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Equations of lines"><a href="#sec-lines-6" title="Copy heading and permalink for Subsection: Equations of lines" aria-label="Copy heading and permalink for Subsection: Equations of lines">🔗</a></div></section><section class="subsection" id="subsec-parallel-perpendicular"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Parallel and perpendicular lines</span>
+</h3>
+<article class="principle theorem-like" id="principle-parallel-lines"><h4 class="heading">
+<span class="type">Principle</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.41</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="principle-parallel-lines-1-1">Two lines are parallel if and only if they have the same slope.<div class="autopermalink" data-description="Paragraph"><a href="#principle-parallel-lines-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Principle 2.2.41"><a href="#principle-parallel-lines" title="Copy heading and permalink for Principle 2.2.41" aria-label="Copy heading and permalink for Principle 2.2.41">🔗</a></div></article><article class="principle theorem-like" id="principle-perpendicular-lines"><h4 class="heading">
+<span class="type">Principle</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.42</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="principle-perpendicular-lines-1-1">Two lines are perpendicular if and only if one slope is the opposite reciprocal of the other (meaning the product of their slopes is <span class="process-math">\(-1\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#principle-perpendicular-lines-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Principle 2.2.42"><a href="#principle-perpendicular-lines" title="Copy heading and permalink for Principle 2.2.42" aria-label="Copy heading and permalink for Principle 2.2.42">🔗</a></div></article><article class="example example-like" id="subsec-parallel-perpendicular-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-parallel-perpendicular-4-1-1">Find an equation of the line that is parallel to the line <span class="process-math">\(y = 3x + 5\)</span> and goes through the point <span class="process-math">\((2, 7)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-parallel-perpendicular-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-parallel-perpendicular-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="subsec-parallel-perpendicular-4-2-1">Since the line we are looking for is parallel to the line <span class="process-math">\(y = 3x + 5\text{,}\)</span> it must have the same slope, which is <span class="process-math">\(3\text{.}\)</span> So, we have a slope of <span class="process-math">\(3\)</span> and a point on the line, <span class="process-math">\((2,7)\text{.}\)</span> Using point-slope form, an equation for this line is <span class="process-math">\(y-7 = 3(x-2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-parallel-perpendicular-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.43.1"><a href="#subsec-parallel-perpendicular-4-2" title="Copy heading and permalink for Answer 2.2.43.1" aria-label="Copy heading and permalink for Answer 2.2.43.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.43"><a href="#subsec-parallel-perpendicular-4" title="Copy heading and permalink for Example 2.2.43" aria-label="Copy heading and permalink for Example 2.2.43">🔗</a></div></article><article class="example example-like" id="subsec-parallel-perpendicular-5"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-parallel-perpendicular-5-1-1">Find an equation of the line that is perpendicular to the line <span class="process-math">\(y = 3x + 5\)</span> and goes through the point <span class="process-math">\((2, 7)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-parallel-perpendicular-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-parallel-perpendicular-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="subsec-parallel-perpendicular-5-2-1">Since the line we are looking for is perpendicular to the line <span class="process-math">\(y = 3x + 5\text{,}\)</span> its slope must be the opposite reciprocal of the slope of the given line. The slope of the given line is <span class="process-math">\(3\text{,}\)</span> so the slope of the perpendicular line is <span class="process-math">\(-\frac{1}{3}\text{.}\)</span> So, we have a slope of <span class="process-math">\(-\frac{1}{3}\)</span> and a point on the line, <span class="process-math">\((2,7)\text{.}\)</span> Using point-slope form, an equation for this line is <span class="process-math">\(y-7 = -\frac{1}{3}(x-2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-parallel-perpendicular-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.44.1"><a href="#subsec-parallel-perpendicular-5-2" title="Copy heading and permalink for Answer 2.2.44.1" aria-label="Copy heading and permalink for Answer 2.2.44.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.44"><a href="#subsec-parallel-perpendicular-5" title="Copy heading and permalink for Example 2.2.44" aria-label="Copy heading and permalink for Example 2.2.44">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Parallel and perpendicular lines"><a href="#subsec-parallel-perpendicular" title="Copy heading and permalink for Subsection: Parallel and perpendicular lines" aria-label="Copy heading and permalink for Subsection: Parallel and perpendicular lines">🔗</a></div></section><section class="subsection" id="sec-lines-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Applications Revisited</span>
+</h3>
+<div class="para" id="sec-lines-8-2">Let’s revisit the applications we introduced at the beginning of this section. <article class="example example-like" id="sec-lines-8-2-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.45</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-8-2-1-1-1">A studio apartment has a monthly rent of <span class="process-math">\(\$600\)</span> in the year 2010. Its monthly rent is <span class="process-math">\(\$875\)</span> in the year 2021. If the rent increases by the same amount each year, what would be the monthly rent in 2025?<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-8-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-8-2-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-8-2-1-2-1">We can think of the behavior as a line, and treat the data as two points on the line. We choose to put the year on the <span class="process-math">\(x\)</span>-axis and the rent on the <span class="process-math">\(y\)</span>-axis. (We could swap these as well, but often time is put on the <span class="process-math">\(x\)</span>-axis.) So, we have the points <span class="process-math">\((2010,600)\)</span> and <span class="process-math">\((2021,875)\text{.}\)</span> The slope is <span class="process-math">\(m = \frac{875-600}{2021-2010} = \frac{275}{11} = 25\text{.}\)</span> (So the rent increases by <span class="process-math">\(\$25\)</span> each year.) Since we have a slope and a point, we can use point-slope form to get an equation for the line. Using the point <span class="process-math">\((2010,600)\text{,}\)</span> we have <span class="process-math">\(y-600 = 25(x-2010)\text{.}\)</span> To find out the rent in 2025, we substitute <span class="process-math">\(x=2025\)</span> into the equation for the line and solve for <span class="process-math">\(y\text{.}\)</span> So, we have <span class="process-math">\(y-600 = 25(2025-2010)\text{,}\)</span> so <span class="process-math">\(y-600 = 25(15)\text{,}\)</span> so <span class="process-math">\(y-600 = 375\text{,}\)</span> so <span class="process-math">\(y = 975\text{.}\)</span> The rent in 2025 was <span class="process-math">\(\$975\)</span> per month.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-8-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.45.1"><a href="#sec-lines-8-2-1-2" title="Copy heading and permalink for Answer 2.2.45.1" aria-label="Copy heading and permalink for Answer 2.2.45.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.45"><a href="#sec-lines-8-2-1" title="Copy heading and permalink for Example 2.2.45" aria-label="Copy heading and permalink for Example 2.2.45">🔗</a></div></article> Note that the question we just answered had the same mathematical outline as <a href="sec-lines.html#interpolation-preview" class="xref" data-knowl="./knowl/xref/interpolation-preview.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.2.40">Example 2.2.40</a>, but with context. <article class="example example-like" id="sec-lines-8-2-3"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.46</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-8-2-3-1-1">A car rental company charges <span class="process-math">\(\$25\)</span> per day to rent a car, plus a one-time fee of <span class="process-math">\(\$49\)</span> for insurance. If the final bill for renting a car is <span class="process-math">\(\$174\text{,}\)</span> how many days was the car rented?<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-8-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-8-2-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-8-2-3-2-1">We can think of the behavior as a line. If we let <span class="process-math">\(x\)</span> be the number of days the car is rented, and <span class="process-math">\(y\)</span> be the total cost, then we have a slope of <span class="process-math">\(25\)</span> (the cost per day), and the <span class="process-math">\(y\)</span>-intercept <span class="process-math">\(49\)</span> given. So, an equation for this line is <span class="process-math">\(y=25x+49\text{.}\)</span> Based on this equation, with a final bill of <span class="process-math">\(174\text{,}\)</span> we can solve for <span class="process-math">\(x\)</span> to find the number of days the car was rented. So <span class="process-math">\(174 = 25x + 49\text{,}\)</span> which gives <span class="process-math">\(125 = 25x\text{,}\)</span> and thus <span class="process-math">\(x = 5\text{.}\)</span> The car was rented for 5 days.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-8-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.46.1"><a href="#sec-lines-8-2-3-2" title="Copy heading and permalink for Answer 2.2.46.1" aria-label="Copy heading and permalink for Answer 2.2.46.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.46"><a href="#sec-lines-8-2-3" title="Copy heading and permalink for Example 2.2.46" aria-label="Copy heading and permalink for Example 2.2.46">🔗</a></div></article> <article class="example example-like" id="sec-lines-8-2-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-lines-8-2-4-1-1">A local coffee shop sells drip coffee for <span class="process-math">\(\$2.25\)</span> in 2020 and <span class="process-math">\(\$2.75\)</span> in 2023. If the price of coffee increases by the same amount each year, what was the price back in 2015?<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-8-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-lines-8-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-lines-8-2-4-2-1">We can think of the behavior as a line. If we let <span class="process-math">\(x\)</span> be the number of years since 2015, and <span class="process-math">\(y\)</span> be the price of coffee, then we have a slope of <span class="process-math">\(\frac{2.75-2.25}{2023-2020} = \frac{0.50}{3} = \frac{1}{6}\text{,}\)</span> and the point <span class="process-math">\((2020, 2.25)\text{.}\)</span> So, an equation for this line is <span class="process-math">\(y -2.25 = \frac16(x-2020)\text{.}\)</span> Based on this equation, we can solve for <span class="process-math">\(y\)</span> when <span class="process-math">\(x = 2015\)</span> to find the price in 2015. So <span class="process-math">\(y - 2.25 = \frac{1}{6}(2015-2020)\)</span> so <span class="process-math">\(y - 2.25 = \frac{1}{6}(-5)\)</span> so <span class="process-math">\(y - 2.25 = -\frac{5}{6}\text{.}\)</span> Therefore, <span class="process-math">\(y = - \frac{5}{6} + 2.25 = \frac{17}{12}\text{.}\)</span> The price of coffee in 2015 was approximately <span class="process-math">\(\$1.42\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-8-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 2.2.47.1"><a href="#sec-lines-8-2-4-2" title="Copy heading and permalink for Answer 2.2.47.1" aria-label="Copy heading and permalink for Answer 2.2.47.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.47"><a href="#sec-lines-8-2-4" title="Copy heading and permalink for Example 2.2.47" aria-label="Copy heading and permalink for Example 2.2.47">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Applications Revisited"><a href="#sec-lines-8" title="Copy heading and permalink for Subsection: Applications Revisited" aria-label="Copy heading and permalink for Subsection: Applications Revisited">🔗</a></div></section><section class="subsection" id="sec-lines-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summary</span>
+</h3>
+<div class="para logical" id="sec-lines-9-2">
+<ol class="decimal" id="sec-lines-9-2-1">
+<li id="sec-lines-9-2-1-1">
+<div class="para" id="sec-lines-9-2-1-1-1">Every equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> has a graph, and a point is on the graph of the equation if and only if its coordinates satisfy the equation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-9-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-lines-9-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-lines-9-2-1-2">
+<div class="para" id="sec-lines-9-2-1-2-1">The slope of a line is a measure of its steepness, calculated as the rise (which is the change in <span class="process-math">\(y\)</span>) divided by the run (which is the change in <span class="process-math">\(x\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-9-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-lines-9-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-lines-9-2-1-3">
+<div class="para" id="sec-lines-9-2-1-3-1">Point-slope and slope-intercept are two common forms of equations for lines. Point-slope form is useful when you know a point on the line and the slope, while slope-intercept form is useful when you know the slope and the <span class="process-math">\(y\)</span>-intercept.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-9-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-lines-9-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec-lines-9-2-1-4">
+<div class="para" id="sec-lines-9-2-1-4-1">Parallel lines have the same slope, while perpendicular lines have slopes that are opposite reciprocals of each other.<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-9-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#sec-lines-9-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Summary"><a href="#sec-lines-9" title="Copy heading and permalink for Subsection: Summary" aria-label="Copy heading and permalink for Subsection: Summary">🔗</a></div></section><section class="subsection" id="sec-lines-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<div class="para logical" id="sec-lines-10-2">
+<ol class="decimal" id="sec-lines-10-2-1">
+<li id="sec-lines-10-2-1-1">
+<div class="para logical" id="sec-lines-10-2-1-1-1">
+<div class="para">Each exercise below gives an equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> and a point. Determine if a point is on the graph of the equation.</div>
+<ol class="lower-alpha lower-alpha-level-1" id="sec-lines-10-2-1-1-1-3">
+<li id="sec-lines-10-2-1-1-1-3-1">
+<div class="para" id="sec-lines-10-2-1-1-1-3-1-1">Is <span class="process-math">\((3,5)\)</span> on the graph of <span class="process-math">\(y = x^2 + 1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#sec-lines-10-2-1-1-1-3-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-1-1-3-2">
+<div class="para" id="sec-lines-10-2-1-1-1-3-2-1">Is <span class="process-math">\((0,-1)\)</span> on the graph of <span class="process-math">\(y = x^2 + 1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#sec-lines-10-2-1-1-1-3-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-1-1-3-3">
+<div class="para" id="sec-lines-10-2-1-1-1-3-3-1">Is <span class="process-math">\((1,2)\)</span> on the graph of <span class="process-math">\(x - y^2 = 3x - 1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-1-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.c"><a href="#sec-lines-10-2-1-1-1-3-3" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-1-1-3-4">
+<div class="para" id="sec-lines-10-2-1-1-1-3-4-1">Is <span class="process-math">\((10,1)\)</span> on the graph of <span class="process-math">\(y = x^2 - x + 1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-1-1-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.d"><a href="#sec-lines-10-2-1-1-1-3-4" title="Copy heading and permalink for Item 1.d" aria-label="Copy heading and permalink for Item 1.d">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-1-1-3-5">
+<div class="para" id="sec-lines-10-2-1-1-1-3-5-1">Is <span class="process-math">\((10,91)\)</span> on the graph of <span class="process-math">\(y = x^2 - x + 1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-1-1-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.e"><a href="#sec-lines-10-2-1-1-1-3-5" title="Copy heading and permalink for Item 1.e" aria-label="Copy heading and permalink for Item 1.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-lines-10-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-2">
+<div class="para logical" id="sec-lines-10-2-1-2-1">
+<div class="para">Find an equation of the line with the given data. (The question asks for "an equation" instead of "the equation" because there are multiple correct answers.)</div>
+<ol class="lower-alpha lower-alpha-level-1" id="sec-lines-10-2-1-2-1-1">
+<li id="sec-lines-10-2-1-2-1-1-1">
+<div class="para" id="sec-lines-10-2-1-2-1-1-1-1">The line through <span class="process-math">\((2,3)\)</span> and <span class="process-math">\((4,17)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.a"><a href="#sec-lines-10-2-1-2-1-1-1" title="Copy heading and permalink for Item 2.a" aria-label="Copy heading and permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-2-1-1-2">
+<div class="para" id="sec-lines-10-2-1-2-1-1-2-1">The line through <span class="process-math">\((0,0)\)</span> and <span class="process-math">\((1,1)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.b"><a href="#sec-lines-10-2-1-2-1-1-2" title="Copy heading and permalink for Item 2.b" aria-label="Copy heading and permalink for Item 2.b">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-2-1-1-3">
+<div class="para" id="sec-lines-10-2-1-2-1-1-3-1">The line through <span class="process-math">\((-1,-1)\)</span> and <span class="process-math">\((2,5)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.c"><a href="#sec-lines-10-2-1-2-1-1-3" title="Copy heading and permalink for Item 2.c" aria-label="Copy heading and permalink for Item 2.c">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-2-1-1-4">
+<div class="para" id="sec-lines-10-2-1-2-1-1-4-1">The line with slope <span class="process-math">\(3\)</span> and <span class="process-math">\(y\)</span>-intercept <span class="process-math">\(5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.d"><a href="#sec-lines-10-2-1-2-1-1-4" title="Copy heading and permalink for Item 2.d" aria-label="Copy heading and permalink for Item 2.d">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-2-1-1-5">
+<div class="para" id="sec-lines-10-2-1-2-1-1-5-1">The line with slope <span class="process-math">\(3\)</span> and <span class="process-math">\(y\)</span>-intercept <span class="process-math">\(-5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.e"><a href="#sec-lines-10-2-1-2-1-1-5" title="Copy heading and permalink for Item 2.e" aria-label="Copy heading and permalink for Item 2.e">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-2-1-1-6">
+<div class="para" id="sec-lines-10-2-1-2-1-1-6-1">The line with slope <span class="process-math">\(-3\)</span> and <span class="process-math">\(y\)</span>-intercept <span class="process-math">\(5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.f"><a href="#sec-lines-10-2-1-2-1-1-6" title="Copy heading and permalink for Item 2.f" aria-label="Copy heading and permalink for Item 2.f">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-2-1-1-7">
+<div class="para" id="sec-lines-10-2-1-2-1-1-7-1">The line with slope <span class="process-math">\(-3\)</span> and <span class="process-math">\(y\)</span>-intercept <span class="process-math">\(-5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.g"><a href="#sec-lines-10-2-1-2-1-1-7" title="Copy heading and permalink for Item 2.g" aria-label="Copy heading and permalink for Item 2.g">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-2-1-1-8">
+<div class="para" id="sec-lines-10-2-1-2-1-1-8-1">The line with slope <span class="process-math">\(3\)</span> and <span class="process-math">\(x\)</span>-intercept <span class="process-math">\(5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.h"><a href="#sec-lines-10-2-1-2-1-1-8" title="Copy heading and permalink for Item 2.h" aria-label="Copy heading and permalink for Item 2.h">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-2-1-1-9">
+<div class="para" id="sec-lines-10-2-1-2-1-1-9-1">The line with slope <span class="process-math">\(3\)</span> and <span class="process-math">\(x\)</span>-intercept <span class="process-math">\(-5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.i"><a href="#sec-lines-10-2-1-2-1-1-9" title="Copy heading and permalink for Item 2.i" aria-label="Copy heading and permalink for Item 2.i">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-2-1-1-10">
+<div class="para" id="sec-lines-10-2-1-2-1-1-10-1">The line with slope <span class="process-math">\(-3\)</span> and <span class="process-math">\(x\)</span>-intercept <span class="process-math">\(5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1-1-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.j"><a href="#sec-lines-10-2-1-2-1-1-10" title="Copy heading and permalink for Item 2.j" aria-label="Copy heading and permalink for Item 2.j">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-2-1-1-11">
+<div class="para" id="sec-lines-10-2-1-2-1-1-11-1">The line with slope <span class="process-math">\(-3\)</span> and <span class="process-math">\(x\)</span>-intercept <span class="process-math">\(-5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1-1-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.k"><a href="#sec-lines-10-2-1-2-1-1-11" title="Copy heading and permalink for Item 2.k" aria-label="Copy heading and permalink for Item 2.k">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-2-1-1-12">
+<div class="para" id="sec-lines-10-2-1-2-1-1-12-1">The line through <span class="process-math">\((2,3)\)</span> and with slope <span class="process-math">\(-\frac1{17}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1-1-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.l"><a href="#sec-lines-10-2-1-2-1-1-12" title="Copy heading and permalink for Item 2.l" aria-label="Copy heading and permalink for Item 2.l">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-lines-10-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-3">
+<div class="para" id="sec-lines-10-2-1-3-1">Find an equation perpendicular to <span class="process-math">\(y = 2x + 3\)</span> going through the point <span class="process-math">\((38,19)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-lines-10-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec-lines-10-2-1-4">
+<div class="para" id="sec-lines-10-2-1-4-1">Find an equation parallel to <span class="process-math">\(y = 2x + 3\)</span> going through the point <span class="process-math">\((38,19)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#sec-lines-10-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-lines-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Exercises"><a href="#sec-lines-10" title="Copy heading and permalink for Subsection: Exercises" aria-label="Copy heading and permalink for Subsection: Exercises">🔗</a></div></section><div class="autopermalink" data-description="Section 2.2: Lines"><a href="#sec-lines" title="Copy heading and permalink for Section 2.2: Lines" aria-label="Copy heading and permalink for Section 2.2: Lines">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-xy-plane.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="mailto:oscar.levin@unco.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-66485406-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-66485406-1');
+</script><!--End: Google Global Site Tag code-->
+</body>
+</html>
