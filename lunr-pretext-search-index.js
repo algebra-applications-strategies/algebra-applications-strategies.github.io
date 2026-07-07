@@ -3925,27 +3925,27 @@ var ptx_lunr_docs = [
   "body": " Recall from that addition can be represented by gluing sticks together, and from that multiplication can be represented by area of a rectangle. To factor , draw a rectangle and divide it into four smaller rectangles. Label the first side vertically and the first side horizontally with . Label the top left rectangle with and the bottom right rectangle with . The second side vertically and the second side horizontally need to be filled in with numbers so that the two numbers multiply to and the two unlabeled areas add up to .  Initial area model figure     While our description above the figure is accurate, it is easier to do repackage it by saying that we are looking for two expressions to multiply to and add to . Here's a practical way to do this: Consider the expression . Write down all pairs of factors that multiply to , with an appearing in each factor. Then, among this list of pairs, find the pair that adds to . It is often helpful to write all the factor pairs of , and then go through the list to see which pair of numbers adds to .  "
 },
 {
-  "id": "sec-factoring-and-expansion-4-11",
+  "id": "factor-xsquaredplus11xplus24",
   "level": "2",
-  "url": "sec-factoring-and-expansion.html#sec-factoring-and-expansion-4-11",
+  "url": "sec-factoring-and-expansion.html#factor-xsquaredplus11xplus24",
   "type": "Example",
   "number": "1.6.44",
   "title": "",
   "body": "  Factor .    We are looking to fill in:  Initial diamond figure     The two numbers must multiply to and add to . We list the pairs of numbers whose product is :    and      and      and      and    Then, look through the list to see which pair of numbers adds up to . These are and , so we can fill in the diamond figure as follows:  Completed diamond figure     Thus     We are looking to fill in the two empty sides in:  Initial area model figure     We consider the product of the first term and last term, . Let's list all pairs of factors of where each factor contains an :    and      and      and      and    Then, look through the list to find which pair adds up to . These are and , so we can fill in the area model figure as follows:  Completed area model figure     We filled in the areas and first. Then the sides and were filled in. Thus .   "
 },
 {
-  "id": "sec-factoring-and-expansion-4-13",
+  "id": "warning-factor-only",
   "level": "2",
-  "url": "sec-factoring-and-expansion.html#sec-factoring-and-expansion-4-13",
+  "url": "sec-factoring-and-expansion.html#warning-factor-only",
   "type": "Warning",
   "number": "1.6.49",
   "title": "",
   "body": " When the task is to factor, just factor. Do not factor followed by setting the expression equal to zero. There is a process we will see later where factoring is the first step.  In the previous question, we are just asked to factor the expression  . In a future section, we will be asked to solve the equation  , and in that situation, one way to do this is to factor the left side, leading to the equation , and then split this into the two equations or , then solve each of the smaller equations: or .  But for now, we are just factoring the expression.  "
 },
 {
-  "id": "sec-factoring-and-expansion-4-14",
+  "id": "factor-xsquaredminus12xplus35",
   "level": "2",
-  "url": "sec-factoring-and-expansion.html#sec-factoring-and-expansion-4-14",
+  "url": "sec-factoring-and-expansion.html#factor-xsquaredminus12xplus35",
   "type": "Example",
   "number": "1.6.50",
   "title": "",
@@ -3979,9 +3979,9 @@ var ptx_lunr_docs = [
   "body": "   .   "
 },
 {
-  "id": "subsec-special-cases-5",
+  "id": "factor-xsquaredplus6xplus9",
   "level": "2",
-  "url": "sec-factoring-and-expansion.html#subsec-special-cases-5",
+  "url": "sec-factoring-and-expansion.html#factor-xsquaredplus6xplus9",
   "type": "Example",
   "number": "1.6.66",
   "title": "",
@@ -4051,9 +4051,9 @@ var ptx_lunr_docs = [
   "body": " Factor by grouping      When does this strategy apply? This strategy usually (but not always) applies when factoring an expression consisting of four terms.     How to apply the strategy    Factor an expression out of the first two terms and factor an expression out of the last two terms.    In the resulting expression, if both terms have the same binomial factor, then factor this binomial out of both terms.        "
 },
 {
-  "id": "subsec-additional-factoring-techniques-7",
+  "id": "factor-xcubed-plus-5x-squared-plus-2x-plus-10",
   "level": "2",
-  "url": "sec-factoring-and-expansion.html#subsec-additional-factoring-techniques-7",
+  "url": "sec-factoring-and-expansion.html#factor-xcubed-plus-5x-squared-plus-2x-plus-10",
   "type": "Example",
   "number": "1.6.94",
   "title": "",
@@ -4177,9 +4177,9 @@ var ptx_lunr_docs = [
   "body": "  Factor .    Our drawing starts with the upper left area labeled and the lower right area labeled .  Initial area diagram     Let's write pairs of factors that multiply to where each factor contains an . In addition, because has a positive coefficient, both factors must have the same sign. The fact that the linear term has a negative coefficient means that both factors must be negative. So, the pairs of factors we have are:    and      and      and      and      and    The pair that adds to is and , so we write these in the empty areas.  Second area diagram     Next, we label the side lengths.   The upper vertical side is the greatest common factor of and , which is .    The lower vertical side is the greatest common factor of and , which is , but from the structure of signs in , the side will need to be labeled ..    The left horizontal side is the greatest common factor of and , which is .    The right horizontal side is the greatest common factor of and , which is , but due to the signs, the side will be labeled .     Final area diagram     Based on the labeled side lengths, we have a geometric representation of , and this is our factorization of .    To apply , we draw the diamond diagram with at the top and at the bottom.  Initial diamond figure    ` We are looking for pairs of numbers that multiply to and add to , so both factors need to be negative. Here are the pairs of factors of that are both negative:    and      and      and      and      and    The pair that adds to is and . So, we consider the expression , but we intentionally do not collect like terms yet, instead adding this to the original expression's first term and last term to get four terms, though for convenience we reordered the terms so that the quadratic term is first, the two linear terms in the middle, and the constant term last: Applying Factoring by Grouping,    "
 },
 {
-  "id": "subsec--9",
+  "id": "factor-6xsquared-minus-7x-minus-20",
   "level": "2",
-  "url": "sec-factoring-and-expansion.html#subsec--9",
+  "url": "sec-factoring-and-expansion.html#factor-6xsquared-minus-7x-minus-20",
   "type": "Example",
   "number": "1.6.119",
   "title": "",
@@ -5759,6 +5759,141 @@ var ptx_lunr_docs = [
   "number": "2.2.47",
   "title": "",
   "body": "  A local coffee shop sells drip coffee for in 2020 and in 2023. If the price of coffee increases by the same amount each year, what was the price back in 2015?    We can think of the behavior as a line. If we let be the number of years since 2015, and be the price of coffee, then we have a slope of , and the point . So, an equation for this line is . Based on this equation, we can solve for when to find the price in 2015. So so so . Therefore, . The price of coffee in 2015 was approximately .   "
+},
+{
+  "id": "sec-quadratic-equations-factoring",
+  "level": "1",
+  "url": "sec-quadratic-equations-factoring.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Quadratic Equations: factoring",
+  "body": " Quadratic Equations: factoring    In this section, we learn how to:    Solve quadratic equations by factoring.     The Zero Product Property  This section is about solving quadratic equations by factoring. By a quadratic equation, we mean that we have an equation (so there is an equal sign), and we only have terms that are constants (that is, numbers without variables), terms that are linear (that is, terms with a variable raised to the first power), and terms that are quadratic (that is, terms with a variable raised to the second power). In other words, we have an equation where the highest power of the variable is . Examples of quadratic equations include and and and and . Examples of equations that are not quadratic include and : in both of these examples, the highest power is , so these are cubic equations, not quadratic equations.  The Zero Product Property  If , then or .  In words, say we are in the situation that we have an equation, where one side is a product of two quantities (labeled and above), while the other side is zero. Then we can conclude that at least one of the two quantities must be zero.  How to use the Zero Product Property   First ensure that we are in the situation described by .   Check that we have an equation to solve, not an expression to simplify.    Check that one side of the equation is a product. In other words, this side should be the result of multiplying two quantities together (we have labeled these factors and above). We have a product if reading the expression on this side of the equation according to Order of Operations, a multiplication that is present in the expression is the last operation that would be performed.    Check that the other side of the equation is zero.   After verifying all three conditions, one line later, write two equations on the same line with the word \"or\" in between: the equations we write are each factor is set equal to zero.      Solve the equation .    We have an equation. One side is a product, since the multiplication is the last operation to be performed. The product has factors and . The other side of the equation is zero. Therefore, the Zero Product Property applies, and our next line of work to write is Subtract on both sides of the first equation and add on both sides of the second equation to get    We can check our work. If we substitute into the original equation, the right side is already without doing any substitutions (there are no 's to substitute on the right side), while the left side is , so the equation is satisfied. If we substitute into the original equation, the right side is still , while the left side is , so the equation is satisfied.   Solve the equation .    We have an equation where one side is a product and the other side is zero. By the Zero Product Property, Subtract on both sides of the first equation and add on both sides of the second equation: Divide both sides of the first equation by and leave the second equation alone:    It is important to not fall into the trap of thinking that the Zero Product Property only applies when each factor is a binomial. The factors can be any expressions: as long as one side is a product and the other side is zero, the Zero Product Property applies. This example helps illustrate this point.   Solve the equation .    We have an equation where one side is a product and the other side is zero. The factors are and . If you wish to have more convincing, you can write the equation as . The point to illustrate here is that it's not about whether a factor is in parentheses or not: the point to make is that we need factors, the result of multiplication. By the Zero Product Property, Add on both sides of the second equation to get    Since this feels like an \"unusual\" example, to convince ourselves that the Zero Product Property applied validly, we can check our work. If we substitute into the original equation, the right side is already without doing any substitutions (there are no 's to substitute on the right side), while the left side is , so the equation is satisfied. If we substitute into the original equation, the right side is still , while the left side is , so the equation is satisfied.  The Zero Product Property only applies when one side of the equation is a product and the other side is zero. If we have an equation where one side is a product and the other side is not zero, we cannot use the Zero Product Property. For example, if we have , we cannot conclude that or .  Suppose somebody tried this. Then they would conclude or by adding to both sides of .  But did this work? That is, is it true that or should be our final answer ? With any equation, we can check to see if the left and the right sides equal.   If , then the left side is , while the right side is . These are not equal, so is not a solution.    If , then the left side is , while the right side is . These are not equal, so is not a solution.     The warning above tells us that there is no \"Twenty Product Property\". The name itself (Zero Product Property) is a helpful reminder. If we don't see that zero on one side of the equation, we should avoid trying to \"split up\" an equation at the multiplication sign. For the equation , what can we do instead?   Solve the equation .    Distributing on the left side, we have . Subtract on both sides to get . The left side is an expression which factors.  Initial area model figure     We consider the product of the first term and last term, . Let's list all pairs of factors of where each factor contains an :    and      and      and      and      and      and    The pair that adds to is and , so we update the area model:  Completed area model figure     Replacing the previous left side with the factored form , we have . By the Zero Product Property, we have So    Our next example relies on work from an earlier section.   Solve the equation .    From the factoring result in , we have . By the Zero Product Property, we have So    When we had which only asked us to factor the expression , we added right after to just factor if the task was to factor an expression , and promised that a later section would discuss how to use factoring to solve an equation . This is that moment. This discussion doesn't really have to be memorized on its own: it's part of the bigger discussion of keeping track of what the task is asking, and remembering the difference between an expression and an equation. When the math notation given to us is an expression, we can only rewrite it in different forms (by simplifying or factoring, for example), but we cannot solve it. The task of solving is left to equations: when we start with an equation, a final answer is in the format of a solved equation: one or more equations of the format where the variable is alone on one side, and a number (without the variable) is alone on the other side.   Solve the equation .    From the factoring result in , we have . By the Zero Product Property, we have So       Solve the equation .    From the factoring result in , we have . By the Zero Product Property, we have So We can leave our final answer as is, or write this as a single solution:       Solve the equation .    By factoring the left side, . By the Zero Product Property, we have So       Solve the equation .    In , we factored the expression on the left side using Factoring By Grouping. Borriwng from that work, . By the Zero Product Property, we have So The first equation has no real solutions, so our only real solution is    While this section focuses on solving quadratic equations, the technique of factoring (by grouping) together with the Zero Product Property allowed us to solve this cubic equation.   Solve the equation .    In , we factored the expression on the left side. Borrowing from that work, . By the Zero Product Property, we have So Dividing both sides of the first equation by and both sides of the second equation by , we have        Summary     The Zero Product Property applies to an equation when we have a product equal to zero.    The Zero Product Property does not apply when we do not have a product.    The Zero Product Property does not apply when we have a product, but that product is not equal to zero.       Exercises     Solve each equation by factoring.                           "
+},
+{
+  "id": "sec-quadratic-equations-factoring-2",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-2",
+  "type": "Objectives",
+  "number": "2.3",
+  "title": "",
+  "body": "  In this section, we learn how to:    Solve quadratic equations by factoring.   "
+},
+{
+  "id": "principle-zpp",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#principle-zpp",
+  "type": "Principle",
+  "number": "2.3.1",
+  "title": "The Zero Product Property.",
+  "body": " The Zero Product Property  If , then or .  "
+},
+{
+  "id": "principle-using-zpp",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#principle-using-zpp",
+  "type": "Principle",
+  "number": "2.3.2",
+  "title": "How to use the Zero Product Property.",
+  "body": " How to use the Zero Product Property   First ensure that we are in the situation described by .   Check that we have an equation to solve, not an expression to simplify.    Check that one side of the equation is a product. In other words, this side should be the result of multiplying two quantities together (we have labeled these factors and above). We have a product if reading the expression on this side of the equation according to Order of Operations, a multiplication that is present in the expression is the last operation that would be performed.    Check that the other side of the equation is zero.   After verifying all three conditions, one line later, write two equations on the same line with the word \"or\" in between: the equations we write are each factor is set equal to zero.   "
+},
+{
+  "id": "sec-quadratic-equations-factoring-3-2-14",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3-2-14",
+  "type": "Example",
+  "number": "2.3.3",
+  "title": "",
+  "body": "  Solve the equation .    We have an equation. One side is a product, since the multiplication is the last operation to be performed. The product has factors and . The other side of the equation is zero. Therefore, the Zero Product Property applies, and our next line of work to write is Subtract on both sides of the first equation and add on both sides of the second equation to get    "
+},
+{
+  "id": "sec-quadratic-equations-factoring-3-2-22",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3-2-22",
+  "type": "Example",
+  "number": "2.3.4",
+  "title": "",
+  "body": "  Solve the equation .    We have an equation where one side is a product and the other side is zero. By the Zero Product Property, Subtract on both sides of the first equation and add on both sides of the second equation: Divide both sides of the first equation by and leave the second equation alone:    "
+},
+{
+  "id": "sec-quadratic-equations-factoring-3-2-23",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3-2-23",
+  "type": "Example",
+  "number": "2.3.5",
+  "title": "",
+  "body": "  Solve the equation .    We have an equation where one side is a product and the other side is zero. The factors are and . If you wish to have more convincing, you can write the equation as . The point to illustrate here is that it's not about whether a factor is in parentheses or not: the point to make is that we need factors, the result of multiplication. By the Zero Product Property, Add on both sides of the second equation to get    "
+},
+{
+  "id": "sec-quadratic-equations-factoring-3-2-31",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3-2-31",
+  "type": "Warning",
+  "number": "2.3.6",
+  "title": "",
+  "body": " The Zero Product Property only applies when one side of the equation is a product and the other side is zero. If we have an equation where one side is a product and the other side is not zero, we cannot use the Zero Product Property. For example, if we have , we cannot conclude that or .  Suppose somebody tried this. Then they would conclude or by adding to both sides of .  But did this work? That is, is it true that or should be our final answer ? With any equation, we can check to see if the left and the right sides equal.   If , then the left side is , while the right side is . These are not equal, so is not a solution.    If , then the left side is , while the right side is . These are not equal, so is not a solution.     "
+},
+{
+  "id": "sec-quadratic-equations-factoring-3-2-33",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3-2-33",
+  "type": "Example",
+  "number": "2.3.7",
+  "title": "",
+  "body": "  Solve the equation .    Distributing on the left side, we have . Subtract on both sides to get . The left side is an expression which factors.  Initial area model figure     We consider the product of the first term and last term, . Let's list all pairs of factors of where each factor contains an :    and      and      and      and      and      and    The pair that adds to is and , so we update the area model:  Completed area model figure     Replacing the previous left side with the factored form , we have . By the Zero Product Property, we have So    "
+},
+{
+  "id": "sec-quadratic-equations-factoring-3-2-34",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3-2-34",
+  "type": "Example",
+  "number": "2.3.10",
+  "title": "",
+  "body": "  Solve the equation .    From the factoring result in , we have . By the Zero Product Property, we have So    "
+},
+{
+  "id": "sec-quadratic-equations-factoring-3-2-41",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3-2-41",
+  "type": "Example",
+  "number": "2.3.11",
+  "title": "",
+  "body": "  Solve the equation .    From the factoring result in , we have . By the Zero Product Property, we have So    "
+},
+{
+  "id": "sec-quadratic-equations-factoring-3-2-42",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3-2-42",
+  "type": "Example",
+  "number": "2.3.12",
+  "title": "",
+  "body": "  Solve the equation .    From the factoring result in , we have . By the Zero Product Property, we have So We can leave our final answer as is, or write this as a single solution:    "
+},
+{
+  "id": "sec-quadratic-equations-factoring-3-2-43",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3-2-43",
+  "type": "Example",
+  "number": "2.3.13",
+  "title": "",
+  "body": "  Solve the equation .    By factoring the left side, . By the Zero Product Property, we have So    "
+},
+{
+  "id": "sec-quadratic-equations-factoring-3-2-44",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3-2-44",
+  "type": "Example",
+  "number": "2.3.14",
+  "title": "",
+  "body": "  Solve the equation .    In , we factored the expression on the left side using Factoring By Grouping. Borriwng from that work, . By the Zero Product Property, we have So The first equation has no real solutions, so our only real solution is    "
+},
+{
+  "id": "sec-quadratic-equations-factoring-3-2-45",
+  "level": "2",
+  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3-2-45",
+  "type": "Example",
+  "number": "2.3.15",
+  "title": "",
+  "body": "  Solve the equation .    In , we factored the expression on the left side. Borrowing from that work, . By the Zero Product Property, we have So Dividing both sides of the first equation by and both sides of the second equation by , we have    "
 },
 {
   "id": "appendix-gcf-lcm",
