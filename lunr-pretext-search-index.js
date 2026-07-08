@@ -3034,9 +3034,9 @@ var ptx_lunr_docs = [
   "body": " There are extended versions of these formulas for three factors, namely and we show below what this looks like for square roots and cube roots:            but there's an even more extended version for four factors, namely , and for square roots and cube roots, this means:            and so on: there are extended versions of this for any number of factors. We just need to ensure that all radicals are of the same kind (that is, we have the same little number on the outside of all radicals), and that we have multiplication everywhere (instead of addition).  "
 },
 {
-  "id": "subsec-radicals-27",
+  "id": "simplify-sqrt18",
   "level": "2",
-  "url": "sec-exponents.html#subsec-radicals-27",
+  "url": "sec-exponents.html#simplify-sqrt18",
   "type": "Example",
   "number": "1.5.70",
   "title": "",
@@ -5869,9 +5869,9 @@ var ptx_lunr_docs = [
   "body": "  Solve the equation .    From the factoring result in , we have . By the Zero Product Property, we have So We can leave our final answer as is, or write this as a single solution:    "
 },
 {
-  "id": "sec-quadratic-equations-factoring-3-3-43",
+  "id": "solve-xsquared-minus9equals0",
   "level": "2",
-  "url": "sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3-3-43",
+  "url": "sec-quadratic-equations-factoring.html#solve-xsquared-minus9equals0",
   "type": "Example",
   "number": "2.3.13",
   "title": "",
@@ -5921,6 +5921,303 @@ var ptx_lunr_docs = [
   "number": "2.3.18",
   "title": "",
   "body": " Please note that the Zero Product Property does not apply when we have a sum. In other words, we cannot turn into or . The left side is a sum, not a product.  "
+},
+{
+  "id": "sec-quadratic-equations-completing",
+  "level": "1",
+  "url": "sec-quadratic-equations-completing.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Quadratic equations: completing the square",
+  "body": " Quadratic equations: completing the square    In this section, we learn how to:    Solve quadratic equations without a linear term.  Solve quadratic equations by completing the square when the qudratic coefficient is .  Solve quadratic equations by completing the square when the qudratic coefficient is not .     Special case: no linear term  The last section gave a general method for solving quadratic equations using the method of factoring. We now introduce a method that works in the special case that our quadratic equation doesn't have a linear term. As a reminder, in general, the kinds of terms that can appear are quadratic, linear, and constant. A quadratic term has , while a linear term has to the first power (with the power usually omitted), and a constant term is a term that does not have the variable at all. For example, has a quadratic term, linear term, and constant term. By contrast, has a quadratic term and a constant term, but no linear term.   Solving a quadratic equation with no linear term      When does this strategy apply? This strategy applies in any equation we are asked to solve a quadratic equation that does not have a linear term.     How to apply the strategy    Step 1: add and subtract on both sides so that the quadratic term and constant term appear on opposite sides of the equation.    Step 2: square root both sides. (The first step in which square rooting occurs on both sides needs to have the plus-or-minus sign. While this symbol can be placed on either side, it is more convenient to put this on the side that does not have the variable.)           Solve the equation .    Since the equation has no linear term, we can apply . Adding to both sides, Step 2 of the strategy tells us to square root both sides and introduce a plus-or-minus sign: Note, it would be slightly incorrect if before aforementioned equation we had written From , we simplify each side independently to get .   Getting our final answer to be (which is read aloud \" equals plus or minus \") is equivalent to the final answer given earlier in .   Expectation when square rooting both sides of an equation  In the very first step in which the action of square rooting happens on both sides of an equation (even in the case when the action is indicated in the previous step's work), a plus-or-minus sign must appear on one side or other side of the equation.    A square root sign occurs when square rooting both sides of an equation , but when simplify an expression that has a square root symbol, a plus-or-minus sign is never artificially introduced into the problem.   For example, when we simplified in , we never wrote the symbol.  To be sure that we understand the concepts that we have introduced, let's answer the following questions:   Simplify .       We never performed the action of square rooting both sides of an equation, so that's why there is no plus-or-minus sign anywhere in our work.      Solve .    Subtracting on both sides, Square rooting both sides, which simplifies to     Subtracting on both sides, Square rooting both sides, In this answer, did not show the step that indicates the square rooting on both sides: just the result.    We provide an answer without commentary:          Find the error in this written work:       There are three equations. The middle equaton looks like someone first had written but then afterward added work on top of that line by writing in square roots on both sides, but without having a plus-or-minus sign on that line of work. The first line of writing that has square rooting on both sides needs the plus-or-minus sign.        Solve .    Square rooting both sides, Adding to both sides,       Solve .    Square rooting both sides, Adding to both sides,       Solve .    Square rooting both sides, Adding to both sides,        Area model: square-focused exploration  Recall from that addition is represented by gluing sticks together, and from that multiplication is represented by the area of a rectangle.   Geometrically justify .    The left side represents the area of a rectangle with sides and .  Area model figure        While the above is (generically) a rectangle, and each of the four panels are meant to represent rectangles, this section will focus on the geometry of squares.   Draw , also known as .    The expression represents the area of a square with side length .  Area model figure        While we can say \" to the power \" for , the reason we can also say \" squared\" is because represents the area of a square with side length .   Draw , and show the contribution of each term in the expanded form.    The expression is also and this represents the area of a square with side length .  Area model figure        Instead of having two variables and , this section will focus on together with a number such as :   Draw , and show the contribution of each term in the expanded form.    The expression is also and this represents the area of a square with side length .  Area model figure          It is important to note that we can also do this \"backwards\". We can start from a diagram, and then write the corresponding algebraic expression.   Write the corresponding algebraic expression for the following diagram:  Area model figure         In the picture above, we see .   In the last example, we see the height and the width of the square are both . The height and the width (which are both sums) correctly depict what says: adding is represented by gluing sticks together. There is a stick of mystery length (labeled ) glued to a second stick of length to make a total length of . We will take this example to introduce the useful terminology we will use in the rest of this section:   The length of the first stick is .    The length of the second stick is .    The linear coefficient is , double the length of the second stick. (The linear coefficent refers to the number in front of , excluding the itself.)    The constant is , the square of the length of the second stick.   We will typically get quadratic expressions where we need to think of splitting up the linear term into two equal-sized pieces (to represent the rectangles drawn in the upper right and lower left). For example:   Rewrite and draw the corresponding area model.     .  Area model figure        In this example, the second stick has length , the linear coefficient is , and the constant is . Note that there is no direct connection (in this or previous examples) between the linear coefficient and the constant. However, it always works out that doubling the length of the second stick gives the linear coefficient, and squaring the length of the second stick gives the constant.  Let's examine a couple more quick explorations that will make the process we will learn go smoother!   In the diagram below, what is the missing amount of area that if added would complete the square?  Area model figure         The missing area is a square with side length , so the missing area is .   Before we complete the square, the diagram depicts , and we see a linear coefficient of (if we collect like terms on ). It is best to think of this as a two-step process:   Step 1: take the linear coefficient and divide by to get the second stick .    Step 2: take the second stick and square to get the constant , which is the missing area.      What should be added to to complete the square? Draw a picture of and draw a picture of the completed square after adding.    The linear coefficient is . Dividing this by tells us the second stick is . Squaring the second stick tells us the constant must be . Before completing the square, we have and its picture is:  Before completing the square: picture of     After completing the square, we have and its picture is:  After completing the square: picture of        We do one more example like this:   What should be added to to complete the square? Draw the before and after pictures.    The linear coefficient is , so the second stick is , so the constant must be . The picture before completing the square is  Before completing the square: picture of     and the picture after completing the square is:  After completing the square: picture of            First examples of completing the square    Completing the square when the quadratic coefficient is  When the quadratic coefficient is (so either a is written in front of , or nothing is written in front of , which siginfies a hidden ) to complete the square:   Identify the linear coefficient (the number in front of , excluding the itself).    Divide the linear coefficient by to get the second stick. (This is technically the \" length of the second stick\", but we will informally say \"second stick\".)    Square the second stick to get the constant that must be added to complete the square.        Solve the equation .    The linear coefficient is , so the second stick is , and the constant that must be added to complete the square is . Adding to both sides of the equation gives Factoring on the left and simplifying on the right, Square rooting both sides, Subtracting from both sides gives       Solve .    The linear coefficient is , so the second stick is , and the constant that must be added to complete the square is . Adding to both sides:    Notice in the factored form , inside the parentheses, we see plus the second stick. This will always happen!   The last example noted something very important:   After adding the appropriate number to both sides, the factored form will always be .      Solve .    The linear coefficient is , so the second stick is , and the constant that must be added to complete the square is . Adding to both sides:          Solve .    Seeing the on the left side is visually distracting, so let's start by subtracting from both sides: Now the problem has the same form as the previous examples, and we can complete the square. The linear coefficient is , so the second stick is , and the constant that must be added to complete the square is . Adding to both sides:         The next example will feel a little strange because the linear coefficient is negative.   Solve .    First, we will add to both sides: The linear coefficient is , so the second stick is , and so the constant is . Because the linear coefficient is negative, the second stick is negative. While it is strange to say that the length of a stick is negative, let's go with this and see if it works. Because the constant is found by squaring the second stick (and squaring a negative number gives a positive number), the constant is still positive. Adding to both sides:       The point is that even with a negative linear coefficent (thus a negative second stick), the constant to add is still positive (and we do add the constant to both sides, instead of subtracting on both sides). So, while the description of the geometry is strange, the process works: we just need to stay absolutely consistent. We will always add the constant to both sides, which is always positive (even if the second stick is negative) since it is the result of squaring the second stick.   Solve .     The linear coefficient is , so the second stick is , and the constant that must be added to complete the square is . Adding to both sides:       Our examples have so far had linear coefficients that are even for convenience:   Solve .    The linear coefficient is , so the second stick is , so the constant is . Recalling the formula , we can rewrite the constant . So we add to both sides:       For this example, we had on the left side of one equation, and factored this as in the next equation. This is consistent with for how the factoring should look, but we should also independently verify that this works: .  The purpose of the preivous example is to show that even when the linear coefficient is odd, we can still complete the square. The second stick will be a fraction, and the constant will be a fraction, but the process works the same way. We had to make use of the formula .    Final examples of completing the square  In , we saw what to do when the quadratic coefficient is . What do we do when the quadratic coefficient is not ? For example, what do we do to solve , where does not directly apply?  We can do some brief algebra (and be careful to follow valid fraction techniques) to get to a situation where does apply.   Solve     Because the quadratic coefficient is , note that does not apply right now, but we will rewrite our problem so that we can apply the technique. Dividing both sides by , we get We haven't simplified our work above yet: we just wanted to point out that we had to divide the entire left side by , not just the term. Because of the plus sign in the numerator, the s on the left do not cancel. But we can apply the fraction addition formula to rewrite the left side (and will also use this step to simplify the right side). Now that we no longer have a plus sign in the fraction (only a plus sign between fractions), we can cancel. We will also slightly rewrite , which is valid since . Note the linear coefficient is , not . (Remember that the linear coefficent is what is in front of  , but excludes itself). So the second stick is , because . The constant that must be added is . Factoring the left side as plus the second stick, quantity squared, and simplifying the right side, Square rooting both sides,    Now, we have isolated and are done, but it is typical to combine the two fractions on the right side into a single fraction, since we are adding\/subtracting fractions and they already have a common denominator:    This example shows us that even when the quadratic coefficient is not , we can still complete the square by first dividing both sides of the equation by the quadratic coefficient.   Before identifying the linear coefficient and computing second stick and the constant, if the coefficient of is not , then divide both sides by the number that is in front of first. Then will apply.   Before we do another example to show this, a friendly word of advice is helpful. Examine both answers to this question:   Solve .    The linear coefficient is , so the second stick is , and the constant that must be added to complete the square is . Adding to both sides:     We can leave our final answer like this, but we point out we have or .    Starting from and subtracting on both sides, Factoring the left side, Applying the Zero Product Property,     We include this example to show that there are multiple ways to solve a quadratic equation, and the method of completing the square is not always the most efficient. Completing the square always works on a quadratic equation, but sometimes factoring is less work.  We end by applying the process of completing the square to a quadratic equation where the coefficients are unknown, and represented by and and . Instead of thinking of and and a variables, think of them as mystery numbers. These are just numbers that are not known to us.   Solve the quadratic equation by completing the square.     First, we will subtract from both sides: The value of might be , but it might not. To make a generic argument that will always work, we follow and divide both sides by : As written above, we cannot cancel the s in the numerator and denominator on the left side. Rewrite the left side as the sum of two fractions. Now we can cancel, and we also use the opportunity to rewrite the second term to have outside of the fraction: Now that the quadratic coefficient is , we can apply . The linear coefficient is , recalling we only take what is next to , but leave out itself. Note , so the second stick is . Since the second stick is , the constant is . To complete the square, we add to both sides: The left side factors, with the content in parentheses being plus the second stick, and on the right side, we multiply the top and bottom of the first fraction by to get a common denominator: Rewriting just the right side, we have a single fraction, and we can write the numerator as , but we wrote instead: Square rooting both sides: On the left side, square rooting and squaring undo each other. On the right side, we apply the square root of the fraction to the top and bottom:   Subtracting from both sides: Because the two fractions on the right side have a common denominator, we can combine them into a single fraction:   The work from the previous example justifies a famous formula for quadratic equations, called the quadratic formula :   The solutions to the quadratic equation are given by the formula    The expression found inside the square root is called the discriminant :   If , then has zero real solutions.    If , then has one real solution.    If , then has two real solutions.   We end this section with two optional pictures to study, which may help enhance the understanding of the answer to .  Before completing the square: picture of       After completing the square: picture of         Summary     To solve a quadratic equation with no linear coefficient, get one term on each side, then square root both sides (and include in the first step that introduces square rooting both sides).    If the coefficient of is not , divide both sides by the coefficient of before completing the square.    If the coefficient of is , identify the linear coefficient (the value in front of , but excluding itself), divide it by to get the second stick, and square the second stick to get the constant that must be added to both sides to complete the square.    In its factored form, we will have a certain quantity squared, and that quantity will be plus the second stick.       Exercises     Solve these quadratic equations using any valid method: (Give 20 exercise problems that do NOT repeat any of the examples)                        Solve the following equations. Note that not all are quadratic equations, so you may need to apply earlier techniques.                            "
+},
+{
+  "id": "sec-quadratic-equations-completing-2",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-2",
+  "type": "Objectives",
+  "number": "2.4",
+  "title": "",
+  "body": "  In this section, we learn how to:    Solve quadratic equations without a linear term.  Solve quadratic equations by completing the square when the qudratic coefficient is .  Solve quadratic equations by completing the square when the qudratic coefficient is not .   "
+},
+{
+  "id": "quadratic-no-linear-term",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#quadratic-no-linear-term",
+  "type": "Strategy",
+  "number": "2.4.1",
+  "title": "Solving a quadratic equation with no linear term.",
+  "body": " Solving a quadratic equation with no linear term      When does this strategy apply? This strategy applies in any equation we are asked to solve a quadratic equation that does not have a linear term.     How to apply the strategy    Step 1: add and subtract on both sides so that the quadratic term and constant term appear on opposite sides of the equation.    Step 2: square root both sides. (The first step in which square rooting occurs on both sides needs to have the plus-or-minus sign. While this symbol can be placed on either side, it is more convenient to put this on the side that does not have the variable.)        "
+},
+{
+  "id": "subsec-no-linear-term-2-6",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#subsec-no-linear-term-2-6",
+  "type": "Example",
+  "number": "2.4.2",
+  "title": "",
+  "body": "  Solve the equation .    Since the equation has no linear term, we can apply . Adding to both sides, Step 2 of the strategy tells us to square root both sides and introduce a plus-or-minus sign: Note, it would be slightly incorrect if before aforementioned equation we had written From , we simplify each side independently to get .   "
+},
+{
+  "id": "pm-when-square-rooting-both-sides",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#pm-when-square-rooting-both-sides",
+  "type": "Principle",
+  "number": "2.4.3",
+  "title": "Expectation when square rooting both sides of an equation.",
+  "body": " Expectation when square rooting both sides of an equation  In the very first step in which the action of square rooting happens on both sides of an equation (even in the case when the action is indicated in the previous step's work), a plus-or-minus sign must appear on one side or other side of the equation.  "
+},
+{
+  "id": "subsec-no-linear-term-4",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#subsec-no-linear-term-4",
+  "type": "Warning",
+  "number": "2.4.4",
+  "title": "",
+  "body": " A square root sign occurs when square rooting both sides of an equation , but when simplify an expression that has a square root symbol, a plus-or-minus sign is never artificially introduced into the problem.  "
+},
+{
+  "id": "subsec-no-linear-term-6-1",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#subsec-no-linear-term-6-1",
+  "type": "Example",
+  "number": "2.4.5",
+  "title": "",
+  "body": "  Simplify .       We never performed the action of square rooting both sides of an equation, so that's why there is no plus-or-minus sign anywhere in our work.   "
+},
+{
+  "id": "subsec-no-linear-term-6-2",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#subsec-no-linear-term-6-2",
+  "type": "Example",
+  "number": "2.4.6",
+  "title": "",
+  "body": "  Solve .    Subtracting on both sides, Square rooting both sides, which simplifies to     Subtracting on both sides, Square rooting both sides, In this answer, did not show the step that indicates the square rooting on both sides: just the result.    We provide an answer without commentary:       "
+},
+{
+  "id": "subsec-no-linear-term-6-3",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#subsec-no-linear-term-6-3",
+  "type": "Example",
+  "number": "2.4.7",
+  "title": "",
+  "body": "  Find the error in this written work:       There are three equations. The middle equaton looks like someone first had written but then afterward added work on top of that line by writing in square roots on both sides, but without having a plus-or-minus sign on that line of work. The first line of writing that has square rooting on both sides needs the plus-or-minus sign.   "
+},
+{
+  "id": "subsec-no-linear-term-7-1",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#subsec-no-linear-term-7-1",
+  "type": "Example",
+  "number": "2.4.8",
+  "title": "",
+  "body": "  Solve .    Square rooting both sides, Adding to both sides,    "
+},
+{
+  "id": "subsec-no-linear-term-7-2",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#subsec-no-linear-term-7-2",
+  "type": "Example",
+  "number": "2.4.9",
+  "title": "",
+  "body": "  Solve .    Square rooting both sides, Adding to both sides,    "
+},
+{
+  "id": "subsec-no-linear-term-7-3",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#subsec-no-linear-term-7-3",
+  "type": "Example",
+  "number": "2.4.10",
+  "title": "",
+  "body": "  Solve .    Square rooting both sides, Adding to both sides,    "
+},
+{
+  "id": "sec-quadratic-equations-completing-4-2-3",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-4-2-3",
+  "type": "Example",
+  "number": "2.4.11",
+  "title": "",
+  "body": "  Geometrically justify .    The left side represents the area of a rectangle with sides and .  Area model figure        "
+},
+{
+  "id": "sec-quadratic-equations-completing-4-2-4",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-4-2-4",
+  "type": "Example",
+  "number": "2.4.13",
+  "title": "",
+  "body": "  Draw , also known as .    The expression represents the area of a square with side length .  Area model figure        "
+},
+{
+  "id": "sec-quadratic-equations-completing-4-2-11",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-4-2-11",
+  "type": "Example",
+  "number": "2.4.15",
+  "title": "",
+  "body": "  Draw , and show the contribution of each term in the expanded form.    The expression is also and this represents the area of a square with side length .  Area model figure        "
+},
+{
+  "id": "sec-quadratic-equations-completing-4-2-16",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-4-2-16",
+  "type": "Example",
+  "number": "2.4.17",
+  "title": "",
+  "body": "  Draw , and show the contribution of each term in the expanded form.    The expression is also and this represents the area of a square with side length .  Area model figure        "
+},
+{
+  "id": "sec-quadratic-equations-completing-4-3",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-4-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "first stick second stick linear coefficient constant "
+},
+{
+  "id": "sec-quadratic-equations-completing-4-4-1",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-4-4-1",
+  "type": "Example",
+  "number": "2.4.23",
+  "title": "",
+  "body": "  In the diagram below, what is the missing amount of area that if added would complete the square?  Area model figure         The missing area is a square with side length , so the missing area is .   "
+},
+{
+  "id": "sec-quadratic-equations-completing-4-4-6",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-4-4-6",
+  "type": "Example",
+  "number": "2.4.25",
+  "title": "",
+  "body": "  What should be added to to complete the square? Draw a picture of and draw a picture of the completed square after adding.    The linear coefficient is . Dividing this by tells us the second stick is . Squaring the second stick tells us the constant must be . Before completing the square, we have and its picture is:  Before completing the square: picture of     After completing the square, we have and its picture is:  After completing the square: picture of        "
+},
+{
+  "id": "sec-quadratic-equations-completing-4-4-7",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-4-4-7",
+  "type": "Example",
+  "number": "2.4.28",
+  "title": "",
+  "body": "  What should be added to to complete the square? Draw the before and after pictures.    The linear coefficient is , so the second stick is , so the constant must be . The picture before completing the square is  Before completing the square: picture of     and the picture after completing the square is:  After completing the square: picture of        "
+},
+{
+  "id": "cts-initial",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#cts-initial",
+  "type": "Principle",
+  "number": "2.4.31",
+  "title": "Completing the square when the quadratic coefficient is <span class=\"process-math\">\\(1\\)<\/span>.",
+  "body": " Completing the square when the quadratic coefficient is  When the quadratic coefficient is (so either a is written in front of , or nothing is written in front of , which siginfies a hidden ) to complete the square:   Identify the linear coefficient (the number in front of , excluding the itself).    Divide the linear coefficient by to get the second stick. (This is technically the \" length of the second stick\", but we will informally say \"second stick\".)    Square the second stick to get the constant that must be added to complete the square.     "
+},
+{
+  "id": "sec-quadratic-equations-completing-5-2-2",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-5-2-2",
+  "type": "Example",
+  "number": "2.4.32",
+  "title": "",
+  "body": "  Solve the equation .    The linear coefficient is , so the second stick is , and the constant that must be added to complete the square is . Adding to both sides of the equation gives Factoring on the left and simplifying on the right, Square rooting both sides, Subtracting from both sides gives    "
+},
+{
+  "id": "sec-quadratic-equations-completing-5-2-3",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-5-2-3",
+  "type": "Example",
+  "number": "2.4.33",
+  "title": "",
+  "body": "  Solve .    The linear coefficient is , so the second stick is , and the constant that must be added to complete the square is . Adding to both sides:    Notice in the factored form , inside the parentheses, we see plus the second stick. This will always happen!   "
+},
+{
+  "id": "principle-cts-factored-form",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#principle-cts-factored-form",
+  "type": "Principle",
+  "number": "2.4.34",
+  "title": "",
+  "body": "  After adding the appropriate number to both sides, the factored form will always be .   "
+},
+{
+  "id": "sec-quadratic-equations-completing-5-2-5",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-5-2-5",
+  "type": "Example",
+  "number": "2.4.35",
+  "title": "",
+  "body": "  Solve .    The linear coefficient is , so the second stick is , and the constant that must be added to complete the square is . Adding to both sides:       "
+},
+{
+  "id": "sec-quadratic-equations-completing-5-2-6",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-5-2-6",
+  "type": "Example",
+  "number": "2.4.36",
+  "title": "",
+  "body": "  Solve .    Seeing the on the left side is visually distracting, so let's start by subtracting from both sides: Now the problem has the same form as the previous examples, and we can complete the square. The linear coefficient is , so the second stick is , and the constant that must be added to complete the square is . Adding to both sides:       "
+},
+{
+  "id": "sec-quadratic-equations-completing-5-3-1",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-5-3-1",
+  "type": "Example",
+  "number": "2.4.37",
+  "title": "",
+  "body": "  Solve .    First, we will add to both sides: The linear coefficient is , so the second stick is , and so the constant is . Because the linear coefficient is negative, the second stick is negative. While it is strange to say that the length of a stick is negative, let's go with this and see if it works. Because the constant is found by squaring the second stick (and squaring a negative number gives a positive number), the constant is still positive. Adding to both sides:       "
+},
+{
+  "id": "sec-quadratic-equations-completing-5-3-6",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-5-3-6",
+  "type": "Example",
+  "number": "2.4.38",
+  "title": "",
+  "body": "  Solve .     The linear coefficient is , so the second stick is , and the constant that must be added to complete the square is . Adding to both sides:       "
+},
+{
+  "id": "sec-quadratic-equations-completing-5-3-7",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-5-3-7",
+  "type": "Example",
+  "number": "2.4.39",
+  "title": "",
+  "body": "  Solve .    The linear coefficient is , so the second stick is , so the constant is . Recalling the formula , we can rewrite the constant . So we add to both sides:       "
+},
+{
+  "id": "sec-quadratic-equations-completing-6-3-2",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-6-3-2",
+  "type": "Example",
+  "number": "2.4.40",
+  "title": "",
+  "body": "  Solve     Because the quadratic coefficient is , note that does not apply right now, but we will rewrite our problem so that we can apply the technique. Dividing both sides by , we get We haven't simplified our work above yet: we just wanted to point out that we had to divide the entire left side by , not just the term. Because of the plus sign in the numerator, the s on the left do not cancel. But we can apply the fraction addition formula to rewrite the left side (and will also use this step to simplify the right side). Now that we no longer have a plus sign in the fraction (only a plus sign between fractions), we can cancel. We will also slightly rewrite , which is valid since . Note the linear coefficient is , not . (Remember that the linear coefficent is what is in front of  , but excludes itself). So the second stick is , because . The constant that must be added is . Factoring the left side as plus the second stick, quantity squared, and simplifying the right side, Square rooting both sides,    Now, we have isolated and are done, but it is typical to combine the two fractions on the right side into a single fraction, since we are adding\/subtracting fractions and they already have a common denominator:    "
+},
+{
+  "id": "principle-cts-general",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#principle-cts-general",
+  "type": "Principle",
+  "number": "2.4.41",
+  "title": "",
+  "body": "  Before identifying the linear coefficient and computing second stick and the constant, if the coefficient of is not , then divide both sides by the number that is in front of first. Then will apply.   "
+},
+{
+  "id": "sec-quadratic-equations-completing-6-3-5",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-6-3-5",
+  "type": "Example",
+  "number": "2.4.42",
+  "title": "",
+  "body": "  Solve .    The linear coefficient is , so the second stick is , and the constant that must be added to complete the square is . Adding to both sides:     We can leave our final answer like this, but we point out we have or .    Starting from and subtracting on both sides, Factoring the left side, Applying the Zero Product Property,     "
+},
+{
+  "id": "sec-quadratic-equations-completing-6-4",
+  "level": "2",
+  "url": "sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-6-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "discriminant "
 },
 {
   "id": "appendix-gcf-lcm",
