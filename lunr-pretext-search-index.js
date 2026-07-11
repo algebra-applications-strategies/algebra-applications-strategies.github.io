@@ -6220,6 +6220,123 @@ var ptx_lunr_docs = [
   "body": "discriminant "
 },
 {
+  "id": "sec-circles",
+  "level": "1",
+  "url": "sec-circles.html",
+  "type": "Section",
+  "number": "2.5",
+  "title": "Circles",
+  "body": " Circles    In this section, we learn how to:    Identify the center and radius of a circle given its equation.  Write the equation of a circle given its center and radius.  Graph a circle given its equation.     Exploring the equation of a circle  In , before introducing equations of lines, we introduced equations in and (in general) and their graphs in the . One such equation we introduced was . We started with equations of lines because they are the nicest examples of equations in and . In this section, we will explore another nice example of an equation in and , namely the equation of a circle, which we can now study since we have discussed completing the square.  Informally, we often just think of a circle as a \"round shape\". As true as this is, to develop what we need, we will need to focus (at least for a minute) on the technical, mathematical definition of a circle.   Definition of a Circle  A circle is the set of all points in a plane that are the same distance from a fixed point. The fixed point is called the center , and the distance from the center to any point on the circle is called the radius .   It is typical (though not required) to denote the center of a circle by and the radius by . Because the center of a circle is a point, there are two coordinates: is the traditional label for the -coordinate of the center, and is the traditional label for the -coordinate of the center.  To build the standard equation for a circle, recall the distance formula from : the distance between and is . Recall from that nothing distributes here to simplify: we cannot distribute the square root over the same, and we can not distribute either of the exponents over subtraction. We apply this distance formula using as the center and as a generic point on the circle. According to the definition of a circle, the distance from to any point must be the radius, labeled , so: This is already technically an equation of a circle, but the standard format of a circle is obtained by squaring both sides: Squaring on the left side undid the square root that used to be on the left side, and squaring on the right side meant that we went from a right side of to .   Standard Equation of a Circle  The standard equation of a circle with center and radius is      Standard Equation of a Circle    Identify the center and radius of the circle given by the equation .    The equation is in the standard form . Comparing coefficients, we have:         so   Therefore, the center of the circle is and the radius is .    The number on the right side is the value of , so the radius is the square root of that number, which is .    Identify the center and radius of the circle given by the equation .    The equation can be rewritten , which is in the standard form . Comparing coefficients, we have:         so   Therefore, the center of the circle is and the radius is .      Identify the center and radius of the circle given by the equation .    The center is and the radius is .    Note that in each of the last three examples, we never square rooted both sides of the equation that presents the circle in standard form. We leave the standand equation alone.   In the first example, we saw on the right side, so we knew , and therefore .    In the second example, we saw on the right side, so we knew , and therefore .    In the third example, we saw on the right side, so we knew , and therefore .      Do not square root both sides of the standard equation of a circle. (Instead, identify the radius by looking at the number on the right side of the equation and reporting its square root as the radius. Alternately, build a separate equation in the format of set equal to the number on the right side of the standard equation. Then square root both sides of the new, small equation that was built, but do not square root both sides of the standard equation.)   To be clear about what this warning is saying, consider the last example. There is an error in the text written below, which we discuss shortly: is correct to have, but then it is incorrect to write because the square root does not distribute over addition.  To clarify what the problem really is, let's show more steps:    There are four equations above. The fourth equation would follow from the third equation. However, the third equation does not follow from the second equation because the square root does not distribute over addition. (So we woudn't be able to validly get to the fourth equation from the second equation.) Actually, there is one other problem: the second equation has a subtle issue: to go from the first equation to the second equation, since square rooting happened on both sides, a symbol would have to appear on one side or the other of the eqaution.  In any case, the point is that we do not square root both sides of the standard equation of a circle, because it invites an error like this to occur. Instead, stare at the number on the right, and report the square root of that number as the radius, without square rooting both sides of the standard equation of a circle.    Identify the center and radius of the circle given by the equation .    The center is and the radius is .    Writing one or both of and\/or is performing the error discussed in . Instead of square rooting both sides of the standard equation of a circle, we just looked at the that was on the right side of the equation and reported its square root as the radius.    Identify the center and radius of the circle given by the equation .    In this example, we will complete the square twice to get the equation to be in the standard form of a circle: once for the terms and once for the terms.   For the terms, we have . Recall the linear coefficient is what is in front of , but excluding the itself. Since the linear coefficient is , the second stick is Since the second stick is , the constant is . We will add to both sides.    For the terms, we have . The linear coefficient is , so the second stick is . Since the second stick is , the constant is . We will add to both sides.   Here is the result of adding to both sides and adding to both sides. On the left side, we have inserted the and into locations that are convenient for us. Now we can factor the left side and simplify the right side: Without square rooting both sides of the previous equation, we now identify the center and the radius. The center is and the radius is .      Identify the center and radius of the circle given by the equation .    In this example, we will complete the square twice to get the equation to be in the standard form of a circle: once for the terms and once for the terms.   For the terms, we have . The linear coefficient is , so the second stick is . Since the second stick is , the constant is . We will add to both sides.    For the terms, we have . The linear coefficient is , so the second stick is . Since the second stick is , the constant is . We will add to both sides.   Here is the result of adding to both sides and adding to both sides. On the left side, we have inserted the and into locations that are convenient for us. Now we can factor the left side and simplify the right side: Without square rooting both sides of the previous equation, we now identify the center and the radius. The center is and the radius is .     When completing the square in both variables, be careful with notation: sometimes, writing unintentionally communicates a multiplication that should not be there. (Recall that when an operation symbol is missing between expressions, there is a hidden multiplication symbol.)   The warning above does not likely make much sense on its own, but let's discuss it in the context of the last example.   Before even completing the square, there are people who like to draw in parentheses for visual convenience and separation. However, writing or writing is incorrect because it communicates multiplication between the two parentheses, no matter how large or small the horizontal gap is between the sets of parentheses. If you wish to include parentheses, then model your work after the following:     Upon finding the correct numbers to add to both sides to complete the square in both variables, it is tempting to write or to show the numbers that were added to both sides. However, this is incorrect because it communicates multiplication between the two parentheses, for the same reason that was just mentioned. Instead, write     Similarly, note that the final equation is correct, but writing or is incorrect because it communicates an unintended multiplication.       Identify the center and radius of the circle given by the equation .    For this question, it will help if we first shuffle the terms around to group the terms together and the terms together: As the warning before (and its examples mentioned), the equation above is correct but writing or is incorrect because it communicates multiplication between the two parentheses. Using the correct equation, we add to both sides to complete the square in , and add to both sides to complete the square in .  Without square rooting both sides of the previous equation, we now identify the center and the radius. The center is and the radius is .      Summary     The standard equation for a circle with center and radius is , which comes from applying the distance formula to the definition of a circle.    To identify the center and radius of a circle given its equation, if not already in standard form, we can complete the square in both variables to get the equation into standard form.       Exercises        Identify the center and radius of the circle with the given equation.                            "
+},
+{
+  "id": "sec-circles-2",
+  "level": "2",
+  "url": "sec-circles.html#sec-circles-2",
+  "type": "Objectives",
+  "number": "2.5",
+  "title": "",
+  "body": "  In this section, we learn how to:    Identify the center and radius of a circle given its equation.  Write the equation of a circle given its center and radius.  Graph a circle given its equation.   "
+},
+{
+  "id": "def-circle",
+  "level": "2",
+  "url": "sec-circles.html#def-circle",
+  "type": "Principle",
+  "number": "2.5.1",
+  "title": "Definition of a Circle.",
+  "body": " Definition of a Circle  A circle is the set of all points in a plane that are the same distance from a fixed point. The fixed point is called the center , and the distance from the center to any point on the circle is called the radius .  "
+},
+{
+  "id": "circle-equation",
+  "level": "2",
+  "url": "sec-circles.html#circle-equation",
+  "type": "Principle",
+  "number": "2.5.2",
+  "title": "Standard Equation of a Circle.",
+  "body": " Standard Equation of a Circle  The standard equation of a circle with center and radius is   "
+},
+{
+  "id": "sec-circles-4-2",
+  "level": "2",
+  "url": "sec-circles.html#sec-circles-4-2",
+  "type": "Example",
+  "number": "2.5.3",
+  "title": "",
+  "body": "  Identify the center and radius of the circle given by the equation .    The equation is in the standard form . Comparing coefficients, we have:         so   Therefore, the center of the circle is and the radius is .   "
+},
+{
+  "id": "sec-circles-4-4",
+  "level": "2",
+  "url": "sec-circles.html#sec-circles-4-4",
+  "type": "Example",
+  "number": "2.5.4",
+  "title": "",
+  "body": "  Identify the center and radius of the circle given by the equation .    The equation can be rewritten , which is in the standard form . Comparing coefficients, we have:         so   Therefore, the center of the circle is and the radius is .   "
+},
+{
+  "id": "sec-circles-4-5",
+  "level": "2",
+  "url": "sec-circles.html#sec-circles-4-5",
+  "type": "Example",
+  "number": "2.5.5",
+  "title": "",
+  "body": "  Identify the center and radius of the circle given by the equation .    The center is and the radius is .   "
+},
+{
+  "id": "warning-do-not-square-root-both-sides-of-standard-equation-of-circle",
+  "level": "2",
+  "url": "sec-circles.html#warning-do-not-square-root-both-sides-of-standard-equation-of-circle",
+  "type": "Warning",
+  "number": "2.5.6",
+  "title": "",
+  "body": " Do not square root both sides of the standard equation of a circle. (Instead, identify the radius by looking at the number on the right side of the equation and reporting its square root as the radius. Alternately, build a separate equation in the format of set equal to the number on the right side of the standard equation. Then square root both sides of the new, small equation that was built, but do not square root both sides of the standard equation.)  "
+},
+{
+  "id": "sec-circles-4-11",
+  "level": "2",
+  "url": "sec-circles.html#sec-circles-4-11",
+  "type": "Example",
+  "number": "2.5.7",
+  "title": "",
+  "body": "  Identify the center and radius of the circle given by the equation .    The center is and the radius is .   "
+},
+{
+  "id": "sec-circles-4-13",
+  "level": "2",
+  "url": "sec-circles.html#sec-circles-4-13",
+  "type": "Example",
+  "number": "2.5.8",
+  "title": "",
+  "body": "  Identify the center and radius of the circle given by the equation .    In this example, we will complete the square twice to get the equation to be in the standard form of a circle: once for the terms and once for the terms.   For the terms, we have . Recall the linear coefficient is what is in front of , but excluding the itself. Since the linear coefficient is , the second stick is Since the second stick is , the constant is . We will add to both sides.    For the terms, we have . The linear coefficient is , so the second stick is . Since the second stick is , the constant is . We will add to both sides.   Here is the result of adding to both sides and adding to both sides. On the left side, we have inserted the and into locations that are convenient for us. Now we can factor the left side and simplify the right side: Without square rooting both sides of the previous equation, we now identify the center and the radius. The center is and the radius is .   "
+},
+{
+  "id": "sec-circles-4-14",
+  "level": "2",
+  "url": "sec-circles.html#sec-circles-4-14",
+  "type": "Example",
+  "number": "2.5.9",
+  "title": "",
+  "body": "  Identify the center and radius of the circle given by the equation .    In this example, we will complete the square twice to get the equation to be in the standard form of a circle: once for the terms and once for the terms.   For the terms, we have . The linear coefficient is , so the second stick is . Since the second stick is , the constant is . We will add to both sides.    For the terms, we have . The linear coefficient is , so the second stick is . Since the second stick is , the constant is . We will add to both sides.   Here is the result of adding to both sides and adding to both sides. On the left side, we have inserted the and into locations that are convenient for us. Now we can factor the left side and simplify the right side: Without square rooting both sides of the previous equation, we now identify the center and the radius. The center is and the radius is .   "
+},
+{
+  "id": "sec-circles-4-15",
+  "level": "2",
+  "url": "sec-circles.html#sec-circles-4-15",
+  "type": "Warning",
+  "number": "2.5.10",
+  "title": "",
+  "body": " When completing the square in both variables, be careful with notation: sometimes, writing unintentionally communicates a multiplication that should not be there. (Recall that when an operation symbol is missing between expressions, there is a hidden multiplication symbol.)  "
+},
+{
+  "id": "sec-circles-4-17",
+  "level": "2",
+  "url": "sec-circles.html#sec-circles-4-17",
+  "type": "Example",
+  "number": "2.5.11",
+  "title": "",
+  "body": "  Identify the center and radius of the circle given by the equation .    For this question, it will help if we first shuffle the terms around to group the terms together and the terms together: As the warning before (and its examples mentioned), the equation above is correct but writing or is incorrect because it communicates multiplication between the two parentheses. Using the correct equation, we add to both sides to complete the square in , and add to both sides to complete the square in .  Without square rooting both sides of the previous equation, we now identify the center and the radius. The center is and the radius is .   "
+},
+{
   "id": "appendix-gcf-lcm",
   "level": "1",
   "url": "appendix-gcf-lcm.html",
