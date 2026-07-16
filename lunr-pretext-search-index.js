@@ -6571,6 +6571,195 @@ var ptx_lunr_docs = [
   "body": "  We reverse the inequality sign when multiplying or dividing both sides of an inequality by a negative number. However, if we had a negative number and divided both sides by a positive number, we would not reverse the inequality sign.   "
 },
 {
+  "id": "sec-absolute-value",
+  "level": "1",
+  "url": "sec-absolute-value.html",
+  "type": "Section",
+  "number": "2.7",
+  "title": "Absolute Value",
+  "body": " Absolute Value    In this section, we learn how to:    Solve absolute value equations.  Solve absolute value inequalities.  Apply absolute value concepts to real-world problems.     Applications  The concepts we learn in this section will be useful in a variety of applications, including:   A manufacturer needs to cut metal rods to centimeters with a tolerance of centimeters. What is the range of a rod's length that is acceptable to the manufacturer?    A doctor is monitoring a patient's blood sugar, with a target of mg\/dL and a tolerance of mg\/dL. What is the range of blood sugar levels that are acceptable to the doctor?       Absolute value equations  Before diving right into solving an absolute value equation, we pause to discuss what it means to solve any equation, and we do this by example. Examine solving the equation . Here are several comments, separated one at a time:   If someone wrote , they haven't really solved the equation, because the variable should be isolated on one side (which it is), but without the variable appearing on the other side.    As a final answer, someone might write or . This is a complete and correct final answer, but we have left out the work. There are three methods that come to mind for solving this equation, which we summarize:   One person may prefer to get all terms on one side, then factor to have , then use the Zero Product Property to get or , and end with or .    Someone else may prefer to examine and complete the square.    Someone else may prefer to use the Quadratic Formula.       Regardless of which of the three methods are applied (that is, independent of the specific work that gets shown), we need to focus on what it actually means to solve an equation. Put directly, what does it mean that the question was to solve and that our answer to that question was or ?  Solving an equation means providing a complete list of all values of the variable that make the equation true. We didn't provide an extra value that doesn't work, and we didn't leave out any values that do work. This removes the focus on how we got to the final answer, and instead focuses on the connection between the question and the answer.     This idea is so important that we need to put this in a box:  What it means to solve an equation   Solving an equation means providing a complete list of all values of the variable that make the equation true. (We don't provide an extra value that do not work, and we don't leave out any values that do work.)   We exercise what this means through several examples.     Verify that is a solution to the equation .    We substitute and simplify each side independently according to the Order of Operations:   The left side is .    The right side is .   Since both sides simplify to , we have verified that is a solution to the equation.        Verify that is a solution to the equation .       The left side is .    The right side is .   Since both sides simplify to , we have verified that is a solution to the equation.        Verify that is a solution to the equation .    We substitute and simplify each side independently according to the Order of Operations:   The left side is .    The right side is .   Since both sides simplify to the same value (namely ), we have verified that is a solution to the equation.   Note that in the previous example, we have hidden the process that we applied. Left completely out was any discussion of what we did to both sides or any other techniques that were involved in getting from to , but this meant that we could focus on the connection between the question and the answer mentioned in . In particular, we stated that is a solution, and the format of that equation was alone on one side, the equal sign, and then a number on the other side.  One key thing to note before we discuss techniques to solve these kinds of equations is that the absolute value of a number is always non-negative. For example, and are both equal to .    Solving absolute value equations     Solve the equation .     or .   We need to provide a complete list of values that make the equation true. So, our response to is or . It is not correct to respond to with or , because that is not stating values of .   To solve    The next step is or .    The next step is not or .           Solve the equation .     or .   The answer is not or . Like before, our final answer is talking about , but it should not be trying to say that is equal to something, especially to a negative number like .     Solve the equation .    Add to both sides to get .  Therefore, or .        Solve the equation .    In this question, adding to both sides does not help. If we add to both sides, we have and note that the plus outside parentheses does not undo the minus inside parentheses. In the question before this one, we had and adding to both sides did undo the minus outside the absolute value.  So, instead in , we will focus on the content inside the absolute value, which is , and replace this with . Then, the question becomes , which we know how to solve. Borrowing our work from , we have or . (Note that we don't have or .) Earlier, we replaced with . Now, we do the reverse, replacing with , and we have or . Finally, we add to both sides of each equation to get or .        Solve the equation .    The content inside the absolute value is . Replace with : To answer this question (and report on values of which satisfy the equation), we have: and note that the above is correct, but |u|=7 \\text{ or } |u|=-7 is not correct. Now, we reverse the substitution, replacing with , and we have Add to both sides of each equation: Divide by on both sides of each equation:        Absolute value inequalities  We now look at inequalities that involve absolute values. We start with plainer examples such as solving before moving on to more involved examples such as solving . The plain examples will just have a single variable (and nothing else) inside the absolute value, while the more involved examples will have a more complicated expression inside the absolute value such as . In the plain examples, there is no need to do any substitution, but in the more involved examples, it will help us to do a substitution to compartmentalize the work.     Solve .    Keeping in mind that we need to report values of that work, notice that works, as does as well as and also , but so does . It appears any value of that is between and works. This is helpful to see on a number line:     can be anything between and , including and  From the number line, and . In interval notation, is in the interval .        Solve .    Keeping in mind that we need to report values of that work, notice that works, as does as well as as well as but not . In addition, also works. It appears any value of that is between and works, but not including the endpoints. This is helpful to see on a number line:     can be anything between and , but not including the endpoints.  From the number line, and . In interval notation, is in the interval .        It is correct to take then conclude: and .    It is incorrect to take then conclude: or .     In the warning above, notice the flaw of the incorrect version: we need to report about , not about . In addition, in the incorrect version, we start with , but then the conclusion has the same inequality plus the additional inequality : that just makes our problem worse!     Solve .    Now, notice that does not work as a solution. The first working positive number is . We note that works, as does . On the negative side is a solution, but so is . Based on this information, we can draw a picture of all values of which satisfy the inequality:     can be anything beyond or beyond , but including the endpoints.  Based on the picture, we can write or . (Here we write the word or recalling its meaning from . The use of the word or means that at least one of the two conditions is satisfied.) In interval notation, we have .        Solve .    Now, notice that does not work as a solution. While does not work, does, as does . We note that works, as does . On the negative side is not a solution, but is, and so is . Based on this information, we can draw a picture of all values of which satisfy the inequality:     can be anything beyond or beyond , but including the endpoints.  Based on the picture, we can write or . In interval notation, we have .     When we have an absolute value inequality with a more complicated expression inside the absolute value, we will do a substitution to compartmentalize the work. (This substitution is never required, but helpful. Finally, in the case when the expression inside the absolute value is just a single variable, we don't need to do a substitution.)   Solve the inequality .    We will use the substitution . Then the inequality becomes      can be anything between and , including and  From our previous work, and the figure (which is about and not about ), we know that this inequality is equivalent to Note that our previous line of work is two inequalities have alone on one side. Having is not correct. Now that we have two inequalities with alone on one side, we can reverse the substitution, replacing with , and we have Adding 4 to all parts of the inequality, we get . Dividing all parts by 2, we get . In interval notation, we have .        Solve the inequality .    We will use the substitution . Then the inequality becomes Here is a picture of all values of which satisfy the inequality:     can be anything less than or greater than , but not including the endpoints.  From the figure, Note that our previous line of work is two inequalities have alone on one side. Having is not correct. Now that we have two inequalities with alone on one side, we can reverse the substitution, replacing with , and we have Adding 4 to all parts of the inequality, we get . Dividing all parts by 2, we get . In interval notation, we have .       Applications Revisited  Let's revisit the applications we introduced at the beginning of this section.    A manufacturer needs to cut metal rods to centimeters with a tolerance of centimeters. What is the range of a rod's length that is acceptable to the manufacturer?    Suppose is the length of a rod in centimeters. Then the manufacturer wants . Substituting , we have . This is equivalent to and . Reversing the substitution, we have and . Adding to all parts of the inequality, we have and . In interval notation, we have .      A doctor is monitoring a patient's blood sugar, with a target of mg\/dL and a tolerance of mg\/dL. What is the range of blood sugar levels that are acceptable to the doctor?    Suppose is the patient's blood sugar level in mg\/dL. Then the doctor wants . Substituting , we have . This is equivalent to and . Replacing each with , we have and . Adding to both sides of both inequalities, we have and . In interval notation, we have .      Summary     When we have the absolute value of a variable is equal to a positive number, we can create two equations: the variable is equal to the positive number, connect with or , followed by the equation where the variable is eqaul to the negative of that number.    In an equation, when the content inside the absolute value consists of more than a single variable, substituting a new letter for all of the content inside the absolute value will create a simpler absolute value equation, which lets us compartmentalize the work.    When solving absolute value inequalities where the content inside the absolute value is a single variable, we can use a number line to help us visualize the solution set.    In an inequality, when the content inside the absolute value consists of more than a single variable, substituting a new letter for all of the content inside the absolute value will create a simpler absolute value inequality, which lets us compartmentalize the work.       Exercises        Solve the following absolute value equations.                          Solve the following absolute value inequalities.                            "
+},
+{
+  "id": "sec-absolute-value-2",
+  "level": "2",
+  "url": "sec-absolute-value.html#sec-absolute-value-2",
+  "type": "Objectives",
+  "number": "2.7",
+  "title": "",
+  "body": "  In this section, we learn how to:    Solve absolute value equations.  Solve absolute value inequalities.  Apply absolute value concepts to real-world problems.   "
+},
+{
+  "id": "principle-solve-meaning",
+  "level": "2",
+  "url": "sec-absolute-value.html#principle-solve-meaning",
+  "type": "Principle",
+  "number": "2.7.1",
+  "title": "What it means to solve an equation.",
+  "body": " What it means to solve an equation   Solving an equation means providing a complete list of all values of the variable that make the equation true. (We don't provide an extra value that do not work, and we don't leave out any values that do work.)   "
+},
+{
+  "id": "sec-absolute-value-4-4-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#sec-absolute-value-4-4-1",
+  "type": "Example",
+  "number": "2.7.2",
+  "title": "",
+  "body": "  Verify that is a solution to the equation .    We substitute and simplify each side independently according to the Order of Operations:   The left side is .    The right side is .   Since both sides simplify to , we have verified that is a solution to the equation.   "
+},
+{
+  "id": "sec-absolute-value-4-5-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#sec-absolute-value-4-5-1",
+  "type": "Example",
+  "number": "2.7.3",
+  "title": "",
+  "body": "  Verify that is a solution to the equation .       The left side is .    The right side is .   Since both sides simplify to , we have verified that is a solution to the equation.   "
+},
+{
+  "id": "sec-absolute-value-4-6-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#sec-absolute-value-4-6-1",
+  "type": "Example",
+  "number": "2.7.4",
+  "title": "",
+  "body": "  Verify that is a solution to the equation .    We substitute and simplify each side independently according to the Order of Operations:   The left side is .    The right side is .   Since both sides simplify to the same value (namely ), we have verified that is a solution to the equation.   "
+},
+{
+  "id": "sec-absolute-value-5-2-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#sec-absolute-value-5-2-1",
+  "type": "Example",
+  "number": "2.7.5",
+  "title": "",
+  "body": "  Solve the equation .     or .   "
+},
+{
+  "id": "principle-state-x-not-abs-x",
+  "level": "2",
+  "url": "sec-absolute-value.html#principle-state-x-not-abs-x",
+  "type": "Principle",
+  "number": "2.7.6",
+  "title": "",
+  "body": "  To solve    The next step is or .    The next step is not or .      "
+},
+{
+  "id": "absval-u-eq-8",
+  "level": "2",
+  "url": "sec-absolute-value.html#absval-u-eq-8",
+  "type": "Example",
+  "number": "2.7.7",
+  "title": "",
+  "body": "  Solve the equation .     or .   "
+},
+{
+  "id": "sec-absolute-value-5-4-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#sec-absolute-value-5-4-1",
+  "type": "Example",
+  "number": "2.7.8",
+  "title": "",
+  "body": "  Solve the equation .    Add to both sides to get .  Therefore, or .   "
+},
+{
+  "id": "sec-absolute-value-5-5-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#sec-absolute-value-5-5-1",
+  "type": "Example",
+  "number": "2.7.9",
+  "title": "",
+  "body": "  Solve the equation .    In this question, adding to both sides does not help. If we add to both sides, we have and note that the plus outside parentheses does not undo the minus inside parentheses. In the question before this one, we had and adding to both sides did undo the minus outside the absolute value.  So, instead in , we will focus on the content inside the absolute value, which is , and replace this with . Then, the question becomes , which we know how to solve. Borrowing our work from , we have or . (Note that we don't have or .) Earlier, we replaced with . Now, we do the reverse, replacing with , and we have or . Finally, we add to both sides of each equation to get or .   "
+},
+{
+  "id": "sec-absolute-value-5-6-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#sec-absolute-value-5-6-1",
+  "type": "Example",
+  "number": "2.7.10",
+  "title": "",
+  "body": "  Solve the equation .    The content inside the absolute value is . Replace with : To answer this question (and report on values of which satisfy the equation), we have: and note that the above is correct, but |u|=7 \\text{ or } |u|=-7 is not correct. Now, we reverse the substitution, replacing with , and we have Add to both sides of each equation: Divide by on both sides of each equation:    "
+},
+{
+  "id": "subsec-abs-val-ineq-3-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#subsec-abs-val-ineq-3-1",
+  "type": "Example",
+  "number": "2.7.11",
+  "title": "",
+  "body": "  Solve .    Keeping in mind that we need to report values of that work, notice that works, as does as well as and also , but so does . It appears any value of that is between and works. This is helpful to see on a number line:     can be anything between and , including and  From the number line, and . In interval notation, is in the interval .   "
+},
+{
+  "id": "subsec-abs-val-ineq-4-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#subsec-abs-val-ineq-4-1",
+  "type": "Example",
+  "number": "2.7.13",
+  "title": "",
+  "body": "  Solve .    Keeping in mind that we need to report values of that work, notice that works, as does as well as as well as but not . In addition, also works. It appears any value of that is between and works, but not including the endpoints. This is helpful to see on a number line:     can be anything between and , but not including the endpoints.  From the number line, and . In interval notation, is in the interval .   "
+},
+{
+  "id": "subsec-abs-val-ineq-4-2",
+  "level": "2",
+  "url": "sec-absolute-value.html#subsec-abs-val-ineq-4-2",
+  "type": "Warning",
+  "number": "2.7.15",
+  "title": "",
+  "body": "    It is correct to take then conclude: and .    It is incorrect to take then conclude: or .     "
+},
+{
+  "id": "subsec-abs-val-ineq-5-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#subsec-abs-val-ineq-5-1",
+  "type": "Example",
+  "number": "2.7.16",
+  "title": "",
+  "body": "  Solve .    Now, notice that does not work as a solution. The first working positive number is . We note that works, as does . On the negative side is a solution, but so is . Based on this information, we can draw a picture of all values of which satisfy the inequality:     can be anything beyond or beyond , but including the endpoints.  Based on the picture, we can write or . (Here we write the word or recalling its meaning from . The use of the word or means that at least one of the two conditions is satisfied.) In interval notation, we have .   "
+},
+{
+  "id": "subsec-abs-val-ineq-6-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#subsec-abs-val-ineq-6-1",
+  "type": "Example",
+  "number": "2.7.18",
+  "title": "",
+  "body": "  Solve .    Now, notice that does not work as a solution. While does not work, does, as does . We note that works, as does . On the negative side is not a solution, but is, and so is . Based on this information, we can draw a picture of all values of which satisfy the inequality:     can be anything beyond or beyond , but including the endpoints.  Based on the picture, we can write or . In interval notation, we have .   "
+},
+{
+  "id": "subsec-abs-val-ineq-7-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#subsec-abs-val-ineq-7-1",
+  "type": "Example",
+  "number": "2.7.20",
+  "title": "",
+  "body": "  Solve the inequality .    We will use the substitution . Then the inequality becomes      can be anything between and , including and  From our previous work, and the figure (which is about and not about ), we know that this inequality is equivalent to Note that our previous line of work is two inequalities have alone on one side. Having is not correct. Now that we have two inequalities with alone on one side, we can reverse the substitution, replacing with , and we have Adding 4 to all parts of the inequality, we get . Dividing all parts by 2, we get . In interval notation, we have .   "
+},
+{
+  "id": "subsec-abs-val-ineq-8-1",
+  "level": "2",
+  "url": "sec-absolute-value.html#subsec-abs-val-ineq-8-1",
+  "type": "Example",
+  "number": "2.7.22",
+  "title": "",
+  "body": "  Solve the inequality .    We will use the substitution . Then the inequality becomes Here is a picture of all values of which satisfy the inequality:     can be anything less than or greater than , but not including the endpoints.  From the figure, Note that our previous line of work is two inequalities have alone on one side. Having is not correct. Now that we have two inequalities with alone on one side, we can reverse the substitution, replacing with , and we have Adding 4 to all parts of the inequality, we get . Dividing all parts by 2, we get . In interval notation, we have .   "
+},
+{
+  "id": "sec-absolute-value-7-3",
+  "level": "2",
+  "url": "sec-absolute-value.html#sec-absolute-value-7-3",
+  "type": "Example",
+  "number": "2.7.24",
+  "title": "",
+  "body": "  A manufacturer needs to cut metal rods to centimeters with a tolerance of centimeters. What is the range of a rod's length that is acceptable to the manufacturer?    Suppose is the length of a rod in centimeters. Then the manufacturer wants . Substituting , we have . This is equivalent to and . Reversing the substitution, we have and . Adding to all parts of the inequality, we have and . In interval notation, we have .   "
+},
+{
+  "id": "sec-absolute-value-7-4",
+  "level": "2",
+  "url": "sec-absolute-value.html#sec-absolute-value-7-4",
+  "type": "Example",
+  "number": "2.7.25",
+  "title": "",
+  "body": "  A doctor is monitoring a patient's blood sugar, with a target of mg\/dL and a tolerance of mg\/dL. What is the range of blood sugar levels that are acceptable to the doctor?    Suppose is the patient's blood sugar level in mg\/dL. Then the doctor wants . Substituting , we have . This is equivalent to and . Replacing each with , we have and . Adding to both sides of both inequalities, we have and . In interval notation, we have .   "
+},
+{
   "id": "appendix-gcf-lcm",
   "level": "1",
   "url": "appendix-gcf-lcm.html",
