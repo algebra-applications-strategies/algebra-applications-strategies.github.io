@@ -6760,6 +6760,438 @@ var ptx_lunr_docs = [
   "body": "  A doctor is monitoring a patient's blood sugar, with a target of mg\/dL and a tolerance of mg\/dL. What is the range of blood sugar levels that are acceptable to the doctor?    Suppose is the patient's blood sugar level in mg\/dL. Then the doctor wants . Substituting , we have . This is equivalent to and . Replacing each with , we have and . Adding to both sides of both inequalities, we have and . In interval notation, we have .   "
 },
 {
+  "id": "sec-what-is-a-function",
+  "level": "1",
+  "url": "sec-what-is-a-function.html",
+  "type": "Section",
+  "number": "3.1",
+  "title": "What is a Function?",
+  "body": " What is a Function?    In this section, we learn how to:    Articulate the definition of a function, and the connection between each input's output.  Identify the domain and range of a function.  Represent functions in various ways, including tables, graphs, and equations.     Applications  Intro:   A consulting firm changes a flat fee of plus per hour for a project, plus for each consultant who works on the project. If represents the number of hours worked and represents the number of consultants hired, describe a formula for the total charge for a project.    A car rental company charges per day plus per mile driven. If represents the number of days the car is rented and represents the number of miles driven, describe a formula for the total charge for renting a car.       Functions by formula    A function is a rule that assigns to each input exactly one output.    We can also place the \"exactly one output\" information befor the \"to each input\" by saying: a function is a rule that assigns exactly one output to each input.   The important thing to emphasize is that a function will generally have many inputs, but that each of the inputs will have exactly one output. It is not possible for an input to have two outputs, and it is not possible for an input to have no output at all. We say the word rule to try to emphasize the idea that the output that we get for a specific input is determined by some kind of process or procedure that anyone can follow. For one specific function, the rule needs to be specific enough that when two people are thinking about the same input, they will both come up with the same output.   There are many ways to introduce a function. One of the ways to introduce a function is to represent the function using a formula. For example, the formula represents a function that takes an input and produces an output by multiplying the input by and then adding .  In , we mentioned how important it is to pay attention to the language of mathematics. For this function, when we see it is important to say (or think internally) the following: of equals . The temptation exists to leave out the word \"of\". In earlier contexts in mathematics, including in this class, when we would have seen something like or , we would have interpreted that writing as multiplied by . In those earlier contexts, that would be totally correct, and so it would lead us to the belief that we should read as if it meant multiplied by . But in this context, we are using the notation to mean that we are talking about a function called , and that represents a typical input of this function. In this context, there is no multiplication going on at all. So, this notation is admittedly inconsistent and potentially misleading, thus confusing. In the context of functions, we should make a habit of including the word \"of\" in our language,even if we haven't written the word \"of\" when we write the notation , so that we don't mislead ourselves.    Given the function ,   Find     Find     Find            . In summary, , which means that when the input is , the output is . To say in words, we would say of equals , focused on ensuring that we say the word of .     . In summary, , which means that when the input is , the output is . To say in words, we would say of equals , focused on ensuring that we say the word of .     . In summary, , which means that when the input is , the output is . To say in words, we would say of equals , focused on ensuring that we say the word of .       It is important to point out that the previous discussion was about one function, and not three functions. For the one function , we discussed three different inputs:   When the input is , the output is .    When the input is , the output is .    When the input is , the output is .   The list above is meant to emphasize helpful words when discussing functions: input and output.   When discussing functions, always think using the words input and output .   The words input and output are helpful because they really describe what is going on. Functions serve as one of the most important concepts in algebra, and confusion is commen when we don't use the words input and output to describe what's going on. We often informally describe a function as a \"machine\" that takes input and produces output. This is a helpful way to think of a function. Think about the specific example of an ATM machine: you enter in your debit card and your PIN, and the machine produces gives you cash. In this analogy, the combination of your debit card and your PIN is the input, and the cash that you receive is the output. In the last example, when we wrote , we say that is the input and is the output.  Suppose we have the same function from the previous example and we are asked to find . Here are two responses that someone might give:    . Here, we have borrowed our work from earlier.     . This time, we simplified first.   The two responses give us different final answers. In fact, one of these is incorrect. In the first response, turning into is an error. That is, a function does not distribute .  Functions do not distribute  A function does not distribute over addition or multiplication. That is, in general, and .  As specific examples of this warning:    does not turn into .     does not turn into .     does not turn into .     does not turn into .        Given the function , find and and . For each of these, practice the language that should be spoken when writing in function notation. For each of these, practice the fundamental concepts of functions by writing a sentence that uses the words input and output .      . In summary, , which means that when the input is , the output is . To say in words, we would say of equals , focused on ensuring that we say the word of .     . In summary, , which means that when the input is , the output is . To say in words, we would say of equals , focused on ensuring that we say the word of .     . In summary, , which means that when the input is , the output is . To say in words, we would say of equals , focused on ensuring that we say the word of .    What we saw in the last example was that and are both . Each input can only have one specific output, but this example of a function shows that it is possible for two different inputs to have the same output.    For a given function:   Each input has exactly one output. (An input may not have more than one output, and an input may not have no output.)    It is possible for two different inputs to have the same output.       In the next example, we compare two different functions. When there is more than one function involved, it is common to name one function and the other function . In words, we have of and of .   Consider the function and the function , and answer the questions below:   Find .    Find .    Find .    Find .           .     .     .     .      In this example, we see that the function has the property that two different inputs and have the same output . For the function , we have only dealt with two inputs and got different outputs for each input. We may just not yet have discovered two different inputs for that lead to the same output: more work remains to be done to figure out if has the same phenomenon as or not. We will discuss this specific function in a future section, but if you're willing to believe it for now: is a function that has the property that two different inputs will never have the same output.  One vital task is taking a given function and evaluating the function for a requested input, reporting on the output. We have already done that, but we slow down intentionally right now to be absolutely sure that this vital skill is clear.   Consider the function . Find .     .     .   In the second answer, we did not bother simplifying. Of course, can be simplified to but we intentionally did not, so that we discuss what is happening more clearly, and see a very important pattern. The first sentence Consider the function introduced the function to us. The notation in this sentence gives us the formula for a function, and the that appears represents a generic (or typical) input. The second sentence Find tells us that we are now going to evaluate the function for a specific input, namely . The specific input is , and this specific input must replace the generic input from the previous sentence.  Let's describe what happens for this example using very specific language: Replace every in with .     Consider the function . Find .     .   We did not simplify so that we can see the pattern better. Here's what we did: Replace every in with . If we examine the previous sentence, there are three bits of notation:     The second bit of notation tells us what text we start with. The first notation (which is ) tells us what is going to get replaced. The third notation (which is ) tells us what we are replacing with . We need all three pieces.     To evaluate a function at a specific input, we need three pieces of information, but there are usually two distinct segments of notation provided:   The description of the function, which usually starts but may start or     The evaluation request: for example, .   Out of these two segments of notation, we can extract the three pieces of information that we need:   The starting text (which is the entire description of the function, including the part)    The text which will have replaced, which is the variable appearing in parentheses in the description of the function.    The replacement text, which is the value inside the parentheses in the evaluation request.      Based on this principle, let's go back to the previous example and state various ways that we could successfully answer the question. First, we recall: Consider the function , and find .   Replace every in with .    Start with and replace every with .    Imagine that is typed as the only text in a Word document. In the search\/replace feature, fill the search for box with and fill the replace box with .    Write . Erase every place there is an written. (There is one on the left, and there are two on the right.) Every place that there is evidence of erasing, write a instead.   Finally, it is important that we emphasize that every instance of must be replaced with .   When evaluating a function, every instance of the variable must be replaced with the specific input.   As an exmple, writing has the correct right side, but the left side is incorrect because it still has an : even the appearing to the left of the equal sign must be replaced with .   Consider the function . Find .     .   We replaced every in with . Said differently, we can imagine that we wrote , then erased all three spots where appeared, and then wrote in its place. Having to replace with the letter instead of a number like sometimes causes confusion. We should end with , but here are some common incorrect answers:    is incorrect, because of the that appears on the right side. In the original text , there is no on the right side, so introducing one is artificial.     is incorrect. This appears to be , that is, multiplied by .      Consider the function . Find .     .   This last example is one that causes a lot of struggle, because in we are replacing each with . In that sense, this feels harder than previous examples where we replaced with a single number or a single letter. However, even in we could argue that replacing each with already involves replacing the single character with two characters 1 and 0 . Of course, we don't tend to think of as two separate symbols (and instead tend to treat as if it's just one thing ), but if we can replace with two characters by writing each time, then we can also replace with three characters by writing each time. We mention some common incorrect responses to this question:    . This response is close, but there is no on the right side of the original description of the function.     . This response is incorrect because a function does not distribute, as mentioned in .     is incorrect. This is the value of , not .        Given , describe the process for finding .    Replace every in with .   The result of doing this would give: . Note that there is no to the right of the equal sign. In our writing, we wrote once before the equal sign and three times after the equal sign.     Given , describe the process for finding .    Replace every in with .   Doing this would give: .     Given , find .    Replace every in with . This gives us: .     We now examine a question that is very typical in applications for functions, finding what is called the average rate of change .   Consider the function . Find the average rate of change and simplify.    In the fraction we are given, we notice as well as , but we found these earlier. Recall:   From , we had .    From , we had .   We didn't simplify earlier, because we were trying to notice a pattern. However, for the purposes of this work, let's simplify: .  Now, let's rewrite the requsted expression, and substitute in earlier work for both and : .        Consider the function . Find the average rate of change and simplify.    Let's first find and :    .     .   Now, let's rewrite the requested expression, and substitute in earlier work for both and : .        Consider the function .   Find .    Find .           .     .      To find , we replaced every in with . We got , since the only place to replace was to the left of the equal sign. To find , we replaced every in with . We got , since the only place to replace was to the left of the equal sign. Both inputs led to the same output . In fact, for this function, every input will lead to the same output . This is an example of what is called a constant function , which is a function which alwas has teh same output, no matter what the input is.    Functions by table  Presenting a formula like or is a very common way to describe a function, but it is not the only way. Another way to describe a function is by a table of values. Our tables will list input in one column (labeled ) and outputs in the second column (labeled or and so on).     Consider the function described by the table:        -2  5    -1  3    0  -12    1  5    2  2    Based on this table,   Find .    Find .    Find .    Find .    Find .           .     .     .     .     .      In this example, note that when the input is , the output is . There are two different inputs that have the same output: namely, both as an input and as an input lead to as an output. We also have example where the output matches the value of the input: when the input is the output is also , which can be written .     Consider the function described by the table:        1  3    2  0    3  -1    4  0    5  3    Based on this table,   Find .    Find .    Find .    Find .    Find .           .     .     .     .     .           Take the function described in and create a table of values for for the inputs , , , , and .            -2  -5    -1  -2    0  1    1  4    2  7           Functions by graph  Another way to describe a function is by a graph . A graph is a picture of the function, and it is drawn on the -plane. The -axis represents the input, and the -axis represents the output.  Like any graph in the -plane, the graph of a function is a collection of points. Every point in the graph records information about a combination of input and output: given a point in the graph, the -coordinate represented here by is the input, and the -coordinate represented here by is the output.  Graph of a function   The point is in the graph of a function if and only if .   So, have a more concrete example, having the point in the graph of a function means that . We can connect a function given by a table and a function given by a graph: each row of the table description corresponds to a point in the graph.    Consider the function whose graph is shown below.     This function's graph happens to be a straight line  Based on this graph,   Find .    Find .    Find .           because the point is in the graph.     because the point is in the graph.     because the point is in the graph.     This question helps us exercise . When we are asked , we look at that number in parentheses (in this case, ) and call that an input, and we ask what output do we get for the input . Said in the language of the graph, we look for the -coordinate of the point in the graph which has -coordinate . If we can say it even more procedurally, we first need to go where , so starting from the origin, we go units to the right. Then, we are looking for a point with this -value, so we scan up and down until we find a point. The -coordinate of that point is the answer to the question . Because a function is a rule that assigns exactly one output to each input, it would be impossible for the graph to have two different points with the -value . In fact, it would be impossible for the graph to have two different points with the same -value, because that would mean that there are two different outputs for the same input, which is not allowed in a function.  Vertical Line Test   The graph of every function passes the Vertical Line Test : every vertical line intersects the graph of a function in at most one point.      For example is the equation of a circle with center and radius . Because this graph does not satisfy the Vertical Line Test, it is not the graph of a function.        Consider the function whose graph is shown below.     This function's graph looks like parts of two lines were glued together     Find .    Find .    Find .    Find .    Find .    Find .           because the point is in the graph.     because the point is in the graph.     because the point is in the graph.     because the point is in the graph.     because the point is in the graph.     because the point is in the graph.                This function's graph looks like two separate line segments, one with holes     Find .    Find .    Find .    Find .    Find .       Before we answer the questions on the parts, we will briefly explain the picture. The graph is made up of two line segments. One of those line segmenst is from to . Each endpoint is a filled point, indicating that the point is included in the graph and is also included in the graph. All points on the line segment between these two points are also included in the graph, but were not drawn in thick: we only drew the endpoints in thick to be able to clearly indicate that these points are included in the graph. The next line segment will show excluded points. The other line segment is from to . Each endpoint is an unfilled point, indicating that the point is not included in the graph and is also not included in the graph. We have all the points between and included in the graph, but not the endpoints. We even have poins thate are very close to the endpoints. For example, there is a point in the graph with an -value of , and the -value of that point is slightly bigger than .      .     . We have the point in the graph. We disregard because that point is not in the graph: we only have the points that get close to that are between and .    We are looking for a point in the graph with -coordinate , and need to report on the -coordinate of that point. We notice that the point we need is on the line segment from to . We make an equation for this line segment. The slope of the line segment is , and we can use the point-slope form of a line to write an equation for this line segment: This is technically the equation for a line (instead of a line segment), but every point that is on the line segment has to satisfy this equation. We know we need the point with -coordinate , so we can substitute for in the equation and find the correct value of :     Since the point is in the graph, .     since the point is in the graph.    To find is not as easy to find . For , we saw that the graph went through the point with integer coordinates. Here, we will apply a technique that is essentially the same as what we did for . Even though the points and are not on the graph, if we extend the line segment to a line, we can still use these two points to build an equation for the line segment. The slope of the line segment is , and we can use the point-slope form of a line to write an equation for this line segment: Every point on the line segment has to satisfy this equation, so we can substitute for and find the correct value of :      Since the point is in the graph, .           Consider the function whose graph is shown below.     This function's graph looks like several separate pieces.  and the function given by the table below:        1  -5    2  -2    3  1    4  4    5  7    and the function given by formula. With these three functions:   Find .    Find .    Find .    Find .    Find .    Find .    Find .           because the point is in the graph.     is undefined. There is no point in the graph with -coordinate .     .     . There is a hole in the graph at due to the unfilled point, so we should not look at that point, but there is a point in the graph with -coordinate and -coordinate .    As a warm up, we take and substitute for to find : With this information, .     . The value of came from the table.     .         "
+},
+{
+  "id": "sec-what-is-a-function-2",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#sec-what-is-a-function-2",
+  "type": "Objectives",
+  "number": "3.1",
+  "title": "",
+  "body": "  In this section, we learn how to:    Articulate the definition of a function, and the connection between each input's output.  Identify the domain and range of a function.  Represent functions in various ways, including tables, graphs, and equations.   "
+},
+{
+  "id": "function-definition",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#function-definition",
+  "type": "Principle",
+  "number": "3.1.1",
+  "title": "",
+  "body": "  A function is a rule that assigns to each input exactly one output.   "
+},
+{
+  "id": "subsec-functions-by-formula-4",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-formula-4",
+  "type": "Note",
+  "number": "3.1.2",
+  "title": "",
+  "body": " The important thing to emphasize is that a function will generally have many inputs, but that each of the inputs will have exactly one output. It is not possible for an input to have two outputs, and it is not possible for an input to have no output at all. We say the word rule to try to emphasize the idea that the output that we get for a specific input is determined by some kind of process or procedure that anyone can follow. For one specific function, the rule needs to be specific enough that when two people are thinking about the same input, they will both come up with the same output.  "
+},
+{
+  "id": "example-f-of-x-equals-3xplus1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#example-f-of-x-equals-3xplus1",
+  "type": "Example",
+  "number": "3.1.3",
+  "title": "",
+  "body": "  Given the function ,   Find     Find     Find            . In summary, , which means that when the input is , the output is . To say in words, we would say of equals , focused on ensuring that we say the word of .     . In summary, , which means that when the input is , the output is . To say in words, we would say of equals , focused on ensuring that we say the word of .     . In summary, , which means that when the input is , the output is . To say in words, we would say of equals , focused on ensuring that we say the word of .      "
+},
+{
+  "id": "subsec-functions-by-formula-8",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-formula-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "input output "
+},
+{
+  "id": "warning-functions-do-not-distribute",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#warning-functions-do-not-distribute",
+  "type": "Warning",
+  "number": "3.1.5",
+  "title": "Functions do not distribute.",
+  "body": " Functions do not distribute  A function does not distribute over addition or multiplication. That is, in general, and .  "
+},
+{
+  "id": "subsec-functions-by-formula-10-1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-formula-10-1",
+  "type": "Example",
+  "number": "3.1.6",
+  "title": "",
+  "body": "  Given the function , find and and . For each of these, practice the language that should be spoken when writing in function notation. For each of these, practice the fundamental concepts of functions by writing a sentence that uses the words input and output .      . In summary, , which means that when the input is , the output is . To say in words, we would say of equals , focused on ensuring that we say the word of .     . In summary, , which means that when the input is , the output is . To say in words, we would say of equals , focused on ensuring that we say the word of .     . In summary, , which means that when the input is , the output is . To say in words, we would say of equals , focused on ensuring that we say the word of .    "
+},
+{
+  "id": "principle-pre-one-to-one",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#principle-pre-one-to-one",
+  "type": "Principle",
+  "number": "3.1.7",
+  "title": "",
+  "body": "  For a given function:   Each input has exactly one output. (An input may not have more than one output, and an input may not have no output.)    It is possible for two different inputs to have the same output.      "
+},
+{
+  "id": "subsec-functions-by-formula-12-5",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-formula-12-5",
+  "type": "Example",
+  "number": "3.1.8",
+  "title": "",
+  "body": "  Consider the function and the function , and answer the questions below:   Find .    Find .    Find .    Find .           .     .     .     .      "
+},
+{
+  "id": "subsec-functions-by-formula-13-1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-formula-13-1",
+  "type": "Example",
+  "number": "3.1.9",
+  "title": "",
+  "body": "  Consider the function . Find .     .     .   "
+},
+{
+  "id": "f-of-10",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#f-of-10",
+  "type": "Example",
+  "number": "3.1.10",
+  "title": "",
+  "body": "  Consider the function . Find .     .   "
+},
+{
+  "id": "principle-evaluating-function",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#principle-evaluating-function",
+  "type": "Principle",
+  "number": "3.1.11",
+  "title": "",
+  "body": "  To evaluate a function at a specific input, we need three pieces of information, but there are usually two distinct segments of notation provided:   The description of the function, which usually starts but may start or     The evaluation request: for example, .   Out of these two segments of notation, we can extract the three pieces of information that we need:   The starting text (which is the entire description of the function, including the part)    The text which will have replaced, which is the variable appearing in parentheses in the description of the function.    The replacement text, which is the value inside the parentheses in the evaluation request.      "
+},
+{
+  "id": "subsec-functions-by-formula-16-8",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-formula-16-8",
+  "type": "Warning",
+  "number": "3.1.12",
+  "title": "",
+  "body": "  When evaluating a function, every instance of the variable must be replaced with the specific input.   "
+},
+{
+  "id": "f-of-a",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#f-of-a",
+  "type": "Example",
+  "number": "3.1.13",
+  "title": "",
+  "body": "  Consider the function . Find .     .   "
+},
+{
+  "id": "f-of-a-plus-h",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#f-of-a-plus-h",
+  "type": "Example",
+  "number": "3.1.14",
+  "title": "",
+  "body": "  Consider the function . Find .     .   "
+},
+{
+  "id": "subsec-functions-by-formula-17-1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-formula-17-1",
+  "type": "Example",
+  "number": "3.1.15",
+  "title": "",
+  "body": "  Given , describe the process for finding .    Replace every in with .   "
+},
+{
+  "id": "subsec-functions-by-formula-18-1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-formula-18-1",
+  "type": "Example",
+  "number": "3.1.16",
+  "title": "",
+  "body": "  Given , describe the process for finding .    Replace every in with .   "
+},
+{
+  "id": "subsec-functions-by-formula-19-1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-formula-19-1",
+  "type": "Example",
+  "number": "3.1.17",
+  "title": "",
+  "body": "  Given , find .    Replace every in with . This gives us: .   "
+},
+{
+  "id": "subsec-functions-by-formula-20",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-formula-20",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "average rate of change "
+},
+{
+  "id": "subsec-functions-by-formula-21-1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-formula-21-1",
+  "type": "Example",
+  "number": "3.1.19",
+  "title": "",
+  "body": "  Consider the function . Find the average rate of change and simplify.    Let's first find and :    .     .   Now, let's rewrite the requested expression, and substitute in earlier work for both and : .   "
+},
+{
+  "id": "subsec-functions-by-formula-22",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-formula-22",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "constant function "
+},
+{
+  "id": "subsec-functions-by-table-2",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-table-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "table "
+},
+{
+  "id": "subsec-functions-by-table-3-1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-table-3-1",
+  "type": "Example",
+  "number": "3.1.21",
+  "title": "",
+  "body": "  Consider the function described by the table:        -2  5    -1  3    0  -12    1  5    2  2    Based on this table,   Find .    Find .    Find .    Find .    Find .           .     .     .     .     .      "
+},
+{
+  "id": "subsec-functions-by-table-4-1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-table-4-1",
+  "type": "Example",
+  "number": "3.1.23",
+  "title": "",
+  "body": "  Consider the function described by the table:        1  3    2  0    3  -1    4  0    5  3    Based on this table,   Find .    Find .    Find .    Find .    Find .           .     .     .     .     .      "
+},
+{
+  "id": "subsec-functions-by-table-5-1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-table-5-1",
+  "type": "Example",
+  "number": "3.1.25",
+  "title": "",
+  "body": "  Take the function described in and create a table of values for for the inputs , , , , and .            -2  -5    -1  -2    0  1    1  4    2  7       "
+},
+{
+  "id": "subsec-functions-by-graph-2",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-graph-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "graph "
+},
+{
+  "id": "principle-graph-of-a-function",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#principle-graph-of-a-function",
+  "type": "Principle",
+  "number": "3.1.27",
+  "title": "Graph of a function.",
+  "body": " Graph of a function   The point is in the graph of a function if and only if .   "
+},
+{
+  "id": "subsec-functions-by-graph-4",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-graph-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Vertical Line Test "
+},
+{
+  "id": "subsec-functions-by-graph-5-1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-graph-5-1",
+  "type": "Example",
+  "number": "3.1.31",
+  "title": "",
+  "body": "  Consider the function whose graph is shown below.     This function's graph looks like parts of two lines were glued together     Find .    Find .    Find .    Find .    Find .    Find .           because the point is in the graph.     because the point is in the graph.     because the point is in the graph.     because the point is in the graph.     because the point is in the graph.     because the point is in the graph.      "
+},
+{
+  "id": "subsec-functions-by-graph-6-1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-graph-6-1",
+  "type": "Example",
+  "number": "3.1.33",
+  "title": "",
+  "body": "       This function's graph looks like two separate line segments, one with holes     Find .    Find .    Find .    Find .    Find .       Before we answer the questions on the parts, we will briefly explain the picture. The graph is made up of two line segments. One of those line segmenst is from to . Each endpoint is a filled point, indicating that the point is included in the graph and is also included in the graph. All points on the line segment between these two points are also included in the graph, but were not drawn in thick: we only drew the endpoints in thick to be able to clearly indicate that these points are included in the graph. The next line segment will show excluded points. The other line segment is from to . Each endpoint is an unfilled point, indicating that the point is not included in the graph and is also not included in the graph. We have all the points between and included in the graph, but not the endpoints. We even have poins thate are very close to the endpoints. For example, there is a point in the graph with an -value of , and the -value of that point is slightly bigger than .      .     . We have the point in the graph. We disregard because that point is not in the graph: we only have the points that get close to that are between and .    We are looking for a point in the graph with -coordinate , and need to report on the -coordinate of that point. We notice that the point we need is on the line segment from to . We make an equation for this line segment. The slope of the line segment is , and we can use the point-slope form of a line to write an equation for this line segment: This is technically the equation for a line (instead of a line segment), but every point that is on the line segment has to satisfy this equation. We know we need the point with -coordinate , so we can substitute for in the equation and find the correct value of :     Since the point is in the graph, .     since the point is in the graph.    To find is not as easy to find . For , we saw that the graph went through the point with integer coordinates. Here, we will apply a technique that is essentially the same as what we did for . Even though the points and are not on the graph, if we extend the line segment to a line, we can still use these two points to build an equation for the line segment. The slope of the line segment is , and we can use the point-slope form of a line to write an equation for this line segment: Every point on the line segment has to satisfy this equation, so we can substitute for and find the correct value of :      Since the point is in the graph, .      "
+},
+{
+  "id": "subsec-functions-by-graph-7-1",
+  "level": "2",
+  "url": "sec-what-is-a-function.html#subsec-functions-by-graph-7-1",
+  "type": "Example",
+  "number": "3.1.35",
+  "title": "",
+  "body": "  Consider the function whose graph is shown below.     This function's graph looks like several separate pieces.  and the function given by the table below:        1  -5    2  -2    3  1    4  4    5  7    and the function given by formula. With these three functions:   Find .    Find .    Find .    Find .    Find .    Find .    Find .           because the point is in the graph.     is undefined. There is no point in the graph with -coordinate .     .     . There is a hole in the graph at due to the unfilled point, so we should not look at that point, but there is a point in the graph with -coordinate and -coordinate .    As a warm up, we take and substitute for to find : With this information, .     . The value of came from the table.     .      "
+},
+{
+  "id": "sec-functions-more-detail",
+  "level": "1",
+  "url": "sec-functions-more-detail.html",
+  "type": "Section",
+  "number": "3.2",
+  "title": "More about functions",
+  "body": " More about functions    In this section, we learn how to:    Determine the domain of a function given its formula, table, or graph.  Determine the range of a function given its table or graph.  Evaluate piecewise functions.     Domain and range  Recall that a function is a rule that assigns to each input exactly one output. All of the inputs together goes by a name.   The domain of a function is the set of all possible inputs for the function.   The thing to keep in mind is that the domain is a set of inputs. So, it would not be accurate to say that the domain is the input . Instead, the domain is (informally) all the inputs . Said differently, the domain isn't one , but rather all the 's . For some more clarity, a real number is in the domain if using it as input to the function produces a real number as output.   The range of a function is the set of all possible outputs for the function.   The range is also a set of outputs. In the last section, we were just introducing the concept of a function, and we encouraged you to think of each input producing an output, and to use the words input and output in your thought process. It can also be helpful to be a little more informal, and talk about 's and 's instead of inputs and outputs . But, no matter what, it is good to differentiate between 's and 's, instead of just calling eveything it .   When discussing the numbers that are involved in a function, use language like 's and 's , or inputs and outputs .     Since the domain is the set of all possible inputs (and for clarity, the domain includes each and every real number which when used as input produces a real number as output), let's think about the situations that would prevent having a real number as output.   When we have a fraction, the denominator cannot be zero. For example, in the fraction , the denominator ends up being zero when . So, we don't want . It is fine if or , but we don't want . For example, is greater than zero when , and is less than zero when . Having is okay, since the value of the fraction would become , which is a real number. Having is also okay, since the value of the fraction would become , which is also a real number. So, we just don't want the denominator to equal zero.  We should note that it is fine if the numerator is equal to zero. For example, in the fraction , the numerator is equal to zero when . In that case, the fraction's value is , which is a real number.    When we have a square root, the content inside the square root cannot be negative. In other words, the content inside the square root must be greater than or equal to zero. For example, in the square root , the content inside the square root is . So, we want . It is a problem if . For example, if , then , which is negative, and the square root would be which is not a real number. Note that square rooting zero is okay: because .   This gives us a procedure that we can always following when finding the domain of a function given its formula.  Finding domain given a function by formula   Given a function by formula, to find its domain, find all fractions and square roots. By default, the domain of a function is a real number, with the following situations creating exceptions   We don't want the denominator to equal zero.    We want the content inside a square root to be greater than or equal to zero.           Find the domain of the function .    We don't want the denominator to equal zero, so we don't want . Adding to both sides, we don't want . Since is a number that we don't want, the domain is .   Note that causes the numerator to equal zero, but that is okay, and has no effect on the domain. Note that is the only real number that is not in the domain, and we can see that in the next question (which is about the same fnuction), the only time that we don't get a real number as output is when we try to compute .   Given the function , answer the following questions:  Find ?  Find ?  Find ?  Find ?        .  .  , which is okay to have zero in the numerator and a non-zero in the denominator.  , because of the zero in the numerator.          Given the function , find the domain.    We don't want the denominator to equal zero, so we don't want . Factoring, we don't want . So, we don't want . So we don't want . Since and are numbers that we don't want, the domain is .  Note that is incorrect to write . This is because having is okay too, so that's why we simply write the equation but write the word don't in front to remind us not that .      Given the function , find the domain.    We want the content inside the square root to be greater than or equal to zero. It is not technically correct to write . Instead, we should state that we want the content inside the radical to be greater than or equal to zero. The radical tells us where to look, but we build one side of the inequality to have the content that is housed inside the radical: Adding to both sides, . The domain in interval notation is .        Given the function , find the domain.    We want and want . The first inequality becomes and the second inequality becomes . So, the domain is .   Because is in the interval , we can compute and get a real number as output: . Inputting gave us the real numbmer as an output. In summary, . Note, it is fine that is a negative number. We never square rooted a negative number. By substituting , the content inside the first square root simplified to , and the content inside the second square root simplified to .     Given the function , find the domain.       We want , so we want .    We don't want . Factoring, we don't want . So, we don't want . So we don't want .   Placing all our wants and don't wants on a number line, we have     Putting all the wants and don't wants together  Based on the picture, the domain is .        Given the function , find the domain.       We want , so we want .    We don't want . Factoring, we don't want . So, we don't want . So we don't want .   Placing all our wants and don't wants on a number line, we have     Putting all the wants and don't wants together  We drew an unfilled point at to indicate that we don't want that number, but the restriction that already takes care of this. Based on the picture, the domain is .   The last example goes to show that there is no mindless approach to the domain. Carefully process the information about what we want and what we don't want. As a reminder, by default take all reals for the domain, but exceptions are created because we want the contents inside each square root to be greater than or equal to zero, and we don't want the denominator of any fraction to equal zero.     Consider the function described by the table:        1  3    2  0    3  -1    4  0    5  3    Find the domain and range.    The domain is the set of all inputs, and consists of . The range is the set of all outputs, and consists of .     When a function is described by a graph, the domain is the set of all 's that are on the graph, and the range is the set of all 's that are on the graph. To find the domain, we scan the picture from left to right and report on all present -values. To find the range, we scan the picture from bottom to top and report on all present -values.     Find the domain and range of the function whose graph is shown below:     This function's graph looks like two separate line segments, one with holes      The domain is the set of all 's that are on the graph, which is . Because is not included in the first interval but is included in the second interval, we can present the domain just as we already have, or simplify the domain by writing .] The range is the set of all 's that are on the graph, which is .        Find the domain and range of the function whose graph is shown below:     This function's graph looks like several separate pieces.      The domain is . Since is ultimately included in the 4th interval, we can simplify the domain to be . Scanning from bottom to top, the range is .       Piecewise functions  There are functions that are nice to give by formula, but one formula doesn't describe the whole function. The function may be described by one formula for some inputs, and a different formula for other inputs. These functions are called piecewise functions . Keep in mind that a function is a rule, and so each input can only produce one output.  A piecewise function has at least two pieces, but might have three pieces, or four pieces, or more. After being presented with a piecewise function, the task ordinarily will be to evaluate the function at a given input. For example, after being shown a piecewise function, we might be asked to find . Noting that the number inside parentheses is the input, we have , and then go back to the description of the piecewise function with the information that to see which piece applies.     Consider the piecewise function    Find .    Find .    Find .          Since , we use the first piece, and have .    Since , we use the first piece, and have .    Since , we use the second piece, and have .      When only the first piece applies. It would be unnecessary and incorrect to compute , and it would definitely be incorrect to add that to the value .     Consider the piecewise function    Find .    Find .    Find .          Since , we use the first piece, and have .    Since , we use the second piece, and have .    Since , we use the third piece, and have .      Note, when finding we only need to compute based on the first piece, and we do not need to compute based on the second piece, nor do we need to compute based on the third piece. Moreover, and .   "
+},
+{
+  "id": "sec-functions-more-detail-2",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#sec-functions-more-detail-2",
+  "type": "Objectives",
+  "number": "3.2",
+  "title": "",
+  "body": "  In this section, we learn how to:    Determine the domain of a function given its formula, table, or graph.  Determine the range of a function given its table or graph.  Evaluate piecewise functions.   "
+},
+{
+  "id": "subsec-domain-and-range-2",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-domain-and-range-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "domain range "
+},
+{
+  "id": "finding-domain",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#finding-domain",
+  "type": "Principle",
+  "number": "3.2.4",
+  "title": "Finding domain given a function by formula.",
+  "body": " Finding domain given a function by formula   Given a function by formula, to find its domain, find all fractions and square roots. By default, the domain of a function is a real number, with the following situations creating exceptions   We don't want the denominator to equal zero.    We want the content inside a square root to be greater than or equal to zero.      "
+},
+{
+  "id": "subsec-domain-and-range-4-1",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-domain-and-range-4-1",
+  "type": "Example",
+  "number": "3.2.5",
+  "title": "",
+  "body": "  Find the domain of the function .    We don't want the denominator to equal zero, so we don't want . Adding to both sides, we don't want . Since is a number that we don't want, the domain is .   "
+},
+{
+  "id": "subsec-domain-and-range-4-6",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-domain-and-range-4-6",
+  "type": "Example",
+  "number": "3.2.6",
+  "title": "",
+  "body": "  Given the function , answer the following questions:  Find ?  Find ?  Find ?  Find ?        .  .  , which is okay to have zero in the numerator and a non-zero in the denominator.  , because of the zero in the numerator.     "
+},
+{
+  "id": "subsec-domain-and-range-5-1",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-domain-and-range-5-1",
+  "type": "Example",
+  "number": "3.2.7",
+  "title": "",
+  "body": "  Given the function , find the domain.    We don't want the denominator to equal zero, so we don't want . Factoring, we don't want . So, we don't want . So we don't want . Since and are numbers that we don't want, the domain is .  Note that is incorrect to write . This is because having is okay too, so that's why we simply write the equation but write the word don't in front to remind us not that . "
+},
+{
+  "id": "subsec-domain-and-range-6-1",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-domain-and-range-6-1",
+  "type": "Example",
+  "number": "3.2.8",
+  "title": "",
+  "body": "  Given the function , find the domain.    We want the content inside the square root to be greater than or equal to zero. It is not technically correct to write . Instead, we should state that we want the content inside the radical to be greater than or equal to zero. The radical tells us where to look, but we build one side of the inequality to have the content that is housed inside the radical: Adding to both sides, . The domain in interval notation is .   "
+},
+{
+  "id": "subsec-domain-and-range-7-1",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-domain-and-range-7-1",
+  "type": "Example",
+  "number": "3.2.9",
+  "title": "",
+  "body": "  Given the function , find the domain.    We want and want . The first inequality becomes and the second inequality becomes . So, the domain is .   "
+},
+{
+  "id": "subsec-domain-and-range-8-1",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-domain-and-range-8-1",
+  "type": "Example",
+  "number": "3.2.10",
+  "title": "",
+  "body": "  Given the function , find the domain.       We want , so we want .    We don't want . Factoring, we don't want . So, we don't want . So we don't want .   Placing all our wants and don't wants on a number line, we have     Putting all the wants and don't wants together  Based on the picture, the domain is .   "
+},
+{
+  "id": "subsec-domain-and-range-9-1",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-domain-and-range-9-1",
+  "type": "Example",
+  "number": "3.2.12",
+  "title": "",
+  "body": "  Given the function , find the domain.       We want , so we want .    We don't want . Factoring, we don't want . So, we don't want . So we don't want .   Placing all our wants and don't wants on a number line, we have     Putting all the wants and don't wants together  We drew an unfilled point at to indicate that we don't want that number, but the restriction that already takes care of this. Based on the picture, the domain is .   "
+},
+{
+  "id": "subsec-domain-and-range-10-1",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-domain-and-range-10-1",
+  "type": "Example",
+  "number": "3.2.14",
+  "title": "",
+  "body": "  Consider the function described by the table:        1  3    2  0    3  -1    4  0    5  3    Find the domain and range.    The domain is the set of all inputs, and consists of . The range is the set of all outputs, and consists of .   "
+},
+{
+  "id": "subsec-domain-and-range-12-1",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-domain-and-range-12-1",
+  "type": "Example",
+  "number": "3.2.16",
+  "title": "",
+  "body": "  Find the domain and range of the function whose graph is shown below:     This function's graph looks like two separate line segments, one with holes      The domain is the set of all 's that are on the graph, which is . Because is not included in the first interval but is included in the second interval, we can present the domain just as we already have, or simplify the domain by writing .] The range is the set of all 's that are on the graph, which is .   "
+},
+{
+  "id": "subsec-domain-and-range-13-1",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-domain-and-range-13-1",
+  "type": "Example",
+  "number": "3.2.18",
+  "title": "",
+  "body": "  Find the domain and range of the function whose graph is shown below:     This function's graph looks like several separate pieces.      The domain is . Since is ultimately included in the 4th interval, we can simplify the domain to be . Scanning from bottom to top, the range is .   "
+},
+{
+  "id": "subsec-piecewise-functions-4-1",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-piecewise-functions-4-1",
+  "type": "Example",
+  "number": "3.2.20",
+  "title": "",
+  "body": "  Consider the piecewise function    Find .    Find .    Find .          Since , we use the first piece, and have .    Since , we use the first piece, and have .    Since , we use the second piece, and have .      "
+},
+{
+  "id": "subsec-piecewise-functions-5-1",
+  "level": "2",
+  "url": "sec-functions-more-detail.html#subsec-piecewise-functions-5-1",
+  "type": "Example",
+  "number": "3.2.21",
+  "title": "",
+  "body": "  Consider the piecewise function    Find .    Find .    Find .          Since , we use the first piece, and have .    Since , we use the second piece, and have .    Since , we use the third piece, and have .      "
+},
+{
   "id": "appendix-gcf-lcm",
   "level": "1",
   "url": "appendix-gcf-lcm.html",
