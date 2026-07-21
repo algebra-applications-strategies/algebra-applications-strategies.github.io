@@ -7192,6 +7192,231 @@ var ptx_lunr_docs = [
   "body": "  Consider the piecewise function    Find .    Find .    Find .          Since , we use the first piece, and have .    Since , we use the second piece, and have .    Since , we use the third piece, and have .      "
 },
 {
+  "id": "sec-linear-and-quadratic-functions",
+  "level": "1",
+  "url": "sec-linear-and-quadratic-functions.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "Linear and Quadratic Functions",
+  "body": " Linear and Quadratic Functions    In this section, we learn how to:    Model real-world situations using linear and quadratic functions.  Graph linear and quadratic functions.  Evaluate linear and quadratic functions.     Applications  With the skills learned in this section, we will be able to answer questions such as:   The value of a new car is estimated by a linear model. Three years after purchase, the car's value is . Eight years after purchase, the car's value is . What is the estimated value of the car ten years after purchase?    A business has a profit function given by , where is the number of toasters sold. How many toasters should the business sell to maximize profit, and what is that maximum profit?    A ball is thrown into the air. Its height in feet after seconds is given by the function . How long will it take for the ball to hit the ground? At what point is the ball at its maximum height, and what is that height?       Linear functions and linear models  A linear function is a function whose graph is a straight line. With the exception of vertical lines (which cannot be functions anyway, because the Vertical Line Test fails for vertical lines), every line can be written in the format , and so replacing with , every linear function can be written in the format .  When a linear function describes the behavior of a real-world situation, we say that we are looking at a linear model . The slope of the linear function describes the rate of change of the situation. For instance, we have the first preview application above, which describes the value of a car over time. For this linear model, we will have represent the time (more specifically, the number of years after purchase), and or will represent the value of the car in dollars. Then the slope will describe the rate at which the car's value is changing over time.  Before digging into the car example, let's look at a warm up example dealing with a linear function.     A linear function has a graph that goes through the points and . Find a formula for the function.    Behind the layer of language, we need to find an equation for the line going through the points and . The slope is . In point-slope form, using the first point, . To get a function, we need to solve for . Adding to both sides gives . So, one formula for the linear function is .  We demonstrate that every linear funciton can be written in the format by simplifying the formula we found. Distributing the gives , and combining like terms gives . So, another formula for the linear function is .   The slope tells us a rate: that is, for every increase of by one unit, the -value (also called the output) of the function increases by .  Let's revisit one of the application preview questions, though to help us see the connections, we'll make the final question that was asked the last part:   The value of a new car is estimated by a linear model. Three years after purchase, the car's value is . Eight years after purchase, the car's value is .   Find a linear model for the value of the car over time.    Identify the slope and interpret the slope in context.    Use the linear model to estimate the value of the car ten years after purchase.       Because we are in the context of an application, the language linear model has come up, but we are really looking for a linear function. We will let represent the number of years after purchase, and represent the value of the car in dollars. Then we have two points: and . It means that we have the same kind of problem as the previous question, but with different numbers.   Given the points and , the slope is . Using the first point, we have . Solving for gives , so is one formula for the linear function.  We can also distribute and combine like terms to get . So is another formula for the linear function.    The slope is , which means that for every increase of by one unit the value of decreases by . Now, we say the same information, but in context in light of the fact that increasing by means it's one year later: every year, the value of the car decreases by .    To estimate the value of the car ten years after purchase, we need to evaluate . Using the formula , we have . So, the estimated value of the car ten years after purchase is .          Quadratic functions and quadratic models  We just saw that a linear function can always be written in the format , or to prep for what we'll see and use letters in alphabetical order, . Instead of having the highest power of be , we can increase this by to talk about a quadratic function. A quadratic function will have the highest power of be , and so a quadratic function can always be written in the format . Whereas a linear function's graph is always a straight line, a quadratic function's graph is always a parabola .  The two forms of line we have focused on and led to two general looks for a linear function: either (alternatively written ) or (alternatively written ). Analogously, is one of the formats we will focus on.    is called the standard form of a quadratic function     is called the vertex form of a quadratic function.     When a quadratic function describes the behavior of a real-world situation, we say that we are looking at a quadratic model .     Consider the quadratic function in vertex form, and write the function in standard form.     . So, the standard form of the function is .        Consider the quadratic function in vertex form, and write the function in standard form.     . So, the standard form of the function is .     Going from vertex form to standard form involves expanding the square and combining like terms. Going from standard form to vertex form involves completing the square. We were used to adding something to both sides, but now we'll have to add and subtract a number on the same side.     Consider the quadratic function in standard form, and write the function in vertex form.    The linear coefficient is , so the second stick is so the constant we need to add is . If we had an equation, we would add to, both sides, but we have the formula for a function, so we will add and subtract on the same side . . So, the vertex form of the function is .     We can actually temporarily create an equation in and by replacing with , and after completing the square and factoring, we can replace with again. It will end up being the same mathematics (the same numbers are involved in completing the square), but it's a little easier to process this way. Let's revisit the same problem with this new technique.     Consider the quadratic function in standard form, and write the function in vertex form.    Replacing with , we have . Subtracting on both sides, . The linear coefficient is , so the second stick is so the constant we need to add is . Adding to both sides, we have , which simplifies to . Factoring the right side gives , and adding to both sides gives . Replacing with , we have .        Consider the quadratic function in standard form, and write the function in vertex form.    Replacing with , we have . Subtracting on both sides, . In the past for quadratic equations, we saw that before we consider the linear coefficient, second stick, and constant, we first need to ensure that the coefficient of is , often a \"hidden\" . To make that happens is a multi-step process that starts with dividing both sides by . As we do this, recall that we have divide the entire left side by , and the entire right side by . Each side has a fraction with subtraction in the numerator, so no cancellations will happen. We can leave the left side as is, but we make the choice to do steps on the left similarly to how we work on the right, splitting up each side as the difference of two fractions: Now that minus signs are not in the numerator of a fraction (but instead between separate fractions), we can cancel in three of the four fractions: Now we can complete the square on the right side. The linear coefficient is , so the second stick is so the constant we need to add is . Adding to both sides, Simplifying the left side and factoring on the right side, Now we solve for . Adding to both sides gives To get by itself, we multiply both sides by : While this techincally leaves isolated, we can distribute the to get a more standard look: Replacing with , we have .        Consider the quadratic function in standard form, and write the function in vertex form.    Replacing with , we have . Subtracting on both sides, . Dividing both sides by , we have The linear coefficient is , so the second stick is so the constant we need to add is . Adding to both sides, Factoring the right side, Now we solve for . Subtracting from both sides gives Multiplying both sides by gives Distributing the gives Subtracting from both sides gives Simplifying the right side, so .   A final answer can be left like this, but if we wish to have this look more literal in its conformance to the vertex form, we can write , in which case we more clearly see that and and .  Now, we dig a little into the parts of the standard form and the vertex form .   The in both forms is the same, and it takes on the same value when convering between forms. (For example, in the last example, in both and .)    If , the parabola opens upward, and if , the parabola opens downward. The figures below depict the two cases.     Parabola opens upward when .       Parabola opens downward when .     While both parabolas were drawn in the context of - and -axes, all we really wanted to show here is that the parabolas open upward or downward depending on the sign of . (The values of the other coefficients and in standard form or and in vertex form will affect the position and width of the parabola, but not its direction.)  There is a special point called the vertex of the parabola.   In the case of a parabola that opens upward (so ) the vertex is the lowest point on the parabola. This is the point on the parabola that has the smallest -value.    In the case of a parabola that opens downward (so ) the vertex is the highest point on the parabola. This is the point on the parabola that has the largest -value.     We introduce formulas for getting the vertex of a parabola in each form:   If is a quadratic function in vertex form, then the vertex of the parabola is .   The fact that the information about the vertex can be read right off of this form is why it is called vertex form.  We introduce a formula for getting the -coordinate only of a vertex of a parabola in standard form:   If is a quadratic function in standard form, then the -coordinate of the vertex of the parabola is .   Once the -coordinate is known, the -coordinate can be found by evaluating the function at the appropriate -coordinate.     Identify the vertex of the parabola given by .    If it helps, we can rewrite the function as , and then we can see that and . So, the vertex is .        Identify the vertex of the parabola given by .    Because we have the function in standard form, we can use the formula to find the -coordinate of the vertex. Here, and , so . To find the -coordinate of the vertex, we evaluate the function at : . So, the vertex is .   Note that we recover the same vertex as in the previous example. This should be expected because from our work in we are looking at two different forms of the same function.     Use the vertex and the -intercepts and -intercept to sketch the graph of the parabola given by .    We already found the vertex to be . It may be helpful for us to replace the with a so we have the following equation in and :   Recall from to find the -intercepts, we need to set and solve for . Because this is a quadratic equation, we can use the quadratic formula to solve for : So, the -intercepts are and .  Recall frohm to find the -intercept, we need to set and solve for . So, the -intercept is .  With the vertex, -intercepts, and -intercept, we can sketch the graph of the parabola. It is helpful to not worry about scale.     A sketch.          Identify the vertex of the parabola given by .    We can see that and and . So, the vertex is .     We now examine the applications at the beginning.   A business has a profit function given by , where is the number of toasters sold. How many toasters should the business sell to maximize profit, and what is that maximum profit?    For concreteness, we replace with : The -coordinate represents the number of toasters sold, while represents the profit. Because the coefficient of is negative, the drawing would be a parabola which opens downward. So, there is a point at the top (called the vertex) in which the -coordinate is largest on the porabola. Recall that represents the profit, so it is this point that we are interested in.  To find the -coordinate of the vertex, we use the formula from . Here, and and , so . Now that we know the -coordinate of the vertex, we can find the -coordinate by evaluating the function at : So the vertex is the point .  Recalling that represents the number of toasters sold and represents the profit, we can say that the business should sell toasters to maximize profit, and that maximum profit is .        A ball is thrown into the air. Its height in feet after seconds is given by the function . How long will it take for the ball to hit the ground? At what point is the ball at its maximum height, and what is that height?    Before going too far, let us note that plays the role of , and represents the time. If we write , then represents the height of the ball.  To find when the ball hits the ground, we set and solve for : Using the quadratic formula, we get: Simplifying the square root: This gives us two solutions, but one of the times is negative, so we remove that possibility. The other solution is seconds.  To find the maximum height, we use the vertex formula : Evaluating the function at : So the vertex is the point . Recalling that represents the time and or represents the height, we can say that the ball reaches its maximum height of feet after seconds. So the maximum height is reached at seconds, and the height is feet.       Summary     A linear function is a function in the form where and are constants, or where is a point on the line.    A linear model is a linear function that is used to describe a real-world situation.    A quadratic function is a function in the form where , , and are constants, or where is the vertex of the parabola. In both the standard form and vertex form, the value of is the same when converting between forms.    To convert from vertex form to standard form, expand and collect like terms. To convert from standard form to vertex form, complete the square.    A quadratic model is a quadratic function that is used to describe a real-world situation.    The vertex of a parabola is the point on the parabola that is either the highest or lowest point, depending on whether the parabola opens downward or upward. (The parabola opens downward if and opens upward if .) The vertex can be read directly from the vertex form as . In standard form, the formula gives the -coordinate of the vertex.      "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-2",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-2",
+  "type": "Objectives",
+  "number": "3.3",
+  "title": "",
+  "body": "  In this section, we learn how to:    Model real-world situations using linear and quadratic functions.  Graph linear and quadratic functions.  Evaluate linear and quadratic functions.   "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-4-2",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-4-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear function "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-4-3",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-4-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear model "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-4-5-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-4-5-1",
+  "type": "Example",
+  "number": "3.3.1",
+  "title": "",
+  "body": "  A linear function has a graph that goes through the points and . Find a formula for the function.    Behind the layer of language, we need to find an equation for the line going through the points and . The slope is . In point-slope form, using the first point, . To get a function, we need to solve for . Adding to both sides gives . So, one formula for the linear function is .  We demonstrate that every linear funciton can be written in the format by simplifying the formula we found. Distributing the gives , and combining like terms gives . So, another formula for the linear function is .   "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-4-6-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-4-6-1",
+  "type": "Example",
+  "number": "3.3.2",
+  "title": "",
+  "body": "  The value of a new car is estimated by a linear model. Three years after purchase, the car's value is . Eight years after purchase, the car's value is .   Find a linear model for the value of the car over time.    Identify the slope and interpret the slope in context.    Use the linear model to estimate the value of the car ten years after purchase.       Because we are in the context of an application, the language linear model has come up, but we are really looking for a linear function. We will let represent the number of years after purchase, and represent the value of the car in dollars. Then we have two points: and . It means that we have the same kind of problem as the previous question, but with different numbers.   Given the points and , the slope is . Using the first point, we have . Solving for gives , so is one formula for the linear function.  We can also distribute and combine like terms to get . So is another formula for the linear function.    The slope is , which means that for every increase of by one unit the value of decreases by . Now, we say the same information, but in context in light of the fact that increasing by means it's one year later: every year, the value of the car decreases by .    To estimate the value of the car ten years after purchase, we need to evaluate . Using the formula , we have . So, the estimated value of the car ten years after purchase is .      "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-2",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "parabola "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-3",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "standard form vertex form "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-4",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "quadratic model "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-5-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-5-1",
+  "type": "Example",
+  "number": "3.3.3",
+  "title": "",
+  "body": "  Consider the quadratic function in vertex form, and write the function in standard form.     . So, the standard form of the function is .   "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-6-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-6-1",
+  "type": "Example",
+  "number": "3.3.4",
+  "title": "",
+  "body": "  Consider the quadratic function in vertex form, and write the function in standard form.     . So, the standard form of the function is .   "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-8-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-8-1",
+  "type": "Example",
+  "number": "3.3.5",
+  "title": "",
+  "body": "  Consider the quadratic function in standard form, and write the function in vertex form.    The linear coefficient is , so the second stick is so the constant we need to add is . If we had an equation, we would add to, both sides, but we have the formula for a function, so we will add and subtract on the same side . . So, the vertex form of the function is .   "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-10-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-10-1",
+  "type": "Example",
+  "number": "3.3.6",
+  "title": "",
+  "body": "  Consider the quadratic function in standard form, and write the function in vertex form.    Replacing with , we have . Subtracting on both sides, . The linear coefficient is , so the second stick is so the constant we need to add is . Adding to both sides, we have , which simplifies to . Factoring the right side gives , and adding to both sides gives . Replacing with , we have .   "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-11-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-11-1",
+  "type": "Example",
+  "number": "3.3.7",
+  "title": "",
+  "body": "  Consider the quadratic function in standard form, and write the function in vertex form.    Replacing with , we have . Subtracting on both sides, . In the past for quadratic equations, we saw that before we consider the linear coefficient, second stick, and constant, we first need to ensure that the coefficient of is , often a \"hidden\" . To make that happens is a multi-step process that starts with dividing both sides by . As we do this, recall that we have divide the entire left side by , and the entire right side by . Each side has a fraction with subtraction in the numerator, so no cancellations will happen. We can leave the left side as is, but we make the choice to do steps on the left similarly to how we work on the right, splitting up each side as the difference of two fractions: Now that minus signs are not in the numerator of a fraction (but instead between separate fractions), we can cancel in three of the four fractions: Now we can complete the square on the right side. The linear coefficient is , so the second stick is so the constant we need to add is . Adding to both sides, Simplifying the left side and factoring on the right side, Now we solve for . Adding to both sides gives To get by itself, we multiply both sides by : While this techincally leaves isolated, we can distribute the to get a more standard look: Replacing with , we have .   "
+},
+{
+  "id": "example2x2-20x-12-vertex-form",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#example2x2-20x-12-vertex-form",
+  "type": "Example",
+  "number": "3.3.8",
+  "title": "",
+  "body": "  Consider the quadratic function in standard form, and write the function in vertex form.    Replacing with , we have . Subtracting on both sides, . Dividing both sides by , we have The linear coefficient is , so the second stick is so the constant we need to add is . Adding to both sides, Factoring the right side, Now we solve for . Subtracting from both sides gives Multiplying both sides by gives Distributing the gives Subtracting from both sides gives Simplifying the right side, so .   "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-13-3-2-1-3",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-13-3-2-1-3",
+  "type": "Figure",
+  "number": "3.3.9",
+  "title": "",
+  "body": "    Parabola opens upward when .  "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-13-3-2-1-4",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-13-3-2-1-4",
+  "type": "Figure",
+  "number": "3.3.10",
+  "title": "",
+  "body": "    Parabola opens downward when .  "
+},
+{
+  "id": "principle-vertex-form-vertex",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#principle-vertex-form-vertex",
+  "type": "Principle",
+  "number": "3.3.11",
+  "title": "",
+  "body": "  If is a quadratic function in vertex form, then the vertex of the parabola is .   "
+},
+{
+  "id": "principle-standard-form-vertex-x",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#principle-standard-form-vertex-x",
+  "type": "Principle",
+  "number": "3.3.12",
+  "title": "",
+  "body": "  If is a quadratic function in standard form, then the -coordinate of the vertex of the parabola is .   "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-17-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-17-1",
+  "type": "Example",
+  "number": "3.3.13",
+  "title": "",
+  "body": "  Identify the vertex of the parabola given by .    If it helps, we can rewrite the function as , and then we can see that and . So, the vertex is .   "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-18-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-18-1",
+  "type": "Example",
+  "number": "3.3.14",
+  "title": "",
+  "body": "  Identify the vertex of the parabola given by .    Because we have the function in standard form, we can use the formula to find the -coordinate of the vertex. Here, and , so . To find the -coordinate of the vertex, we evaluate the function at : . So, the vertex is .   "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-19-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-19-1",
+  "type": "Example",
+  "number": "3.3.15",
+  "title": "",
+  "body": "  Use the vertex and the -intercepts and -intercept to sketch the graph of the parabola given by .    We already found the vertex to be . It may be helpful for us to replace the with a so we have the following equation in and :   Recall from to find the -intercepts, we need to set and solve for . Because this is a quadratic equation, we can use the quadratic formula to solve for : So, the -intercepts are and .  Recall frohm to find the -intercept, we need to set and solve for . So, the -intercept is .  With the vertex, -intercepts, and -intercept, we can sketch the graph of the parabola. It is helpful to not worry about scale.     A sketch.     "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-20-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-20-1",
+  "type": "Example",
+  "number": "3.3.17",
+  "title": "",
+  "body": "  Identify the vertex of the parabola given by .    We can see that and and . So, the vertex is .   "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-21-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-21-1",
+  "type": "Example",
+  "number": "3.3.18",
+  "title": "",
+  "body": "  A business has a profit function given by , where is the number of toasters sold. How many toasters should the business sell to maximize profit, and what is that maximum profit?    For concreteness, we replace with : The -coordinate represents the number of toasters sold, while represents the profit. Because the coefficient of is negative, the drawing would be a parabola which opens downward. So, there is a point at the top (called the vertex) in which the -coordinate is largest on the porabola. Recall that represents the profit, so it is this point that we are interested in.  To find the -coordinate of the vertex, we use the formula from . Here, and and , so . Now that we know the -coordinate of the vertex, we can find the -coordinate by evaluating the function at : So the vertex is the point .  Recalling that represents the number of toasters sold and represents the profit, we can say that the business should sell toasters to maximize profit, and that maximum profit is .   "
+},
+{
+  "id": "sec-linear-and-quadratic-functions-5-22-1",
+  "level": "2",
+  "url": "sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5-22-1",
+  "type": "Example",
+  "number": "3.3.19",
+  "title": "",
+  "body": "  A ball is thrown into the air. Its height in feet after seconds is given by the function . How long will it take for the ball to hit the ground? At what point is the ball at its maximum height, and what is that height?    Before going too far, let us note that plays the role of , and represents the time. If we write , then represents the height of the ball.  To find when the ball hits the ground, we set and solve for : Using the quadratic formula, we get: Simplifying the square root: This gives us two solutions, but one of the times is negative, so we remove that possibility. The other solution is seconds.  To find the maximum height, we use the vertex formula : Evaluating the function at : So the vertex is the point . Recalling that represents the time and or represents the height, we can say that the ball reaches its maximum height of feet after seconds. So the maximum height is reached at seconds, and the height is feet.   "
+},
+{
   "id": "appendix-gcf-lcm",
   "level": "1",
   "url": "appendix-gcf-lcm.html",

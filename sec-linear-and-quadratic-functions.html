@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Linear and Quadratic Functions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Algebra">
+<meta property="book:author" content="
+      Edward D. Kim">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.14';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.cb5af2e851de3574.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f51cd4153b45055d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="dmoi-4" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://algebra-applications-strategies.github.io/"><img src="external/images/algebra-cover-preliminary.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="dmoi4.html"><span class="title">Algebra</span> <span class="subtitle">Applications and Strategies</span></a></h1>
+<p class="byline">Edward D. Kim</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-functions-more-detail.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-functions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{cancel}
+\def\d{\displaystyle} 
+\def\N{\mathbb N} 
+\def\B{\mathbf B} 
+\def\Z{\mathbb Z} 
+\def\Q{\mathbb Q} 
+\def\R{\mathbb R} 
+\def\C{\mathbb C} 
+\def\U{\mathcal U} 
+\def\x{\mathbf{x}}
+\def\y{\mathbf{y}}
+\def\X{\mathcal{X}}
+\def\Y{\mathcal{Y}}
+\def\pow{\mathcal P} 
+\def\inv{^{-1}} 
+\def\st{:} 
+\def\iff{\leftrightarrow} 
+\def\Iff{\Leftrightarrow} 
+\def\imp{\rightarrow} 
+\def\Imp{\Rightarrow} 
+\def\isom{\cong} 
+
+\def\bar{\overline} 
+\def\card#1{\left| #1 \right|} 
+\def\twoline#1#2{\begin{pmatrix}#1 \\ #2 \end{pmatrix}} 
+
+\def\mchoose#1#2{
+  \left.\mathchoice
+    {\left(\kern-0.48em\binom{#1}{#2}\kern-0.48em\right)}
+    {\big(\kern-0.30em\binom{\smash{#1}}{\smash{#2}}\kern-0.30em\big)}
+    {\left(\kern-0.30em\binom{\smash{#1}}{\smash{#2}}\kern-0.30em\right)}
+    {\left(\kern-0.30em\binom{\smash{#1}}{\smash{#2}}\kern-0.30em\right)}
+  \right.}
+\def\o{\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="1" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface to the student</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Preface to the instructor</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-expressions-equations.html" class="internal"><span class="codenumber">1</span> <span class="title">Expressions and Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-operations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-operations.html#sec-operations-8" class="internal"><span class="title">Order of Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-operations.html#sec-operations-11" class="internal"><span class="title">Order of Operations with variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-operations.html#sec-operations-12" class="internal"><span class="title">Language</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-operations.html#sec-operations-13" class="internal"><span class="title">Pictures</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-operations.html#sec-operations-14" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-operations.html#sec-operations-15" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-expressions-with-fractions.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Expressions with Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-fraction-applications" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#sec-expressions-with-fractions-4" class="internal"><span class="title">Representation and Equal/Unequal Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-adding-subtracting-fractions" class="internal"><span class="title">Adding and subtracting fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-multiplying-fractions" class="internal"><span class="title">Multiplying fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-dividing-fractions" class="internal"><span class="title">Dividing fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-additional-practice" class="internal"><span class="title">Additional practice</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-clarifications-and-details" class="internal"><span class="title">Clarifications and details</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#subsec-fraction-applications-revisited" class="internal"><span class="title">Applications Revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#sec-expressions-with-fractions-11" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-expressions-with-fractions.html#sec-expressions-with-fractions-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-solving-equations.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Solving Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#subsec-solving-equations-applications" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#subsec-introduction-to-equations" class="internal"><span class="title">Introduction to Equations</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-solving-equations.html#sec-solving-equations-5" class="internal"><span class="title">Equations when the variable is written once</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-solving-equations.html#subsubsec-equations-with-several-operations" class="internal"><span class="title">Equations with several operations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#sec-solving-equations-6" class="internal"><span class="title">Comments and clarifications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#sec-solving-equations-7" class="internal"><span class="title">Equations when the variable is written more than once</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#subsec-TITLE-applications-revisited" class="internal"><span class="title">Applications Revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#sec-solving-equations-9" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations.html#sec-solving-equations-10" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-equations-with-fractions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Equations with Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-equations-with-fractions.html#subsec-24375623987698" class="internal"><span class="title">A new strategy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-equations-with-fractions.html#sec-equations-with-fractions-4" class="internal"><span class="title">Clarifications, Cautions, and Connections</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-equations-with-fractions.html#sec-equations-with-fractions-5" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-equations-with-fractions.html#sec-equations-with-fractions-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-exponents.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exponents and Radicals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#sec-exponents-3" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#sec-exponents-4" class="internal"><span class="title">Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#subsec-radicals" class="internal"><span class="title">Radicals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#sec-exponents-6" class="internal"><span class="title">Clarifications and techniques</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#sec-exponents-7" class="internal"><span class="title">Applications Revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#sec-exponents-8" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponents.html#sec-exponents-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-factoring-and-expansion.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Factoring and Expansion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#sec-factoring-and-expansion-3" class="internal"><span class="title">Expansion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#sec-factoring-and-expansion-4" class="internal"><span class="title">Factoring</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#subsec-special-cases" class="internal"><span class="title">Special cases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#subsec-additional-factoring-techniques" class="internal"><span class="title">Additional factoring techniques</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#subsec-" class="internal"><span class="title">Factoring quadratics revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#sec-factoring-and-expansion-8" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-factoring-and-expansion.html#sec-factoring-and-expansion-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-fractions-revisited.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Fractions Revisited</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fractions-revisited.html#sec-fractions-revisited-5" class="internal"><span class="title">Rational Expressions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fractions-revisited.html#sec-fractions-revisited-6" class="internal"><span class="title">Compound Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fractions-revisited.html#sec-fractions-revisited-7" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fractions-revisited.html#sec-fractions-revisited-8" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-solving-equations-revisited.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Expressions and Equations Revisited</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-3" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-4" class="internal"><span class="title">Expressions representing contextual quantities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-5" class="internal"><span class="title">Equations involving percentages</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-6" class="internal"><span class="title">Systems of equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-7" class="internal"><span class="title">Distance, rate, and time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-8" class="internal"><span class="title">Mixture</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-9" class="internal"><span class="title">Literal Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-10" class="internal"><span class="title">Equations with Rational Expressions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-11" class="internal"><span class="title">Applications revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-12" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-solving-equations-revisited.html#sec-solving-equations-revisited-13" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-analytic-geometry.html" class="internal"><span class="codenumber">2</span> <span class="title">Analytic Geometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-xy-plane.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The <span class="process-math">\(xy\)</span>-plane</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-3" class="internal"><span class="title">Why bother with the <span class="process-math">\(xy\)</span>-plane?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-4" class="internal"><span class="title">The <span class="process-math">\(xy\)</span>-plane</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-5" class="internal"><span class="title">Distance between points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-6" class="internal"><span class="title">Midpoint</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-7" class="internal"><span class="title">Application: Interpreting graphs in context</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-8" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-xy-plane.html#sec-xy-plane-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-lines.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-3" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-4" class="internal"><span class="title">Equations in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-5" class="internal"><span class="title">Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-6" class="internal"><span class="title">Equations of lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#subsec-parallel-perpendicular" class="internal"><span class="title">Parallel and perpendicular lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-8" class="internal"><span class="title">Applications Revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-9" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-lines.html#sec-lines-10" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-quadratic-equations-factoring.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Quadratic Equations: factoring</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-3" class="internal"><span class="title">The Zero Product Property</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-4" class="internal"><span class="title">Extensions and cautions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-5" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quadratic-equations-factoring.html#sec-quadratic-equations-factoring-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-quadratic-equations-completing.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Quadratic equations: completing the square</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quadratic-equations-completing.html#subsec-no-linear-term" class="internal"><span class="title">Special case: no linear term</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-4" class="internal"><span class="title">Area model: square-focused exploration</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-5" class="internal"><span class="title">First examples of completing the square</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-6" class="internal"><span class="title">Final examples of completing the square</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-7" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quadratic-equations-completing.html#sec-quadratic-equations-completing-8" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circles.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Circles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#sec-circles-3" class="internal"><span class="title">Exploring the equation of a circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#sec-circles-4" class="internal"><span class="title">Standard Equation of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#sec-circles-5" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#sec-circles-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-inequalities.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Inequalities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inequalities.html#sec-inequalities-3" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inequalities.html#sec-inequalities-4" class="internal"><span class="title">Inequalities, the number line, and interval notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inequalities.html#sec-inequalities-5" class="internal"><span class="title">Solving inequalities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inequalities.html#sec-inequalities-6" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-inequalities.html#sec-inequalities-7" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-absolute-value.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Absolute Value</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-absolute-value.html#sec-absolute-value-3" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-absolute-value.html#sec-absolute-value-4" class="internal"><span class="title">Absolute value equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-absolute-value.html#sec-absolute-value-5" class="internal"><span class="title">Solving absolute value equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-absolute-value.html#subsec-abs-val-ineq" class="internal"><span class="title">Absolute value inequalities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-absolute-value.html#sec-absolute-value-7" class="internal"><span class="title">Applications Revisited</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-absolute-value.html#sec-absolute-value-8" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-absolute-value.html#sec-absolute-value-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-functions.html" class="internal"><span class="codenumber">3</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-what-is-a-function.html" class="internal"><span class="codenumber">3.1</span> <span class="title">What is a Function?</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-what-is-a-function.html#sec-what-is-a-function-3" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-what-is-a-function.html#subsec-functions-by-formula" class="internal"><span class="title">Functions by formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-what-is-a-function.html#subsec-functions-by-table" class="internal"><span class="title">Functions by table</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-what-is-a-function.html#subsec-functions-by-graph" class="internal"><span class="title">Functions by graph</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-functions-more-detail.html" class="internal"><span class="codenumber">3.2</span> <span class="title">More about functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-functions-more-detail.html#subsec-domain-and-range" class="internal"><span class="title">Domain and range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-functions-more-detail.html#subsec-piecewise-functions" class="internal"><span class="title">Piecewise functions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-linear-and-quadratic-functions.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Linear and Quadratic Functions</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-3" class="internal"><span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-4" class="internal"><span class="title">Linear functions and linear models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-5" class="internal"><span class="title">Quadratic functions and quadratic models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-linear-and-quadratic-functions.html#sec-linear-and-quadratic-functions-6" class="internal"><span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="appendix-gcf-lcm.html" class="internal"><span class="codenumber">A</span> <span class="title">Details on GCF and LCM</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="appendix-factoring-and-expansion-revisited.html" class="internal"><span class="codenumber">B</span> <span class="title">Factoring and Expansion Revisited</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-linear-and-quadratic-functions"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear and Quadratic Functions</span>
+</h2>
+<article class="objectives goal-like" id="sec-linear-and-quadratic-functions-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<div class="introduction" id="sec-linear-and-quadratic-functions-2-1"><div class="para" id="sec-linear-and-quadratic-functions-2-1-1">In this section, we learn how to:<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<ol class="decimal" id="sec-linear-and-quadratic-functions-2-2">
+<li id="sec-linear-and-quadratic-functions-2-2-1">
+<div class="para" id="sec-linear-and-quadratic-functions-2-2-1-1">Model real-world situations using linear and quadratic functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 3.3.1"><a href="#sec-linear-and-quadratic-functions-2-2-1" title="Copy heading and permalink for Objective 3.3.1" aria-label="Copy heading and permalink for Objective 3.3.1">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-2-2-2">
+<div class="para" id="sec-linear-and-quadratic-functions-2-2-2-1">Graph linear and quadratic functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 3.3.2"><a href="#sec-linear-and-quadratic-functions-2-2-2" title="Copy heading and permalink for Objective 3.3.2" aria-label="Copy heading and permalink for Objective 3.3.2">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-2-2-3">
+<div class="para" id="sec-linear-and-quadratic-functions-2-2-3-1">Evaluate linear and quadratic functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective 3.3.3"><a href="#sec-linear-and-quadratic-functions-2-2-3" title="Copy heading and permalink for Objective 3.3.3" aria-label="Copy heading and permalink for Objective 3.3.3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Objectives 3.3"><a href="#sec-linear-and-quadratic-functions-2" title="Copy heading and permalink for Objectives 3.3" aria-label="Copy heading and permalink for Objectives 3.3">🔗</a></div></article><section class="subsection" id="sec-linear-and-quadratic-functions-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Applications</span>
+</h3>
+<div class="para logical" id="sec-linear-and-quadratic-functions-3-2">
+<div class="para">With the skills learned in this section, we will be able to answer questions such as:</div>
+<ol class="decimal" id="sec-linear-and-quadratic-functions-3-2-1">
+<li id="sec-linear-and-quadratic-functions-3-2-1-1">
+<div class="para" id="sec-linear-and-quadratic-functions-3-2-1-1-1">The value of a new car is estimated by a linear model. Three years after purchase, the car’s value is <span class="process-math">\(\$20,000\text{.}\)</span> Eight years after purchase, the car’s value is <span class="process-math">\(\$10,000\text{.}\)</span> What is the estimated value of the car ten years after purchase?<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-linear-and-quadratic-functions-3-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-3-2-1-2">
+<div class="para" id="sec-linear-and-quadratic-functions-3-2-1-2-1">A business has a profit function given by <span class="process-math">\(P(x) = -4x^2 + 80x - 100\text{,}\)</span> where <span class="process-math">\(x\)</span> is the number of toasters sold. How many toasters should the business sell to maximize profit, and what is that maximum profit?<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-3-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-linear-and-quadratic-functions-3-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-3-2-1-3">
+<div class="para" id="sec-linear-and-quadratic-functions-3-2-1-3-1">A ball is thrown into the air. Its height in feet after <span class="process-math">\(t\)</span> seconds is given by the function <span class="process-math">\(h(t) = -16t^2 + 64t + 5\text{.}\)</span> How long will it take for the ball to hit the ground? At what point is the ball at its maximum height, and what is that height?<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-3-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-linear-and-quadratic-functions-3-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Applications"><a href="#sec-linear-and-quadratic-functions-3" title="Copy heading and permalink for Subsection: Applications" aria-label="Copy heading and permalink for Subsection: Applications">🔗</a></div></section><section class="subsection" id="sec-linear-and-quadratic-functions-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear functions and linear models</span>
+</h3>
+<div class="para" id="sec-linear-and-quadratic-functions-4-2">A <dfn class="terminology">linear function</dfn> is a function whose graph is a straight line. With the exception of vertical lines (which cannot be functions anyway, because the Vertical Line Test fails for vertical lines), every line can be written in the format <span class="process-math">\(y = mx + b\text{,}\)</span> and so replacing <span class="process-math">\(y\)</span> with <span class="process-math">\(f(x)\text{,}\)</span> every linear function can be written in the format <span class="process-math">\(f(x) = mx + b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-4-3">When a linear function describes the behavior of a real-world situation, we say that we are looking at a <dfn class="terminology">linear model</dfn>. The slope <span class="process-math">\(m\)</span> of the linear function describes the rate of change of the situation. For instance, we have the first preview application above, which describes the value of a car over time. For this linear model, we will have <span class="process-math">\(x\)</span> represent the time (more specifically, the number of years after purchase), and <span class="process-math">\(y\)</span> or <span class="process-math">\(f(x)\)</span> will represent the value of the car in dollars. Then the slope will describe the rate at which the car’s value is changing over time.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-4-4">Before digging into the car example, let’s look at a warm up example dealing with a linear function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-4-5">
+<article class="example example-like" id="sec-linear-and-quadratic-functions-4-5-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-linear-and-quadratic-functions-4-5-1-1-1">A linear function has a graph that goes through the points <span class="process-math">\((3,8)\)</span> and <span class="process-math">\((6,20)\text{.}\)</span> Find a formula for the function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-4-5-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-linear-and-quadratic-functions-4-5-1-2-1">Behind the layer of language, we need to find an equation for the line going through the points <span class="process-math">\((3,8)\)</span> and <span class="process-math">\((6,20)\text{.}\)</span> The slope is <span class="process-math">\(m = \frac{20-8}{6-3} = \frac{12}{3} = 4\text{.}\)</span> In point-slope form, using the first point, <span class="process-math">\(y - 8 = 4(x - 3)\text{.}\)</span> To get a function, we need to solve for <span class="process-math">\(y\text{.}\)</span> Adding <span class="process-math">\(8\)</span> to both sides gives <span class="process-math">\(y = 4(x - 3) + 8\text{.}\)</span> So, one formula for the linear function is <span class="process-math">\(f(x) = 4(x - 3) + 8\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-4-5-1-2-2">We demonstrate that every linear funciton can be written in the format <span class="process-math">\(f(x) = mx + b\)</span> by simplifying the formula we found. Distributing the <span class="process-math">\(4\)</span> gives <span class="process-math">\(f(x) = 4x - 12 + 8\text{,}\)</span> and combining like terms gives <span class="process-math">\(f(x) = 4x - 4\text{.}\)</span> So, another formula for the linear function is <span class="process-math">\(f(x) = 4x - 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-5-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.1.1"><a href="#sec-linear-and-quadratic-functions-4-5-1-2" title="Copy heading and permalink for Answer 3.3.1.1" aria-label="Copy heading and permalink for Answer 3.3.1.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.1"><a href="#sec-linear-and-quadratic-functions-4-5-1" title="Copy heading and permalink for Example 3.3.1" aria-label="Copy heading and permalink for Example 3.3.1">🔗</a></div></article> The slope <span class="process-math">\(4\)</span> tells us a rate: that is, for every increase of <span class="process-math">\(x\)</span> by one unit, the <span class="process-math">\(y\)</span>-value (also called the output) of the function increases by <span class="process-math">\(4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-4-6">Let’s revisit one of the application preview questions, though to help us see the connections, we’ll make the final question that was asked the last part: <article class="example example-like" id="sec-linear-and-quadratic-functions-4-6-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="sec-linear-and-quadratic-functions-4-6-1-1-1">
+<div class="para">The value of a new car is estimated by a linear model. Three years after purchase, the car’s value is <span class="process-math">\(\$20,000\text{.}\)</span> Eight years after purchase, the car’s value is <span class="process-math">\(\$10,000\text{.}\)</span>
+</div>
+<ol class="decimal" id="sec-linear-and-quadratic-functions-4-6-1-1-1-3">
+<li id="sec-linear-and-quadratic-functions-4-6-1-1-1-3-1">
+<div class="para" id="sec-linear-and-quadratic-functions-4-6-1-1-1-3-1-1">Find a linear model for the value of the car over time.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-6-1-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-linear-and-quadratic-functions-4-6-1-1-1-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-4-6-1-1-1-3-2">
+<div class="para" id="sec-linear-and-quadratic-functions-4-6-1-1-1-3-2-1">Identify the slope and interpret the slope in context.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-6-1-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-linear-and-quadratic-functions-4-6-1-1-1-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-4-6-1-1-1-3-3">
+<div class="para" id="sec-linear-and-quadratic-functions-4-6-1-1-1-3-3-1">Use the linear model to estimate the value of the car ten years after purchase.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-6-1-1-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-linear-and-quadratic-functions-4-6-1-1-1-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-4-6-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-linear-and-quadratic-functions-4-6-1-2-1">
+<div class="para">Because we are in the context of an application, the language “linear model” has come up, but we are really looking for a linear function. We will let <span class="process-math">\(x\)</span> represent the number of years after purchase, and <span class="process-math">\(y\)</span> represent the value of the car in dollars. Then we have two points: <span class="process-math">\((3, 20000)\)</span> and <span class="process-math">\((8, 10000)\text{.}\)</span> It means that we have the same kind of problem as the previous question, but with different numbers.</div>
+<ol class="decimal" id="sec-linear-and-quadratic-functions-4-6-1-2-1-6">
+<li id="sec-linear-and-quadratic-functions-4-6-1-2-1-6-1">
+<div class="para" id="sec-linear-and-quadratic-functions-4-6-1-2-1-6-1-1">Given the points <span class="process-math">\((3, 20000)\)</span> and <span class="process-math">\((8, 10000)\text{,}\)</span> the slope is <span class="process-math">\(m = \frac{10000 - 20000}{8 - 3} = \frac{-10000}{5} = -2000\text{.}\)</span> Using the first point, we have <span class="process-math">\(y - 20000 = -2000(x - 3)\text{.}\)</span> Solving for <span class="process-math">\(y\)</span> gives <span class="process-math">\(y = -2000(x - 3) + 20000\text{,}\)</span> so <span class="process-math">\(f(x) = -2000(x-3) + 20000\)</span> is one formula for the linear function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-6-1-2-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-4-6-1-2-1-6-1-2">We can also distribute <span class="process-math">\(-2000\)</span> and combine like terms to get <span class="process-math">\(f(x) = -2000x + 6000 + 20000 = -2000x + 26000\text{.}\)</span> So <span class="process-math">\(f(x) = -2000x + 26000\)</span> is another formula for the linear function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-6-1-2-1-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-linear-and-quadratic-functions-4-6-1-2-1-6-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-4-6-1-2-1-6-2">
+<div class="para" id="sec-linear-and-quadratic-functions-4-6-1-2-1-6-2-1">The slope is <span class="process-math">\(-2000\text{,}\)</span> which means that for every increase of <span class="process-math">\(x\)</span> by one unit the value of <span class="process-math">\(y\)</span> decreases by <span class="process-math">\(2000\text{.}\)</span> Now, we say the same information, but in context in light of the fact that <span class="process-math">\(x\)</span> increasing by <span class="process-math">\(1\)</span> means it’s one year later: every year, the value of the car decreases by <span class="process-math">\(\$2000\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-6-1-2-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-linear-and-quadratic-functions-4-6-1-2-1-6-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-4-6-1-2-1-6-3">
+<div class="para" id="sec-linear-and-quadratic-functions-4-6-1-2-1-6-3-1">To estimate the value of the car ten years after purchase, we need to evaluate <span class="process-math">\(f(10)\text{.}\)</span> Using the formula <span class="process-math">\(f(x) = -2000x + 26000\text{,}\)</span> we have <span class="process-math">\(f(10) = -2000(10) + 26000 = -20000 + 26000 = 6000\text{.}\)</span> So, the estimated value of the car ten years after purchase is <span class="process-math">\(\$6000\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-6-1-2-1-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-linear-and-quadratic-functions-4-6-1-2-1-6-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-6-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.2.1"><a href="#sec-linear-and-quadratic-functions-4-6-1-2" title="Copy heading and permalink for Answer 3.3.2.1" aria-label="Copy heading and permalink for Answer 3.3.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.2"><a href="#sec-linear-and-quadratic-functions-4-6-1" title="Copy heading and permalink for Example 3.3.2" aria-label="Copy heading and permalink for Example 3.3.2">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Linear functions and linear models"><a href="#sec-linear-and-quadratic-functions-4" title="Copy heading and permalink for Subsection: Linear functions and linear models" aria-label="Copy heading and permalink for Subsection: Linear functions and linear models">🔗</a></div></section><section class="subsection" id="sec-linear-and-quadratic-functions-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quadratic functions and quadratic models</span>
+</h3>
+<div class="para" id="sec-linear-and-quadratic-functions-5-2">We just saw that a linear function can always be written in the format <span class="process-math">\(f(x) = mx + b\text{,}\)</span> or to prep for what we’ll see and use letters in alphabetical order, <span class="process-math">\(f(x) = ax + b\text{.}\)</span> Instead of having the highest power of <span class="process-math">\(x\)</span> be <span class="process-math">\(1\text{,}\)</span> we can increase this by <span class="process-math">\(1\)</span> to talk about a quadratic function. A quadratic function will have the highest power of <span class="process-math">\(x\)</span> be <span class="process-math">\(2\text{,}\)</span> and so a quadratic function can always be written in the format <span class="process-math">\(f(x) = ax^2 + bx + c\text{.}\)</span> Whereas a linear function’s graph is always a straight line, a quadratic function’s graph is always a <dfn class="terminology">parabola</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-linear-and-quadratic-functions-5-3">
+<div class="para">The two forms of line we have focused on <span class="process-math">\(y = mx + b\)</span> and <span class="process-math">\(y - y_1 = m(x - x_1)\)</span> led to two general looks for a linear function: either <span class="process-math">\(f(x) = mx + b\)</span> (alternatively written <span class="process-math">\(f(x) = ax + b\)</span>) or <span class="process-math">\(f(x) = m(x - x_1) + y_1\)</span> (alternatively written <span class="process-math">\(f(x) = y_1 + m(x - x_1)\)</span>). Analogously, <span class="process-math">\(f(x) = ax^2 + bx + c\)</span> is one of the formats we will focus on.</div>
+<ul class="disc" id="sec-linear-and-quadratic-functions-5-3-8">
+<li id="sec-linear-and-quadratic-functions-5-3-8-1">
+<div class="para" id="sec-linear-and-quadratic-functions-5-3-8-1-1">
+<span class="process-math">\(f(x) = ax^2 + bx + c\)</span> is called the <dfn class="terminology">standard form</dfn> of a quadratic function<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-linear-and-quadratic-functions-5-3-8-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-5-3-8-2">
+<div class="para" id="sec-linear-and-quadratic-functions-5-3-8-2-1">
+<span class="process-math">\(f(x) = a(x - h)^2 + k\)</span> is called the <dfn class="terminology">vertex form</dfn> of a quadratic function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-3-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-linear-and-quadratic-functions-5-3-8-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-4">When a quadratic function describes the behavior of a real-world situation, we say that we are looking at a <dfn class="terminology">quadratic model</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-5">
+<article class="example example-like" id="sec-linear-and-quadratic-functions-5-5-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-linear-and-quadratic-functions-5-5-1-1-1">Consider the quadratic function <span class="process-math">\(f(x) = (x-3)^2 + 100\)</span> in vertex form, and write the function in standard form.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-5-5-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-linear-and-quadratic-functions-5-5-1-2-1">
+<span class="process-math">\(f(x) = (x-3)^2 + 100 = x^2 - 6x + 9 + 100 = x^2 - 6x + 109\text{.}\)</span> So, the standard form of the function is <span class="process-math">\(f(x) = x^2 - 6x + 109\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.3.1"><a href="#sec-linear-and-quadratic-functions-5-5-1-2" title="Copy heading and permalink for Answer 3.3.3.1" aria-label="Copy heading and permalink for Answer 3.3.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.3"><a href="#sec-linear-and-quadratic-functions-5-5-1" title="Copy heading and permalink for Example 3.3.3" aria-label="Copy heading and permalink for Example 3.3.3">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-6">
+<article class="example example-like" id="sec-linear-and-quadratic-functions-5-6-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-linear-and-quadratic-functions-5-6-1-1-1">Consider the quadratic function <span class="process-math">\(f(x) = 10(x-3)^2 + 100\)</span> in vertex form, and write the function in standard form.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-5-6-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-linear-and-quadratic-functions-5-6-1-2-1">
+<span class="process-math">\(f(x) = 10(x-3)^2 + 100 = 10(x^2 - 6x + 9) + 100 = 10x^2 - 60x + 90 + 100 = 10x^2 - 60x + 190\text{.}\)</span> So, the standard form of the function is <span class="process-math">\(f(x) = 10x^2 - 60x + 190\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-6-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.4.1"><a href="#sec-linear-and-quadratic-functions-5-6-1-2" title="Copy heading and permalink for Answer 3.3.4.1" aria-label="Copy heading and permalink for Answer 3.3.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.4"><a href="#sec-linear-and-quadratic-functions-5-6-1" title="Copy heading and permalink for Example 3.3.4" aria-label="Copy heading and permalink for Example 3.3.4">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-7">Going from vertex form to standard form involves expanding the square and combining like terms. Going from standard form to vertex form involves completing the square. We were used to adding something to both sides, but now we’ll have to add and subtract a number on the <em class="emphasis">same</em> side.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-8">
+<article class="example example-like" id="sec-linear-and-quadratic-functions-5-8-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-linear-and-quadratic-functions-5-8-1-1-1">Consider the quadratic function <span class="process-math">\(f(x) = x^2 + 6x + 100\)</span> in standard form, and write the function in vertex form.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-8-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-5-8-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-linear-and-quadratic-functions-5-8-1-2-1">The linear coefficient is <span class="process-math">\(6\text{,}\)</span> so the second stick is <span class="process-math">\(3\)</span> so the constant we need to add is <span class="process-math">\(9\text{.}\)</span> If we had an equation, we would add <span class="process-math">\(9\)</span> to, both sides, but we have the formula for a function, so we will add and subtract <span class="process-math">\(9\)</span> on the same “side”. <span class="process-math">\(f(x) = x^2 + 6x + 9 - 9 + 100 = (x^2 + 6x + 9) + 91 = (x+3)^2 + 91\text{.}\)</span> So, the vertex form of the function is <span class="process-math">\(f(x) = (x+3)^2 + 91\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-8-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.5.1"><a href="#sec-linear-and-quadratic-functions-5-8-1-2" title="Copy heading and permalink for Answer 3.3.5.1" aria-label="Copy heading and permalink for Answer 3.3.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.5"><a href="#sec-linear-and-quadratic-functions-5-8-1" title="Copy heading and permalink for Example 3.3.5" aria-label="Copy heading and permalink for Example 3.3.5">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-9">We can actually temporarily create an equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> by replacing <span class="process-math">\(f(x)\)</span> with <span class="process-math">\(y\text{,}\)</span> and after completing the square and factoring, we can replace <span class="process-math">\(y\)</span> with <span class="process-math">\(f(x)\)</span> again. It will end up being the same mathematics (the same numbers are involved in completing the square), but it’s a little easier to process this way. Let’s revisit the same problem with this new technique.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-10">
+<article class="example example-like" id="sec-linear-and-quadratic-functions-5-10-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-linear-and-quadratic-functions-5-10-1-1-1">Consider the quadratic function <span class="process-math">\(f(x) = x^2 + 6x + 100\)</span> in standard form, and write the function in vertex form.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-10-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-5-10-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-linear-and-quadratic-functions-5-10-1-2-1">Replacing <span class="process-math">\(f(x)\)</span> with <span class="process-math">\(y\text{,}\)</span> we have <span class="process-math">\(y = x^2 + 6x + 100\text{.}\)</span> Subtracting <span class="process-math">\(100\)</span> on both sides, <span class="process-math">\(y-100 = x^2 + 6x\text{.}\)</span> The linear coefficient is <span class="process-math">\(6\text{,}\)</span> so the second stick is <span class="process-math">\(3\)</span> so the constant we need to add is <span class="process-math">\(9\text{.}\)</span> Adding <span class="process-math">\(9\)</span> to both sides, we have <span class="process-math">\(y - 100 + 9 = x^2 + 6x + 9\text{,}\)</span> which simplifies to <span class="process-math">\(y - 91 = x^2 + 6x + 9\text{.}\)</span> Factoring the right side gives <span class="process-math">\(y - 91 = (x + 3)^2\text{,}\)</span> and adding <span class="process-math">\(91\)</span> to both sides gives <span class="process-math">\(y = (x + 3)^2 + 91\text{.}\)</span> Replacing <span class="process-math">\(y\)</span> with <span class="process-math">\(f(x)\text{,}\)</span> we have <span class="process-math">\(f(x) = (x + 3)^2 + 91\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-10-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.6.1"><a href="#sec-linear-and-quadratic-functions-5-10-1-2" title="Copy heading and permalink for Answer 3.3.6.1" aria-label="Copy heading and permalink for Answer 3.3.6.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.6"><a href="#sec-linear-and-quadratic-functions-5-10-1" title="Copy heading and permalink for Example 3.3.6" aria-label="Copy heading and permalink for Example 3.3.6">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-11">
+<article class="example example-like" id="sec-linear-and-quadratic-functions-5-11-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-linear-and-quadratic-functions-5-11-1-1-1">Consider the quadratic function <span class="process-math">\(f(x) = 10x^2 - 60x + 300\)</span> in standard form, and write the function in vertex form.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-11-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-5-11-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-linear-and-quadratic-functions-5-11-1-2-1">
+<div class="para">Replacing <span class="process-math">\(f(x)\)</span> with <span class="process-math">\(y\text{,}\)</span> we have <span class="process-math">\(y = 10x^2 - 60x + 300\text{.}\)</span> Subtracting <span class="process-math">\(300\)</span> on both sides, <span class="process-math">\(y - 300 = 10x^2 - 60x\text{.}\)</span> In the past for quadratic equations, we saw that before we consider the linear coefficient, second stick, and constant, we first need to ensure that the coefficient of <span class="process-math">\(x^2\)</span> is <span class="process-math">\(1\text{,}\)</span> often a "hidden" <span class="process-math">\(1\text{.}\)</span> To make that happens is a multi-step process that starts with dividing both sides by <span class="process-math">\(10\text{.}\)</span> As we do this, recall that we have divide the <em class="emphasis">entire</em> left side by <span class="process-math">\(10\text{,}\)</span> and the <em class="emphasis">entire</em> right side by <span class="process-math">\(10\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{y - 300}{10} = \frac{10x^2 - 60x}{10}.
+\end{equation*}
+</div>
+<div class="para">Each side has a fraction with subtraction in the numerator, so no cancellations will happen. We can leave the left side as is, but we make the choice to do steps on the left similarly to how we work on the right, splitting up each side as the difference of two fractions:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{y}{10} - \frac{300}{10} = \frac{10x^2}{10} - \frac{60x}{10}.
+\end{equation*}
+</div>
+<div class="para">Now that minus signs are not <em class="emphasis">in</em> the numerator of a fraction (but instead <em class="emphasis">between</em> separate fractions), we can cancel in three of the four fractions:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{y}{10} - 30 = x^2 - 6x.
+\end{equation*}
+</div>
+<div class="para">Now we can complete the square on the right side. The linear coefficient is <span class="process-math">\(-6\text{,}\)</span> so the second stick is <span class="process-math">\(-3\)</span> so the constant we need to add is <span class="process-math">\(9\text{.}\)</span> Adding <span class="process-math">\(9\)</span> to both sides,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{y}{10} - 30 + 9 = x^2 - 6x + 9.
+\end{equation*}
+</div>
+<div class="para">Simplifying the left side and factoring on the right side,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{y}{10} - 21 = (x - 3)^2.
+\end{equation*}
+</div>
+<div class="para">Now we solve for <span class="process-math">\(y\text{.}\)</span> Adding <span class="process-math">\(21\)</span> to both sides gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{y}{10} = (x-3)^2 + 21
+\end{equation*}
+</div>
+<div class="para">To get <span class="process-math">\(y\)</span> by itself, we multiply both sides by <span class="process-math">\(10\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = 10 ((x-3)^2 + 21).
+\end{equation*}
+</div>
+<div class="para">While this techincally leaves <span class="process-math">\(y\)</span> isolated, we can distribute the <span class="process-math">\(10\)</span> to get a more standard look:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = 10(x-3)^2 + 210.
+\end{equation*}
+</div>
+<div class="para">Replacing <span class="process-math">\(y\)</span> with <span class="process-math">\(f(x)\text{,}\)</span> we have <span class="process-math">\(f(x) = 10(x-3)^2 + 210\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-11-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.7.1"><a href="#sec-linear-and-quadratic-functions-5-11-1-2" title="Copy heading and permalink for Answer 3.3.7.1" aria-label="Copy heading and permalink for Answer 3.3.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.7"><a href="#sec-linear-and-quadratic-functions-5-11-1" title="Copy heading and permalink for Example 3.3.7" aria-label="Copy heading and permalink for Example 3.3.7">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-12">
+<article class="example example-like" id="example2x2-20x-12-vertex-form"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="example2x2-20x-12-vertex-form-1-1">Consider the quadratic function <span class="process-math">\(f(x) = 2x^2 + 20x - 12\)</span> in standard form, and write the function in vertex form.<div class="autopermalink" data-description="Paragraph"><a href="#example2x2-20x-12-vertex-form-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example2x2-20x-12-vertex-form-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="example2x2-20x-12-vertex-form-2-1">
+<div class="para">Replacing <span class="process-math">\(f(x)\)</span> with <span class="process-math">\(y\text{,}\)</span> we have <span class="process-math">\(y = 2x^2 + 20x - 12\text{.}\)</span> Subtracting <span class="process-math">\(-12\)</span> on both sides, <span class="process-math">\(y + 12 = 2x^2 + 20x\text{.}\)</span> Dividing both sides by <span class="process-math">\(2\text{,}\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{y + 12}{2} = x^2 + 10x.
+\end{equation*}
+</div>
+<div class="para">The linear coefficient is <span class="process-math">\(10\text{,}\)</span> so the second stick is <span class="process-math">\(5\)</span> so the constant we need to add is <span class="process-math">\(25\text{.}\)</span> Adding <span class="process-math">\(25\)</span> to both sides,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{y + 12}{2} + 25 = x^2 + 10x + 25.
+\end{equation*}
+</div>
+<div class="para">Factoring the right side,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{y + 12}{2} + 25 = (x + 5)^2.
+\end{equation*}
+</div>
+<div class="para">Now we solve for <span class="process-math">\(y\text{.}\)</span> Subtracting <span class="process-math">\(25\)</span> from both sides gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{y + 12}{2} = (x + 5)^2 - 25
+\end{equation*}
+</div>
+<div class="para">Multiplying both sides by <span class="process-math">\(2\)</span> gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y + 12 = 2((x + 5)^2 - 25)
+\end{equation*}
+</div>
+<div class="para">Distributing the <span class="process-math">\(2\)</span> gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y + 12 = 2(x + 5)^2 - 50
+\end{equation*}
+</div>
+<div class="para">Subtracting <span class="process-math">\(12\)</span> from both sides gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = 2(x + 5)^2 - 50 - 12
+\end{equation*}
+</div>
+<div class="para">Simplifying the right side,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = 2(x + 5)^2 - 62
+\end{equation*}
+</div>
+<div class="para">so</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = 2(x + 5)^2 - 62\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example2x2-20x-12-vertex-form-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.8.1"><a href="#example2x2-20x-12-vertex-form-2" title="Copy heading and permalink for Answer 3.3.8.1" aria-label="Copy heading and permalink for Answer 3.3.8.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.8"><a href="#example2x2-20x-12-vertex-form" title="Copy heading and permalink for Example 3.3.8" aria-label="Copy heading and permalink for Example 3.3.8">🔗</a></div></article> A final answer can be left like this, but if we wish to have this look more literal in its conformance to the vertex form, we can write <span class="process-math">\(f(x) = 2(x - (-5))^2 - 62\text{,}\)</span> in which case we more clearly see that <span class="process-math">\(a=2\)</span> and <span class="process-math">\(h=-5\)</span> and <span class="process-math">\(k=-62\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-linear-and-quadratic-functions-5-13">
+<div class="para">Now, we dig a little into the parts of the standard form <span class="process-math">\(f(x) = ax^2 + bx + c\)</span> and the vertex form <span class="process-math">\(f(x) = a(x-h)^2 + k\text{.}\)</span>
+</div>
+<ul class="disc" id="sec-linear-and-quadratic-functions-5-13-3">
+<li id="sec-linear-and-quadratic-functions-5-13-3-1">
+<div class="para" id="sec-linear-and-quadratic-functions-5-13-3-1-1">The <span class="process-math">\(a\)</span> in both forms is the same, and it takes on the same value when convering between forms. (For example, in the last example, <span class="process-math">\(a=2\)</span> in both <span class="process-math">\(f(x) = 2x^2 + 20x - 12\)</span> and <span class="process-math">\(f(x) = 2(x + 5)^2 - 62\text{.}\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-13-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-linear-and-quadratic-functions-5-13-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-5-13-3-2">
+<div class="para" id="sec-linear-and-quadratic-functions-5-13-3-2-1">If <span class="process-math">\(a &gt; 0\text{,}\)</span> the parabola opens upward, and if <span class="process-math">\(a &lt; 0\text{,}\)</span> the parabola opens downward. The figures below depict the two cases. <figure class="figure figure-like" id="sec-linear-and-quadratic-functions-5-13-3-2-1-3"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/latex-image/sec-linear-and-quadratic-functions-5-13-3-2-1-3-1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Parabola opens upward when <span class="process-math">\(a &gt; 0\text{.}\)</span><div class="autopermalink" data-description="Figure 3.3.9"><a href="#sec-linear-and-quadratic-functions-5-13-3-2-1-3" title="Copy heading and permalink for Figure 3.3.9" aria-label="Copy heading and permalink for Figure 3.3.9">🔗</a></div></figcaption></figure> <figure class="figure figure-like" id="sec-linear-and-quadratic-functions-5-13-3-2-1-4"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/latex-image/sec-linear-and-quadratic-functions-5-13-3-2-1-4-1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Parabola opens downward when <span class="process-math">\(a &lt; 0\text{.}\)</span><div class="autopermalink" data-description="Figure 3.3.10"><a href="#sec-linear-and-quadratic-functions-5-13-3-2-1-4" title="Copy heading and permalink for Figure 3.3.10" aria-label="Copy heading and permalink for Figure 3.3.10">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-13-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-linear-and-quadratic-functions-5-13-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">While both parabolas were drawn in the context of <span class="process-math">\(x\)</span>- and <span class="process-math">\(y\)</span>-axes, all we really wanted to show here is that the parabolas open upward or downward depending on the sign of <span class="process-math">\(a\text{.}\)</span> (The values of the other coefficients <span class="process-math">\(b\)</span> and <span class="process-math">\(c\)</span> in standard form or <span class="process-math">\(h\)</span> and <span class="process-math">\(k\)</span> in vertex form will affect the position and width of the parabola, but not its direction.)</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-linear-and-quadratic-functions-5-14">
+<div class="para">There is a special point called the <em class="emphasis">vertex</em> of the parabola.</div>
+<ul class="disc" id="sec-linear-and-quadratic-functions-5-14-2">
+<li id="sec-linear-and-quadratic-functions-5-14-2-1">
+<div class="para" id="sec-linear-and-quadratic-functions-5-14-2-1-1">In the case of a parabola that opens upward (so <span class="process-math">\(a &gt; 0\)</span>) the vertex is the lowest point on the parabola. This is the point on the parabola that has the smallest <span class="process-math">\(y\)</span>-value.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-14-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-linear-and-quadratic-functions-5-14-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-5-14-2-2">
+<div class="para" id="sec-linear-and-quadratic-functions-5-14-2-2-1">In the case of a parabola that opens downward (so <span class="process-math">\(a &lt; 0\)</span>) the vertex is the highest point on the parabola. This is the point on the parabola that has the largest <span class="process-math">\(y\)</span>-value.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-14-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-linear-and-quadratic-functions-5-14-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-15">We introduce formulas for getting the vertex of a parabola in each form: <article class="principle theorem-like" id="principle-vertex-form-vertex"><h4 class="heading">
+<span class="type">Principle</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="principle-vertex-form-vertex-1-1">If <span class="process-math">\(f(x) = a(x-h)^2 + k\)</span> is a quadratic function in vertex form, then the vertex of the parabola is <span class="process-math">\((h,k)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#principle-vertex-form-vertex-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Principle 3.3.11"><a href="#principle-vertex-form-vertex" title="Copy heading and permalink for Principle 3.3.11" aria-label="Copy heading and permalink for Principle 3.3.11">🔗</a></div></article> The fact that the information about the vertex can be read right off of this form is why it is called vertex form.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-16">We introduce a formula for getting the <span class="process-math">\(x\)</span>-coordinate only of a vertex of a parabola in standard form: <article class="principle theorem-like" id="principle-standard-form-vertex-x"><h4 class="heading">
+<span class="type">Principle</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="principle-standard-form-vertex-x-1-1">If <span class="process-math">\(f(x) = ax^2 + bx + c\)</span> is a quadratic function in standard form, then the <span class="process-math">\(x\)</span>-coordinate of the vertex of the parabola is <span class="process-math">\(x = -\frac{b}{2a}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#principle-standard-form-vertex-x-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Principle 3.3.12"><a href="#principle-standard-form-vertex-x" title="Copy heading and permalink for Principle 3.3.12" aria-label="Copy heading and permalink for Principle 3.3.12">🔗</a></div></article> Once the <span class="process-math">\(x\)</span>-coordinate is known, the <span class="process-math">\(y\)</span>-coordinate can be found by evaluating the function at the appropriate <span class="process-math">\(x\)</span>-coordinate.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-17">
+<article class="example example-like" id="sec-linear-and-quadratic-functions-5-17-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-linear-and-quadratic-functions-5-17-1-1-1">Identify the vertex of the parabola given by <span class="process-math">\(f(x) = 2(x + 5)^2 - 62\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-17-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-5-17-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-linear-and-quadratic-functions-5-17-1-2-1">If it helps, we can rewrite the function as <span class="process-math">\(f(x) = 2(x - (-5))^2 - 62\text{,}\)</span> and then we can see that <span class="process-math">\(h = -5\)</span> and <span class="process-math">\(k = -62\text{.}\)</span> So, the vertex is <span class="process-math">\((-5, -62)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-17-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.13.1"><a href="#sec-linear-and-quadratic-functions-5-17-1-2" title="Copy heading and permalink for Answer 3.3.13.1" aria-label="Copy heading and permalink for Answer 3.3.13.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.13"><a href="#sec-linear-and-quadratic-functions-5-17-1" title="Copy heading and permalink for Example 3.3.13" aria-label="Copy heading and permalink for Example 3.3.13">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-18">
+<article class="example example-like" id="sec-linear-and-quadratic-functions-5-18-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-linear-and-quadratic-functions-5-18-1-1-1">Identify the vertex of the parabola given by <span class="process-math">\(f(x) = 2x^2 + 20x - 12\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-18-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-5-18-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-linear-and-quadratic-functions-5-18-1-2-1">
+<div class="para">Because we have the function in standard form, we can use the formula <span class="process-math">\(x = -\frac{b}{2a}\)</span> to find the <span class="process-math">\(x\)</span>-coordinate of the vertex. Here, <span class="process-math">\(a = 2\)</span> and <span class="process-math">\(b = 20\text{,}\)</span> so <span class="process-math">\(x = -\frac{20}{2(2)} = -\frac{20}{4} = -5\text{.}\)</span> To find the <span class="process-math">\(y\)</span>-coordinate of the vertex, we evaluate the function at <span class="process-math">\(x = -5\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(-5) = 2(-5)^2 + 20(-5) - 12 = 2(25) - 100 - 12 = 50 - 100 - 12 = -62\text{.}
+\end{equation*}
+</div>
+<div class="para">So, the vertex is <span class="process-math">\((-5, -62)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-18-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.14.1"><a href="#sec-linear-and-quadratic-functions-5-18-1-2" title="Copy heading and permalink for Answer 3.3.14.1" aria-label="Copy heading and permalink for Answer 3.3.14.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.14"><a href="#sec-linear-and-quadratic-functions-5-18-1" title="Copy heading and permalink for Example 3.3.14" aria-label="Copy heading and permalink for Example 3.3.14">🔗</a></div></article> Note that we recover the same vertex <span class="process-math">\((-5, -62)\)</span> as in the previous example. This should be expected because from our work in <a href="sec-linear-and-quadratic-functions.html#example2x2-20x-12-vertex-form" class="xref" data-knowl="./knowl/xref/example2x2-20x-12-vertex-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 3.3.8">Example 3.3.8</a> we are looking at two different forms of the same function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-19">
+<article class="example example-like" id="sec-linear-and-quadratic-functions-5-19-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-linear-and-quadratic-functions-5-19-1-1-1">Use the vertex and the <span class="process-math">\(x\)</span>-intercepts and <span class="process-math">\(y\)</span>-intercept to sketch the graph of the parabola given by <span class="process-math">\(f(x) = 2x^2 + 20x - 12\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-19-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-5-19-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-linear-and-quadratic-functions-5-19-1-2-1">
+<div class="para">We already found the vertex to be <span class="process-math">\((-5, -62)\text{.}\)</span> It may be helpful for us to replace the <span class="process-math">\(f(x)\)</span> with a <span class="process-math">\(y\)</span> so we have the following equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = 2x^2 + 20x - 12.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-19-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-linear-and-quadratic-functions-5-19-1-2-2">
+<div class="para">Recall from <a href="sec-lines.html#principle-x-intercepts" class="xref" data-knowl="./knowl/xref/principle-x-intercepts.html" data-reveal-label="Reveal" data-close-label="Close" title="Principle 2.2.7: Finding x-intercepts">Principle 2.2.7</a> to find the <span class="process-math">\(x\)</span>-intercepts, we need to set <span class="process-math">\(y = 0\)</span> and solve for <span class="process-math">\(x\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/principle-x-intercepts.html">
+\begin{equation*}
+0 = 2x^2 + 20x - 12
+\end{equation*}
+</div>
+<div class="para">Because this is a quadratic equation, we can use the quadratic formula to solve for <span class="process-math">\(x\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/principle-x-intercepts.html">
+\begin{equation*}
+x = \frac{-20 \pm \sqrt{20^2 - 4(2)(-12)}}{2(2)} = \frac{-20 \pm \sqrt{400 + 96}}{4} = \frac{-20 \pm \sqrt{496}}{4} = \frac{-20 \pm 4\sqrt{31}}{4} = -5 \pm \sqrt{31}
+\end{equation*}
+</div>
+<div class="para">So, the <span class="process-math">\(x\)</span>-intercepts are <span class="process-math">\(x = -5 + \sqrt{31} \approx 1.4\)</span> and <span class="process-math">\(x = -5 - \sqrt{31} \approx -11.4\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-19-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-linear-and-quadratic-functions-5-19-1-2-3">
+<div class="para">Recall frohm <a href="sec-lines.html#principle-y-intercepts" class="xref" data-knowl="./knowl/xref/principle-y-intercepts.html" data-reveal-label="Reveal" data-close-label="Close" title="Principle 2.2.8: Finding y-intercepts">Principle 2.2.8</a> to find the <span class="process-math">\(y\)</span>-intercept, we need to set <span class="process-math">\(x = 0\)</span> and solve for <span class="process-math">\(y\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/principle-y-intercepts.html">
+\begin{equation*}
+y = 2(0)^2 + 20(0) - 12 = -12
+\end{equation*}
+</div>
+<div class="para">So, the <span class="process-math">\(y\)</span>-intercept is <span class="process-math">\(y = -12\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-19-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-19-1-2-4">With the vertex, <span class="process-math">\(x\)</span>-intercepts, and <span class="process-math">\(y\)</span>-intercept, we can sketch the graph of the parabola. It is helpful to not worry about scale. <figure class="figure figure-like" id="sec-linear-and-quadratic-functions-5-19-1-2-4-3"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/latex-image/sec-linear-and-quadratic-functions-5-19-1-2-4-3-1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A sketch.<div class="autopermalink" data-description="Figure 3.3.16"><a href="#sec-linear-and-quadratic-functions-5-19-1-2-4-3" title="Copy heading and permalink for Figure 3.3.16" aria-label="Copy heading and permalink for Figure 3.3.16">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-19-1-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.15.1"><a href="#sec-linear-and-quadratic-functions-5-19-1-2" title="Copy heading and permalink for Answer 3.3.15.1" aria-label="Copy heading and permalink for Answer 3.3.15.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.15"><a href="#sec-linear-and-quadratic-functions-5-19-1" title="Copy heading and permalink for Example 3.3.15" aria-label="Copy heading and permalink for Example 3.3.15">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-20">
+<article class="example example-like" id="sec-linear-and-quadratic-functions-5-20-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-linear-and-quadratic-functions-5-20-1-1-1">Identify the vertex of the parabola given by <span class="process-math">\(f(x) = -3(x - 2)^2 + 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-20-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-5-20-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-linear-and-quadratic-functions-5-20-1-2-1">We can see that <span class="process-math">\(a = -3\)</span> and <span class="process-math">\(h = 2\)</span> and <span class="process-math">\(k = 1\text{.}\)</span> So, the vertex is <span class="process-math">\((2, 1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-20-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.17.1"><a href="#sec-linear-and-quadratic-functions-5-20-1-2" title="Copy heading and permalink for Answer 3.3.17.1" aria-label="Copy heading and permalink for Answer 3.3.17.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.17"><a href="#sec-linear-and-quadratic-functions-5-20-1" title="Copy heading and permalink for Example 3.3.17" aria-label="Copy heading and permalink for Example 3.3.17">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-21">We now examine the applications at the beginning. <article class="example example-like" id="sec-linear-and-quadratic-functions-5-21-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-linear-and-quadratic-functions-5-21-1-1-1">A business has a profit function given by <span class="process-math">\(P(x) = -4x^2 + 80x - 100\text{,}\)</span> where <span class="process-math">\(x\)</span> is the number of toasters sold. How many toasters should the business sell to maximize profit, and what is that maximum profit?<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-21-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-5-21-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-linear-and-quadratic-functions-5-21-1-2-1">
+<div class="para">For concreteness, we replace <span class="process-math">\(P(x)\)</span> with <span class="process-math">\(y\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = -4x^2 + 80x - 100
+\end{equation*}
+</div>
+<div class="para">The <span class="process-math">\(x\)</span>-coordinate represents the number of toasters sold, while <span class="process-math">\(y\)</span> represents the profit. Because the coefficient of <span class="process-math">\(x^2\)</span> is negative, the drawing would be a parabola which opens downward. So, there is a point at the top (called the vertex) in which the <span class="process-math">\(y\)</span>-coordinate is largest on the porabola. Recall that <span class="process-math">\(y\)</span> represents the profit, so it is this point that we are interested in.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-21-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-linear-and-quadratic-functions-5-21-1-2-2">
+<div class="para">To find the <span class="process-math">\(x\)</span>-coordinate of the vertex, we use the formula <span class="process-math">\(x = -\frac{b}{2a}\)</span> from <a href="sec-linear-and-quadratic-functions.html#principle-standard-form-vertex-x" class="xref" data-knowl="./knowl/xref/principle-standard-form-vertex-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Principle 3.3.12">Principle 3.3.12</a>. Here, <span class="process-math">\(a = -4\)</span> and <span class="process-math">\(b = 80\)</span> and <span class="process-math">\(c=-100\text{,}\)</span> so <span class="process-math">\(x = -\frac{80}{2(-4)} = -\frac{80}{-8} = 10\text{.}\)</span> Now that we know the <span class="process-math">\(x\)</span>-coordinate of the vertex, we can find the <span class="process-math">\(y\)</span>-coordinate by evaluating the function at <span class="process-math">\(x = 10\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/principle-standard-form-vertex-x.html">
+\begin{equation*}
+P(10) = -4(10)^2 + 80(10) - 100 = -4(100) + 800 - 100 = -400 + 800 - 100 = 300
+\end{equation*}
+</div>
+<div class="para">So the vertex is the point <span class="process-math">\((10, 300)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-21-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-21-1-2-3">Recalling that <span class="process-math">\(x\)</span> represents the number of toasters sold and <span class="process-math">\(y\)</span> represents the profit, we can say that the business should sell <span class="process-math">\(10\)</span> toasters to maximize profit, and that maximum profit is <span class="process-math">\(\$300\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-21-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.18.1"><a href="#sec-linear-and-quadratic-functions-5-21-1-2" title="Copy heading and permalink for Answer 3.3.18.1" aria-label="Copy heading and permalink for Answer 3.3.18.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.18"><a href="#sec-linear-and-quadratic-functions-5-21-1" title="Copy heading and permalink for Example 3.3.18" aria-label="Copy heading and permalink for Example 3.3.18">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-linear-and-quadratic-functions-5-22">
+<article class="example example-like" id="sec-linear-and-quadratic-functions-5-22-1"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sec-linear-and-quadratic-functions-5-22-1-1-1">A ball is thrown into the air. Its height in feet after <span class="process-math">\(t\)</span> seconds is given by the function <span class="process-math">\(h(t) = -16t^2 + 64t + 5\text{.}\)</span> How long will it take for the ball to hit the ground? At what point is the ball at its maximum height, and what is that height?<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-22-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-linear-and-quadratic-functions-5-22-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-linear-and-quadratic-functions-5-22-1-2-1">Before going too far, let us note that <span class="process-math">\(t\)</span> plays the role of <span class="process-math">\(x\text{,}\)</span> and represents the time. If we write <span class="process-math">\(y = -16t^2 + 64t + 5\text{,}\)</span> then <span class="process-math">\(y\)</span> represents the height of the ball.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-22-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-linear-and-quadratic-functions-5-22-1-2-2">
+<div class="para">To find when the ball hits the ground, we set <span class="process-math">\(h(t) = 0\)</span> and solve for <span class="process-math">\(t\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0 = -16t^2 + 64t + 5
+\end{equation*}
+</div>
+<div class="para">Using the quadratic formula, we get:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t = \frac{-64 \pm \sqrt{64^2 - 4(-16)(5)}}{2(-16)} = \frac{-64 \pm \sqrt{4096 + 320}}{-32} = \frac{-64 \pm \sqrt{4416}}{-32}
+\end{equation*}
+</div>
+<div class="para">Simplifying the square root:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t \apporx \frac{-64 \pm 66.4}{-32}
+\end{equation*}
+</div>
+<div class="para">This gives us two solutions, but one of the times is negative, so we remove that possibility. The other solution is <span class="process-math">\(t \approx 4.075\)</span> seconds.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-22-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-linear-and-quadratic-functions-5-22-1-2-3">
+<div class="para">To find the maximum height, we use the vertex formula <span class="process-math">\(t = -\frac{b}{2a}\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t = -\frac{64}{2(-16)} = -\frac{64}{-32} = 2
+\end{equation*}
+</div>
+<div class="para">Evaluating the function at <span class="process-math">\(t = 2\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+h(2) = -16(2)^2 + 64(2) + 5 = -16(4) + 128 + 5 = -64 + 128 + 5 = 9
+\end{equation*}
+</div>
+<div class="para">So the vertex is the point <span class="process-math">\((2, 9)\text{.}\)</span> Recalling that <span class="process-math">\(t\)</span> represents the time and <span class="process-math">\(h(t)\)</span> or <span class="process-math">\(y\)</span>represents the height, we can say that the ball reaches its maximum height of <span class="process-math">\(9\)</span> feet after <span class="process-math">\(2\)</span> seconds. So the maximum height is reached at <span class="process-math">\(t = 2\)</span> seconds, and the height is <span class="process-math">\(9\)</span> feet.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-22-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.19.1"><a href="#sec-linear-and-quadratic-functions-5-22-1-2" title="Copy heading and permalink for Answer 3.3.19.1" aria-label="Copy heading and permalink for Answer 3.3.19.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.3.19"><a href="#sec-linear-and-quadratic-functions-5-22-1" title="Copy heading and permalink for Example 3.3.19" aria-label="Copy heading and permalink for Example 3.3.19">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-5-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Quadratic functions and quadratic models"><a href="#sec-linear-and-quadratic-functions-5" title="Copy heading and permalink for Subsection: Quadratic functions and quadratic models" aria-label="Copy heading and permalink for Subsection: Quadratic functions and quadratic models">🔗</a></div></section><section class="subsection" id="sec-linear-and-quadratic-functions-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summary</span>
+</h3>
+<div class="para logical" id="sec-linear-and-quadratic-functions-6-2">
+<ol class="decimal" id="sec-linear-and-quadratic-functions-6-2-1">
+<li id="sec-linear-and-quadratic-functions-6-2-1-1">
+<div class="para" id="sec-linear-and-quadratic-functions-6-2-1-1-1">A linear function is a function in the form <span class="process-math">\(f(x) = mx + b\)</span> where <span class="process-math">\(m\)</span> and <span class="process-math">\(b\)</span> are constants, or <span class="process-math">\(f(x) = m(x-x_1) + y_1\)</span> where <span class="process-math">\((x_1, y_1)\)</span> is a point on the line.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-6-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-linear-and-quadratic-functions-6-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-6-2-1-2">
+<div class="para" id="sec-linear-and-quadratic-functions-6-2-1-2-1">A linear model is a linear function that is used to describe a real-world situation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-6-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-linear-and-quadratic-functions-6-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-6-2-1-3">
+<div class="para" id="sec-linear-and-quadratic-functions-6-2-1-3-1">A quadratic function is a function in the form <span class="process-math">\(f(x) = ax^2 + bx + c\)</span> where <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\)</span> are constants, or <span class="process-math">\(f(x) = a(x-h)^2 + k\)</span> where <span class="process-math">\((h,k)\)</span> is the vertex of the parabola. In both the standard form and vertex form, the value of <span class="process-math">\(a\)</span> is the same when converting between forms.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-6-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec-linear-and-quadratic-functions-6-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-6-2-1-4">
+<div class="para" id="sec-linear-and-quadratic-functions-6-2-1-4-1">To convert from vertex form to standard form, expand and collect like terms. To convert from standard form to vertex form, complete the square.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-6-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#sec-linear-and-quadratic-functions-6-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-6-2-1-5">
+<div class="para" id="sec-linear-and-quadratic-functions-6-2-1-5-1">A quadratic model is a quadratic function that is used to describe a real-world situation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-6-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#sec-linear-and-quadratic-functions-6-2-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="sec-linear-and-quadratic-functions-6-2-1-6">
+<div class="para" id="sec-linear-and-quadratic-functions-6-2-1-6-1">The vertex of a parabola is the point on the parabola that is either the highest or lowest point, depending on whether the parabola opens downward or upward. (The parabola opens downward if <span class="process-math">\(a &lt; 0\)</span> and opens upward if <span class="process-math">\(a &gt; 0\text{.}\)</span>) The vertex can be read directly from the vertex form as <span class="process-math">\((h,k)\text{.}\)</span> In standard form, the formula <span class="process-math">\(x = -\frac{b}{2a}\)</span> gives the <span class="process-math">\(x\)</span>-coordinate of the vertex.<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-6-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#sec-linear-and-quadratic-functions-6-2-1-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-linear-and-quadratic-functions-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Summary"><a href="#sec-linear-and-quadratic-functions-6" title="Copy heading and permalink for Subsection: Summary" aria-label="Copy heading and permalink for Subsection: Summary">🔗</a></div></section><div class="autopermalink" data-description="Section 3.3: Linear and Quadratic Functions"><a href="#sec-linear-and-quadratic-functions" title="Copy heading and permalink for Section 3.3: Linear and Quadratic Functions" aria-label="Copy heading and permalink for Section 3.3: Linear and Quadratic Functions">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-functions-more-detail.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="mailto:oscar.levin@unco.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-66485406-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-66485406-1');
+</script><!--End: Google Global Site Tag code-->
+</body>
+</html>
